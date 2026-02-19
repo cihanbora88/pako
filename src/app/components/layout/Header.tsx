@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import svgPaths from '../../../imports/svg-9rloq76aef';
 import { t } from '../../utils/translations';
@@ -28,9 +28,19 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
         {/* Logo */}
         <Link to="/" className="shrink-0" aria-label={t('header.about')}>
           <div className="h-[60px] w-[150px]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 150 60">
+            <svg
+              className="block size-full"
+              fill="none"
+              preserveAspectRatio="none"
+              viewBox="0 0 150 60"
+            >
               <g id="flash_logo">
-                <path d={svgPaths.pb335580} fill="var(--color-primary)" id="pako_flash" />
+                <path
+                  d={svgPaths.pb335580}
+                  fill="var(--color-primary)"
+                  className="dark:fill-[var(--color-secondary)] transition-colors"
+                  id="pako_flash"
+                />
               </g>
             </svg>
           </div>
@@ -47,10 +57,10 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
               <span className="font-['Overpass_Mono',sans-serif] text-[var(--text-xl)] text-[var(--color-primary)] dark:text-[var(--color-secondary)] transition-colors group-hover:opacity-70">
                 {item.label}
               </span>
-              <div 
-                className={`h-1 w-full bg-[var(--color-secondary)] dark:bg-[var(--color-primary)] transition-opacity ${
+              <div
+                className={`h-1 w-full bg-[var(--color-secondary)] dark:bg-[var(--color-secondary)] transition-opacity ${
                   isActive(item.path) ? 'opacity-100' : 'opacity-0 group-hover:opacity-50'
-                }`} 
+                }`}
               />
             </Link>
           ))}
@@ -62,7 +72,11 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
             aria-label="Toggle dark mode"
           >
             <svg className="size-full" fill="none" viewBox="0 0 24 24">
-              <path d={svgPaths.p3655b580} fill="var(--color-primary)" className="dark:fill-[var(--color-secondary)]" />
+              <path
+                d={svgPaths.p3655b580}
+                fill="var(--color-primary)"
+                className="dark:fill-[var(--color-secondary)]"
+              />
             </svg>
           </button>
 
@@ -84,9 +98,15 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
           aria-label="Toggle menu"
         >
-          <span className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
-          <span className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span
+            className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}
+          />
+          <span
+            className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`}
+          />
+          <span
+            className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}
+          />
         </button>
       </nav>
 
@@ -113,7 +133,11 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
                 aria-label="Toggle dark mode"
               >
                 <svg className="size-6" fill="none" viewBox="0 0 24 24">
-                  <path d={svgPaths.p3655b580} fill="var(--color-primary)" className="dark:fill-[var(--color-secondary)]" />
+                  <path
+                    d={svgPaths.p3655b580}
+                    fill="var(--color-primary)"
+                    className="dark:fill-[var(--color-secondary)]"
+                  />
                 </svg>
               </button>
               <button

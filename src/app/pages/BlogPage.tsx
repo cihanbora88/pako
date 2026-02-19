@@ -5,7 +5,7 @@ import { SearchBar } from '../components/ui/SearchBar';
 import { FilterTag } from '../components/ui/FilterTag';
 import { BlogCard } from '../components/ui/BlogCard';
 import { CardGrid } from '../components/sections/CardGrid';
-import { blogPosts, BlogPost } from '../data/blog-posts';
+import { blogPosts } from '../data/blog-posts';
 import { t } from '../utils/translations';
 
 export function BlogPage() {
@@ -21,9 +21,10 @@ export function BlogPage() {
     t('blog.filters.advice'),
   ];
 
-  const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+  const filteredPosts = blogPosts.filter((post) => {
+    const matchesSearch =
+      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesFilter = !selectedFilter || post.category === selectedFilter;
     return matchesSearch && matchesFilter;
   });
@@ -74,10 +75,7 @@ export function BlogPage() {
             {filteredPosts.length > 0 ? (
               <>
                 {/* Hero Post */}
-                <BlogCard
-                  {...filteredPosts[0]}
-                  size="large"
-                />
+                <BlogCard {...filteredPosts[0]} size="large" />
 
                 {/* Two Column Grid */}
                 {filteredPosts.length > 1 && (

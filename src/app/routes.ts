@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router';
 import { HomePage } from './pages/HomePage';
 import { BlogPage } from './pages/BlogPage';
 import { HelpPage } from './pages/HelpPage';
-import { SupportPage } from './pages/SupportPage';
+import { SupportusPage } from './pages/SupportusPage';
 import { ContactPage } from './pages/ContactPage';
 import { BusinessesPage } from './pages/BusinessesPage';
 import { PakoRiderPage } from './pages/PakoRiderPage';
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/destek-ol',
-    Component: SupportPage,
+    Component: SupportusPage,
   },
   {
     path: '/iletisim',
@@ -52,4 +52,3 @@ export const router = createBrowserRouter([
     Component: NotFoundPage,
   },
 ]);
-

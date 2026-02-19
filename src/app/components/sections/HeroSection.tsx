@@ -6,11 +6,7 @@ export function HeroSection() {
     <section className="relative flex w-full items-center justify-center overflow-hidden py-16 md:py-20 lg:h-[450px]">
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
-        <img
-          alt=""
-          className="absolute inset-0 size-full object-cover"
-          src={heroImage}
-        />
+        <img alt="" className="absolute inset-0 size-full object-cover" src={heroImage} />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[rgba(41,0,121,0.5)]" />
       </div>
 

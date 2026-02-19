@@ -4,7 +4,7 @@
   /* Pako Brand Colors */
   --color-primary: #290079;
   --color-primary-dark: #1a004d;
-  --color-secondary: #AFE403;
+  --color-secondary: #afe403;
   --color-secondary-dark: #8cb602;
   --color-white: #ffffff;
   --color-black: #000000;
@@ -18,11 +18,11 @@
   --color-gray-700: #404040;
   --color-gray-800: #262626;
   --color-gray-900: #171717;
-  --color-red: #C00000;
+  --color-red: #c00000;
   --color-text-muted: #8c8ca1;
   --color-text-dark: #353030;
   --color-border: #696969;
-  
+
   /* Spacing Variables */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
@@ -34,7 +34,7 @@
   --spacing-4xl: 64px;
   --spacing-5xl: 80px;
   --spacing-6xl: 120px;
-  
+
   /* Font Sizes */
   --text-xs: 12px;
   --text-sm: 14px;
@@ -45,25 +45,25 @@
   --text-3xl: 32px;
   --text-4xl: 48px;
   --text-5xl: 80px;
-  
+
   /* Layout */
   --container-max-width: 1440px;
   --content-max-width: 1152px;
   --header-height: 80px;
-  
+
   /* Border Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
   --radius-xl: 20px;
-  
+
   /* Font Weights */
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  
+
   /* Base theme colors for components */
   --font-size: 16px;
   --background: var(--color-white);
@@ -104,8 +104,8 @@
 }
 
 .dark {
-  --color-primary: #5a00d6;
-  --color-secondary: #c9f740;
+  --color-primary: #290079;
+  --color-secondary: #afe403;
   --background: var(--color-gray-900);
   --foreground: var(--color-white);
   --card: var(--color-gray-800);

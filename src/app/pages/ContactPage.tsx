@@ -16,7 +16,7 @@ export function ContactPage() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
@@ -27,25 +27,45 @@ export function ContactPage() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Validate required fields
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
 
-    console.log('Form submitted:', formData);
-    setIsSubmitting(false);
-    setSubmitStatus('success');
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        subject: '',
-        topic: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
-      setSubmitStatus('idle');
-    }, 3000);
+    try {
+      // Simulate API call - replace with actual backend integration
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
+      setIsSubmitting(false);
+      setSubmitStatus('success');
+
+      // Reset form after 5 seconds
+      setTimeout(() => {
+        setFormData({
+          name: '',
+          subject: '',
+          topic: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+        setSubmitStatus('idle');
+      }, 5000);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -71,7 +91,10 @@ export function ContactPage() {
           >
             {/* Name */}
             <div className="flex flex-col gap-1">
-              <label htmlFor="name" className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white">
+              <label
+                htmlFor="name"
+                className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white"
+              >
                 {t('contact.name')}
               </label>
               <input
@@ -87,7 +110,10 @@ export function ContactPage() {
 
             {/* Subject */}
             <div className="flex flex-col gap-1">
-              <label htmlFor="subject" className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white">
+              <label
+                htmlFor="subject"
+                className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white"
+              >
                 {t('contact.subject')}
               </label>
               <input
@@ -103,7 +129,10 @@ export function ContactPage() {
 
             {/* Topic */}
             <div className="flex flex-col gap-1">
-              <label htmlFor="topic" className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white">
+              <label
+                htmlFor="topic"
+                className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white"
+              >
                 {t('contact.topic')}
               </label>
               <input
@@ -120,7 +149,10 @@ export function ContactPage() {
             {/* Email and Phone */}
             <div className="flex flex-col gap-2 md:flex-row">
               <div className="flex flex-1 flex-col gap-1">
-                <label htmlFor="email" className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white">
+                <label
+                  htmlFor="email"
+                  className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white"
+                >
                   {t('contact.email')}
                 </label>
                 <input
@@ -134,7 +166,10 @@ export function ContactPage() {
                 />
               </div>
               <div className="flex flex-1 flex-col gap-1">
-                <label htmlFor="phone" className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white">
+                <label
+                  htmlFor="phone"
+                  className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white"
+                >
                   {t('contact.phone')}
                 </label>
                 <input
@@ -150,7 +185,10 @@ export function ContactPage() {
 
             {/* Message */}
             <div className="flex flex-col gap-1">
-              <label htmlFor="message" className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white">
+              <label
+                htmlFor="message"
+                className="font-['Overpass',sans-serif] font-bold text-2xl text-black dark:text-white"
+              >
                 {t('contact.message')}
               </label>
               <textarea
@@ -175,14 +213,19 @@ export function ContactPage() {
 
             {/* Status Messages */}
             {submitStatus === 'success' && (
-              <p className="mt-2 text-center font-['Overpass',sans-serif] text-green-600 dark:text-green-400">
-                ✓ Mesajınız başarıyla gönderildi!
-              </p>
+              <div className="mt-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-3">
+                <p className="text-center font-['Overpass',sans-serif] text-green-700 dark:text-green-400">
+                  ✓ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.
+                </p>
+              </div>
             )}
             {submitStatus === 'error' && (
-              <p className="mt-2 text-center font-['Overpass',sans-serif] text-red-600 dark:text-red-400">
-                ✗ Bir hata oluştu. Lütfen tekrar deneyin.
-              </p>
+              <div className="mt-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 p-3">
+                <p className="text-center font-['Overpass',sans-serif] text-red-700 dark:text-red-400">
+                  ✗ Lütfen tüm gerekli alanları doldurunuz ve e-mail adresini doğru formatta
+                  giriniz.
+                </p>
+              </div>
             )}
           </form>
         </section>
@@ -193,7 +236,11 @@ export function ContactPage() {
             {/* Email */}
             <div className="flex items-end gap-4">
               <svg className="size-10 shrink-0" fill="none" viewBox="0 0 40 32">
-                <path d={svgPaths.p2d133480} fill="var(--color-primary)" className="dark:fill-[var(--color-secondary)]" />
+                <path
+                  d={svgPaths.p2d133480}
+                  fill="var(--color-primary)"
+                  className="dark:fill-[var(--color-secondary)]"
+                />
               </svg>
               <a
                 href="mailto:patronsuzlarkoop@gmail.com"
@@ -206,7 +253,11 @@ export function ContactPage() {
             {/* Phone */}
             <div className="flex items-center gap-4">
               <svg className="size-10 shrink-0" fill="none" viewBox="0 0 26 40">
-                <path d={svgPaths.p1c8ad00} fill="var(--color-primary)" className="dark:fill-[var(--color-secondary)]" />
+                <path
+                  d={svgPaths.p1c8ad00}
+                  fill="var(--color-primary)"
+                  className="dark:fill-[var(--color-secondary)]"
+                />
               </svg>
               <a
                 href="tel:+905424089034"

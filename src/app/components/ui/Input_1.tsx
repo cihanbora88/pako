@@ -24,9 +24,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           } ${className}`}
           {...props}
         />
-        {error && (
-          <span className="text-sm text-red-500 dark:text-red-400">{error}</span>
-        )}
+        {error && <span className="text-sm text-red-500 dark:text-red-400">{error}</span>}
       </div>
     );
   }

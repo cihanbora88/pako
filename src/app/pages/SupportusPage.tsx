@@ -1,0 +1,121 @@
+import { MainLayout } from '../components/layout/MainLayout';
+
+export function SupportusPage() {
+  return (
+    <MainLayout>
+      <div className="flex w-full flex-col items-center gap-16 py-10">
+        {/* Section 1: Intro */}
+        <section className="flex w-full flex-col items-center px-4 md:px-8">
+          <div className="flex w-full max-w-[var(--content-max-width)] flex-col gap-10 lg:px-16">
+            <h1 className="font-['Overpass_Mono',sans-serif] text-[32px] font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[42px]">
+              Destek ol
+            </h1>
+            <div className="flex flex-col gap-6">
+              <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
+                Pako&apos;yu yürekten desteklediğini bilmek bizim için en önemlisidir çünkü bu
+                inanış atmosferi bizim hedeflerimiz doğrultusunda daha çok çalışmamızı ve üretmemizi
+                sağlıyor. Topluluğuza üye olarak, sosyal medya kanallarıda Pako&apos;yu takip ederek
+                ve yorum yazarak bize en büyük desteği vermiş olursun.
+              </p>
+              <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
+                Öte yandan Pako&apos;nun sosyal tarafı ekonomik yönünden ağır basan, kâr amacı
+                gütmeyen topluluk yapısı devamlılığı için fiziksel desteğe de ihtiyacı duyuyor:
+              </p>
+              <ul className="list-inside list-disc flex flex-col gap-2 font-['Overpass',sans-serif] text-base font-light leading-relaxed text-black dark:text-white md:text-lg">
+                <li>
+                  Bisiklet merkezli bir oluşumuz ve her türlü bisiklet malzemesi bize fayda sağlar,
+                </li>
+                <li>
+                  Sahada operasyon yürüten arkadaşlarımıza gerekli ekipmanlar için maddi kaynak çok
+                  işimize yarar,
+                </li>
+                <li>
+                  Açık kaynak olarak geliştirdiğimiz ve bisikletiyle yerel üreticilere destek olmayı
+                  amaçlayan, herkesin ücretsiz ulaşabileceği Pako Rider&apos;ın geliştirilmesinde
+                  yazılım bilgin ile katkıda bulunabilirsin,
+                </li>
+                <li>
+                  Pako Rider&apos;ın barınması ve geliştirilmesi için maddi katkı sağlayabilirsin.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 2: Github Contribution */}
+        <section className="flex w-full flex-col items-center gap-8 px-4 py-8 text-center md:px-8">
+          <div className="flex flex-col gap-4">
+            <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px]">
+              Repoya katkıda bulun
+            </h2>
+            <p className="max-w-2xl font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
+              Yazılımı incele, katkıda bulun ayrıca görüş ve önerilerini bizimle paylaşmayı unutma.
+            </p>
+          </div>
+          <a
+            href="https://github.com/pako"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-[#AFE403] px-8 py-3 font-['Overpass',sans-serif] text-xl font-bold tracking-tight text-[#290079] transition-all hover:scale-105 active:scale-[0.98] shadow-md"
+          >
+            github
+          </a>
+        </section>
+
+        {/* Section 3: Bank Accounts */}
+        <section className="flex w-full flex-col items-center px-4 py-8 md:px-8">
+          <div className="flex w-full max-w-[var(--content-max-width)] flex-col gap-8 lg:px-16">
+            <div className="flex flex-col gap-4">
+              <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px]">
+                Banka Hesapları
+              </h2>
+              <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
+                Bağış için PKOOP&apos;un aşağıdaki banka hesaplarını kullanabilirsin.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center">
+                <span className="min-w-[120px] font-['Overpass_Mono',sans-serif] text-lg font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)]">
+                  Banka 1
+                </span>
+                <div className="flex-1 rounded-sm border border-gray-400 p-4 transition-colors hover:border-[var(--color-primary)] dark:border-gray-600 dark:hover:border-[var(--color-secondary)]">
+                  <p className="font-['Overpass',sans-serif] text-sm tracking-widest text-black dark:text-white md:text-base">
+                    TR00 0000 0000 0000 0000 0000 00
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 md:flex-row md:items-center">
+                <span className="min-w-[120px] font-['Overpass_Mono',sans-serif] text-lg font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)]">
+                  Banka 2
+                </span>
+                <div className="flex-1 rounded-sm border border-gray-400 p-4 transition-colors hover:border-[var(--color-primary)] dark:border-gray-600 dark:hover:border-[var(--color-secondary)]">
+                  <p className="font-['Overpass',sans-serif] text-sm tracking-widest text-black dark:text-white md:text-base">
+                    TR00 0000 0000 0000 0000 0000 00
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="mt-4 font-['Overpass',sans-serif] text-sm font-light leading-relaxed text-black dark:text-white md:text-base">
+              Kooperatif olarak kollektif şekilde karar alan Pako&apos;da harcamalar da diğer her
+              konu gibi şeffaftır. Kurul toplantılarımızda ele alınan konular, kararlar ve
+              harcamalar hakkında PKOOP&apos;dan bilgi talep etme hakkınız saklıdır.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 4: Bottom Banner */}
+        <section className="flex w-full flex-col items-center px-4 py-16 md:px-8">
+          <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-4 text-center">
+            <h2 className="font-['Overpass',sans-serif] text-2xl font-light leading-tight text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-2xl lg:text-3xl">
+              Pako&rsquo;nun kâr amacı gütmeyen misyonu ve sosyal hareketinin bir parçası ol,
+              <br />
+              <span className="font-bold">Dayanışmamıza katılarak fark yarat!</span>
+            </h2>
+          </div>
+        </section>
+      </div>
+    </MainLayout>
+  );
+}

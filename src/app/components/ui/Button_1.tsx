@@ -15,11 +15,14 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseStyles = 'rounded-lg font-["Overpass",sans-serif] font-medium transition-all hover:opacity-90 active:scale-98 disabled:opacity-50 disabled:cursor-not-allowed';
-  
+  const baseStyles =
+    'rounded-lg font-["Overpass",sans-serif] font-medium transition-all hover:opacity-90 active:scale-98 disabled:opacity-50 disabled:cursor-not-allowed';
+
   const variantStyles = {
-    primary: 'bg-[var(--color-secondary)] text-[var(--color-primary)] hover:bg-[var(--color-secondary-dark)]',
-    secondary: 'bg-[var(--color-gray-100)] dark:bg-gray-800 text-[var(--color-primary)] dark:text-white border border-[var(--color-border)] dark:border-gray-700',
+    primary:
+      'bg-[var(--color-secondary)] text-[var(--color-primary)] hover:bg-[var(--color-secondary-dark)]',
+    secondary:
+      'bg-[var(--color-gray-100)] dark:bg-gray-800 text-[var(--color-primary)] dark:text-white border border-[var(--color-border)] dark:border-gray-700',
     outline: 'border-2 border-white text-white hover:bg-white/10',
   };
 

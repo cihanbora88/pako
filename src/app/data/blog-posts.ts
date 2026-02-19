@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: 'Kısa Pako tarihi',
-    excerpt: 'bir fikir olarak Pako\'nun nasıl ortaya çıktığı ve geliştiği hakkında...',
+    excerpt: "bir fikir olarak Pako'nun nasıl ortaya çıktığı ve geliştiği hakkında...",
     category: 'yazı',
     slug: 'kisa-pako-tarihi',
     date: '2024-01-15',
@@ -20,7 +20,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 2,
     title: 'Platformlar ile çalışamayan işletme Pako ile komisyonsuz teslimat...',
-    excerpt: 'Resmi kurumlar platformların talep ettiği haksız komisyonu fatura edemiyorlar ve dolayısla platformlar üzerinden sipariş almaları imkansızlaşıyor. Pako\'nun şeffaf...',
+    excerpt:
+      "Resmi kurumlar platformların talep ettiği haksız komisyonu fatura edemiyorlar ve dolayısla platformlar üzerinden sipariş almaları imkansızlaşıyor. Pako'nun şeffaf...",
     category: 'yazı',
     slug: 'komisyonsuz-teslimat',
     date: '2024-01-20',
@@ -28,7 +29,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 3,
     title: 'Patikalar beliriyor',
-    excerpt: 'Kolektifimizle birlikte ormanlarımızda parkur açtık! Gençlerimizin dağ bisikletleriyle antreman yapmaları için hep birlikte kazma, kürek, tırpan ve çapaları alıp...',
+    excerpt:
+      'Kolektifimizle birlikte ormanlarımızda parkur açtık! Gençlerimizin dağ bisikletleriyle antreman yapmaları için hep birlikte kazma, kürek, tırpan ve çapaları alıp...',
     category: 'hikaye',
     slug: 'patikalar-beliriyor',
     date: '2024-02-01',
@@ -36,7 +38,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 4,
     title: 'PakoBike ile tümsekler engel değil',
-    excerpt: 'Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık. Kuryelerimizin karşılaştığı zorlu yol şartlarına uygun bir bisiklet tasarımı...',
+    excerpt:
+      'Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık. Kuryelerimizin karşılaştığı zorlu yol şartlarına uygun bir bisiklet tasarımı...',
     category: 'yazı',
     slug: 'pakobike-tumsekler',
     date: '2024-02-10',
@@ -44,7 +47,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 5,
     title: 'Bisikletinizle iyi geçinmenin püf noktaları',
-    excerpt: 'Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık...',
+    excerpt:
+      'Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık...',
     category: 'rehber',
     slug: 'bisiklet-bakim-rehberi',
     date: '2024-02-15',
@@ -52,7 +56,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 6,
     title: 'Topluluk olarak başardık',
-    excerpt: 'Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir ettirebilirsiniz.',
+    excerpt:
+      'Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir ettirebilirsiniz.',
     category: 'hikaye',
     slug: 'topluluk-basarisi',
     date: '2024-02-20',
@@ -60,7 +65,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 7,
     title: 'Bisikletle Kargo Taşımanın İpuçları',
-    excerpt: 'Bisikletle etkili kargo taşıma tekniklerini öğrenin. Yükü dengeli dağıtmak ve güvenli sürüş için pratik öneriler...',
+    excerpt:
+      'Bisikletle etkili kargo taşıma tekniklerini öğrenin. Yükü dengeli dağıtmak ve güvenli sürüş için pratik öneriler...',
     category: 'nasıl yapılır',
     slug: 'kargo-tasima-ipuclari',
     date: '2024-03-01',
@@ -68,7 +74,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 8,
     title: 'Yağmurda Bisiklet Sürüşü',
-    excerpt: 'Yağışlı havalarda güvenli bisiklet sürüşü için dikkat edilmesi gerekenler ve ekipman tavsiyeleri...',
+    excerpt:
+      'Yağışlı havalarda güvenli bisiklet sürüşü için dikkat edilmesi gerekenler ve ekipman tavsiyeleri...',
     category: 'tavsiye',
     slug: 'yagmurda-bisiklet',
     date: '2024-03-05',
@@ -76,7 +83,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: 9,
     title: 'Pako Rider Kullanım Kılavuzu',
-    excerpt: 'Pako Rider uygulamasını en verimli şekilde kullanmak için detaylı adım adım rehber...',
+    excerpt:
+      'Pako Rider uygulamasını en verimli şekilde kullanmak için detaylı adım adım rehber...',
     category: 'rehber',
     slug: 'pako-rider-kilavuz',
     date: '2024-03-10',

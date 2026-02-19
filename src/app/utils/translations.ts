@@ -42,12 +42,14 @@ const translations: { [locale: string]: Translations } = {
     },
     help: {
       title: 'Yardım',
-      description: 'Yardım için buradayız. PakoAI ile sohbet başlatın, topluluktan destek alın, kaynakları inceleyin ve çözüm bulun.',
+      description:
+        'Yardım için buradayız. PakoAI ile sohbet başlatın, topluluktan destek alın, kaynakları inceleyin ve çözüm bulun.',
       community: 'Topluluk',
-      communityDesc: 'Pako\'lardan destek alın, öğrenin',
+      communityDesc: "Pako'lardan destek alın, öğrenin",
       join: 'katıl',
       pakoAI: 'PakoAI ile sohbet',
-      pakoAIDesc: 'Pako hakkında bir AI modeli geliştirdik, ona soru sorabilir ve çözüm bulabilirsin.',
+      pakoAIDesc:
+        'Pako hakkında bir AI modeli geliştirdik, ona soru sorabilir ve çözüm bulabilirsin.',
       start: 'başlat',
       resources: 'Kaynaklar',
       resourcesDesc: 'Topluluk tarafından oluşturulan belgeleri burada bulabilirsin',
@@ -56,16 +58,18 @@ const translations: { [locale: string]: Translations } = {
     support: {
       title: 'Destek ol',
       repoTitle: 'Repoya katkıda bulun',
-      repoDesc: 'Yazılımı incele, katkıda bulun ayrıca görüş ve önerilerini bizimle paylaşmayı unutma.',
+      repoDesc:
+        'Yazılımı incele, katkıda bulun ayrıca görüş ve önerilerini bizimle paylaşmayı unutma.',
       github: 'github',
       bankAccounts: 'Banka Hesapları',
-      bankAccountsDesc: 'Bağış için PKOOP\'un aşağıdaki banka hesaplarını kullanabilirsin.',
+      bankAccountsDesc: "Bağış için PKOOP'un aşağıdaki banka hesaplarını kullanabilirsin.",
       bank1: 'Banka 1',
       bank2: 'Banka 2',
     },
     contact: {
       title: 'İletişim',
-      description: 'Görüş, öneri ve talepleriniz için iletişim kutusunu kullannın, e-mail adresimize posta gönderin veya iletişim numaramızı arayın.',
+      description:
+        'Görüş, öneri ve talepleriniz için iletişim kutusunu kullannın, e-mail adresimize posta gönderin veya iletişim numaramızı arayın.',
       name: 'İsim',
       subject: 'Başlık',
       topic: 'Konu',
@@ -78,9 +82,11 @@ const translations: { [locale: string]: Translations } = {
     businesses: {
       title: 'İşletmeler',
       ctaTitle: 'Pako ile tanış',
-      ctaDesc: 'Pako Rider ile geliştirmekte olduğumuz teslimat sistemi hakkında daha fazla bilgi al',
+      ctaDesc:
+        'Pako Rider ile geliştirmekte olduğumuz teslimat sistemi hakkında daha fazla bilgi al',
       start: 'başla',
-      contactTitle: 'Daha fazla bilgi almak için bizimle iletişime geçin veya irtibat bilginizi paylaşın, bir ekip arkadaşımız en yakın sürede size ulaşacaktır.',
+      contactTitle:
+        'Daha fazla bilgi almak için bizimle iletişime geçin veya irtibat bilginizi paylaşın, bir ekip arkadaşımız en yakın sürede size ulaşacaktır.',
       contactBtn: 'iletişim',
     },
     pakoRider: {
@@ -127,8 +133,8 @@ export const getLocale = () => currentLocale;
 
 export const t = (key: string): string => {
   const keys = key.split('.');
-  let value: any = translations[currentLocale];
-  
+  let value: unknown = translations[currentLocale];
+
   for (const k of keys) {
     if (value && typeof value === 'object') {
       value = value[k];
@@ -136,6 +142,6 @@ export const t = (key: string): string => {
       return key; // Return key if translation not found
     }
   }
-  
+
   return typeof value === 'string' ? value : key;
 };

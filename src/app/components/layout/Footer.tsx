@@ -25,29 +25,29 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { 
-      name: 'Play', 
+    {
+      name: 'Play',
       icon: svgPaths.p20d86580,
       href: '#',
-      ariaLabel: 'Play Store'
+      ariaLabel: 'Play Store',
     },
-    { 
-      name: 'Mastodon', 
+    {
+      name: 'Mastodon',
       icon: svgPaths.p28240000,
       href: '#',
-      ariaLabel: 'Mastodon'
+      ariaLabel: 'Mastodon',
     },
-    { 
-      name: 'YouTube', 
+    {
+      name: 'YouTube',
       icon: svgPaths.p32a85dc0,
       href: '#',
-      ariaLabel: 'YouTube'
+      ariaLabel: 'YouTube',
     },
-    { 
-      name: 'GitHub', 
+    {
+      name: 'GitHub',
       icon: svgPaths.p1916b400,
       href: '#',
-      ariaLabel: 'GitHub'
+      ariaLabel: 'GitHub',
     },
   ];
 
@@ -57,15 +57,44 @@ export function Footer() {
         {/* Logo */}
         <div className="flex w-44 shrink-0 items-center justify-center">
           <div className="h-[43px] w-[124px]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 131.134 43">
+            <svg
+              className="block size-full"
+              fill="none"
+              preserveAspectRatio="none"
+              viewBox="0 0 131.134 43"
+            >
               <g id="pako_logo">
                 <g id="pako_logo_2">
-                  <path d={svgPaths.p13c0e400} fill="#290079" className="dark:fill-[var(--color-secondary)]" />
-                  <path d={svgPaths.p1b627800} fill="#290079" className="dark:fill-[var(--color-secondary)]" />
-                  <path d={svgPaths.p35ac7872} fill="#290079" className="dark:fill-[var(--color-secondary)]" />
-                  <path d={svgPaths.pc1cca00} fill="#290079" className="dark:fill-[var(--color-secondary)]" />
-                  <path d={svgPaths.paa7e180} fill="var(--color-secondary)" className="dark:fill-[var(--color-primary)]" />
-                  <path d={svgPaths.p1bf53600} fill="var(--color-secondary)" className="dark:fill-[var(--color-primary)]" />
+                  <path
+                    d={svgPaths.p13c0e400}
+                    fill="#290079"
+                    className="dark:fill-[var(--color-secondary)]"
+                  />
+                  <path
+                    d={svgPaths.p1b627800}
+                    fill="#290079"
+                    className="dark:fill-[var(--color-secondary)]"
+                  />
+                  <path
+                    d={svgPaths.p35ac7872}
+                    fill="#290079"
+                    className="dark:fill-[var(--color-secondary)]"
+                  />
+                  <path
+                    d={svgPaths.pc1cca00}
+                    fill="#290079"
+                    className="dark:fill-[var(--color-secondary)]"
+                  />
+                  <path
+                    d={svgPaths.paa7e180}
+                    fill="var(--color-secondary)"
+                    className="dark:fill-[var(--color-primary)]"
+                  />
+                  <path
+                    d={svgPaths.p1bf53600}
+                    fill="var(--color-secondary)"
+                    className="dark:fill-[var(--color-primary)]"
+                  />
                 </g>
               </g>
             </svg>
@@ -124,16 +153,16 @@ export function Footer() {
             >
               <svg className="size-6" fill="none" viewBox="0 0 24 24">
                 {social.name === 'GitHub' ? (
-                  <path 
-                    clipRule="evenodd" 
-                    d={social.icon} 
-                    fill="var(--color-primary)" 
+                  <path
+                    clipRule="evenodd"
+                    d={social.icon}
+                    fill="var(--color-primary)"
                     fillRule="evenodd"
                     className="dark:fill-[var(--color-secondary)]"
                   />
                 ) : (
-                  <path 
-                    d={social.icon} 
+                  <path
+                    d={social.icon}
                     fill="var(--color-primary)"
                     className="dark:fill-[var(--color-secondary)]"
                   />

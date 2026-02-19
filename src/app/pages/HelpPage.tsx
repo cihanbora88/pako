@@ -19,7 +19,7 @@ const helpCards: HelpCard[] = [
   },
   {
     title: 'PakoAI ile sohbet',
-    desc: "Pako hakkında bir AI modeli geliştirdik, ona soru sorabilir ve çözüm bulabilirsin.",
+    desc: 'Pako hakkında bir AI modeli geliştirdik, ona soru sorabilir ve çözüm bulabilirsin.',
     action: 'başlat',
     link: '#',
   },
