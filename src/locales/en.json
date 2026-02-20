@@ -1,0 +1,295 @@
+{
+  "header": {
+    "about": "About",
+    "pakoRider": "Pako Rider",
+    "businesses": "Businesses",
+    "community": "Community",
+    "contact": "Contact"
+  },
+  "footer": {
+    "about": "About",
+    "pakoRider": "Pako Rider",
+    "partnership": "Partnership",
+    "blog": "Blog",
+    "community": "Community",
+    "pkoop": "PKOOP",
+    "support": "Support",
+    "help": "Help",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact"
+  },
+  "blog": {
+    "title": "Blog",
+    "filters": {
+      "article": "article",
+      "video": "video",
+      "story": "story",
+      "guide": "guide",
+      "howto": "how to",
+      "advice": "advice"
+    },
+    "search": "Search...",
+    "noContent": "No content found matching your search.",
+    "posts": [
+      {
+        "title": "A brief history of Pako",
+        "excerpt": "About how Pako emerged and developed as an idea..."
+      },
+      {
+        "title": "Commission-free delivery with Pako for businesses unable to work with platforms...",
+        "excerpt": "Official institutions cannot invoice the unfair commissions requested by platforms and therefore it becomes impossible for them to receive orders through platforms. Pako's transparent..."
+      },
+      {
+        "title": "Trails are appearing",
+        "excerpt": "We opened a trail in our forests with our collective! We all took picks, shovels, scythes and hoes together for our youth to train with mountain bikes..."
+      },
+      {
+        "title": "Bumps are not an obstacle with PakoBike",
+        "excerpt": "Speaking of local and customized production, we couldn't find a better production tool than the bicycle. A bicycle design suitable for the challenging road conditions our couriers encounter..."
+      },
+      {
+        "title": "Tips for getting along well with your bicycle",
+        "excerpt": "Yes that's right you are in a serious relationship. We prepared this guide for this relationship to be healthy for both parties..."
+      },
+      {
+        "title": "We succeeded as a community",
+        "excerpt": "One of the most beautiful gifts of acting as a community, good luck to our entire district. You can entrust your bicycles to the PKOOP bicycle center, have them repaired."
+      },
+      {
+        "title": "Tips for Carrying Cargo by Bicycle",
+        "excerpt": "Learn effective cargo carrying techniques by bicycle. Practical suggestions for balanced load distribution and safe driving..."
+      },
+      {
+        "title": "Cycling in the Rain",
+        "excerpt": "Points to consider for safe cycling in wet weather and equipment recommendations..."
+      },
+      {
+        "title": "Pako Rider User Manual",
+        "excerpt": "Detailed step-by-step guide to using the Pako Rider application most efficiently..."
+      },
+      {
+        "title": "Courier Experiences: In One Day",
+        "excerpt": "The story of a working day from the eyes of one of the Pako couriers and what happened..."
+      }
+    ]
+  },
+  "help": {
+    "title": "Help",
+    "description": "We are here to help. Start a chat with PakoAI, get support from the community, review resources and find solutions.",
+    "community": "Community",
+    "communityDesc": "Get support from Pakos, learn more",
+    "join": "join",
+    "pakoAI": "Chat with PakoAI",
+    "pakoAIDesc": "We developed an AI model about Pako, you can ask it questions and find solutions.",
+    "start": "start",
+    "resources": "Resources",
+    "resourcesDesc": "You can find documents created by the community here",
+    "explore": "explore"
+  },
+  "support": {
+    "title": "Support Us",
+    "intro": {
+      "description1": "Knowing that you support Pako from the heart is the most important thing for us because this atmosphere of belief allows us to work and produce more towards our goals. You can give us the greatest support by becoming a member of our community, following Pako on social media channels and writing comments.",
+      "description2": "On the other hand, Pako's non-profit community structure, whose social side outweighs its economic side, also needs physical support for its continuity:",
+      "list": [
+        "We are a bicycle-centric formation and all kinds of bicycle materials benefit us,",
+        "Financial resources for the necessary equipment for our friends running operations in the field are very useful for us,",
+        "You can contribute with your software knowledge to the development of Pako Rider, which we developed as open source and aims to support local producers with their bicycle, and which everyone can access for free,",
+        "You can provide financial contribution for the hosting and development of Pako Rider."
+      ]
+    },
+    "github": {
+      "title": "Contribute to the repo",
+      "description": "Examine the software, contribute, and don't forget to share your views and suggestions with us.",
+      "cta": "github"
+    },
+    "bank": {
+      "title": "Bank Accounts",
+      "description": "You can use PKOOP's bank accounts below for donations.",
+      "bank1": "Bank 1",
+      "bank2": "Bank 2",
+      "note": "In Pako, which takes decisions collectively as a cooperative, expenditures are transparent like every other subject. Your right to request information from PKOOP about the issues discussed in our board meetings, decisions and expenditures is reserved."
+    },
+    "banner": {
+      "text": "Be a part of Pako's non-profit mission and social movement,",
+      "highlight": "Make a difference by joining our solidarity!"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "For your opinions, suggestions and requests, use the contact box, send an e-mail to our address or call our contact number.",
+    "name": "Name",
+    "subject": "Subject",
+    "topic": "Topic",
+    "email": "E-mail",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "send",
+    "sending": "Sending...",
+    "success": "✓ Your message has been sent successfully! We will get back to you as soon as possible.",
+    "error": "✗ Please fill in all required fields and enter the e-mail address in the correct format.",
+    "note": "Our team works on a voluntary basis, a friend will respond to your message on a voluntary basis as soon as possible."
+  },
+  "businesses": {
+    "title": "Businesses",
+    "intro": {
+      "title": "Businesses",
+      "description1": "Businesses that give spirit to venues with their labor and inspire with their food constitute the highest priority audience for Pako, because Pako, which puts the concept of 'locality' at the very top of its principles, is a local community consisting of the neighborhood's cyclists as a culture. Our goal is to offer a fair and transparent working model to local tradesmen and couriers by combining the speed of the bicycle, the justice of the cooperative and the ease of technology.",
+      "description2": "Our decentralized system is transforming the courier model and developing towards making this model applicable in every district under all conditions. You can help us develop a principled working model by meeting and supporting Pako.",
+      "description3": "Pako, which has been providing training to many courier networks with the experience it has gained in the field since the pandemic period in 2019, has made decentralized and independent restaurant couriering technologically possible with the mobile application Pako Rider it developed."
+    },
+    "heroStatement": "Be a part of Pako's non-profit mission and social movement, strong ties with local producers.",
+    "localNetwork": {
+      "title": "Join the local network",
+      "description1": "Pako feeds on Turkey's solidarist roots, locality and organicity. In a period when the unfair business order is on the rise, it offers a beneficial alternative to you precious tradesmen who produce value and are unique, and to local producers outside the global chain. By asking 'Is a different courier model possible?', it believes that the bicycle is the carrier of this model.",
+      "description2": "Pako, which has been providing training to many courier networks with the experience it has gained in the field since the pandemic period in 2019, has made decentralized and independent restaurant couriering technologically possible with the mobile application Pako Rider it developed. Pako performs restaurant delivery without commission, Pako Rider acts as a 'pool' that lists the delivery jobs in the region. By receiving support from the bicycle Pako team in the region you serve, you contribute to the solidarity exhibiting a fair and transparent model."
+    },
+    "meetPako": {
+      "title": "Meet Pako",
+      "description": "Get more information about the delivery system we are developing with Pako Rider",
+      "cta": "start"
+    },
+    "principles": {
+      "title": "Cooperation principles",
+      "description1": "Pako is not a technology platform managed by a \"boss\", but by those who produce value with their labor. The culture, philosophy and business model of Pako must first be correctly understood by the Pako driver and the business it aims to establish a partnership with. Pako, feeding from Turkey's solidarist background, works on a voluntary basis and aims to protect this trust bond it has established with the business while using the bicycle as a tool.",
+      "description2": "The operator should be aware that they are supporting a principled movement and business model by establishing a cooperation with Pako. They should know that the Pako driver cares about every order and is expected to be steadfast and understanding in the face of possible disruptions."
+    },
+    "contactCard": {
+      "description": "Contact us for more information or share your contact info, a teammate will reach out to you as soon as possible.",
+      "cta": "contact"
+    }
+  },
+  "pakoRider": {
+    "title": "Pako Rider",
+    "joinCommunity": "Join the Community",
+    "joinDesc": "Learn the traditional Pako way and work without a boss in your own region.",
+    "createAccount": "Create an account",
+    "joinMovement": "Join the Movement!",
+    "description1": "The Pako Rider application was developed as a digital reflection of organic field experience by bicycle couriers dedicated to Pako. Pako Rider is not just a delivery tool; it is a high-performance and transparent technology platform that draws its strength from the open-source philosophy. Developed by cyclists for cyclists with collective consciousness, the Pako Rider software is open source; it can be inspected and developed by everyone. The data flow is not secret. Its independent technology is a common value of the cooperative.",
+    "description2": "Pako's courier-oriented technological vision produces solutions by observing courier needs directly in the field. This software aims to offer a fairer, more transparent and efficient working environment by shaping with the collective mind of the community; it builds a future where people, not algorithms, are priority.",
+    "heroTitle": "Open source code, transparent data flow and honest economic models",
+    "interfaceDescription1": "Developed by cyclists for cyclists with collective consciousness, the Pako Rider software is open source; it can be inspected and developed by everyone. Data flow is not secret. Its independent technology is the joint value of the cooperative.",
+    "interfaceDescription2": "Pako Rider's new generation software approach creates a fast workflow, recommends works in the pool to couriers in the field in the most reasonable way with its organic advanced algorithm and creates smart routes. It is designed to help people working on a common task achieve their goals.",
+    "communityInvitation1": "Join the movement we started with Pako Rider, join the community to get more information about our philosophy, principles and examine usage principles. Our goal is to make the use of Pako Rider possible and easier for everyone.",
+    "communityInvitation2": "You will find all the guides you are looking for about the field orientation, Pako community system, field coordination and operation, and about the application there. Your participation is very valuable for the development of Pako Rider, we invite anyone who wants to develop a cyclist fair delivery system together to become a member of our community page."
+  },
+  "about": {
+    "title": "What is Pako?",
+    "description1": "Pako is a delivery ecosystem developed under the umbrella of PKOOP (Bossless Cooperative), focusing on solidarity economy and ecological transportation. Pako performs restaurant delivery and aims to bring restaurants and cyclists together and enable a transparent and fair delivery system for both sides. Unlike traditional courier platforms, Pako works with a \"bossless\" structure and positions bicycle couriers not as workers, but as partners and independent service providers of the platform. It cares about locality, neighborhood and mutual trust. It says that a sustainable and nature-friendly transportation model that does not prioritize profit and acts with collective wisdom is possible, and believes that the bicycle can be the carrier of this model; it offers a fast and ethical delivery alternative with its logistics network that reduces the carbon footprint to zero.",
+    "description2": "Pako, which has a decentralized structure managed by the community, works to support fair working conditions and local economy.",
+    "heroTitle": "Sustainable, commission-free collaborative and participatory working model",
+    "kolektif": "Collective",
+    "kolektifDesc": "We take decisions together, we walk the path together.",
+    "yerel": "Local",
+    "yerelDesc": "We establish strong bonds with tradesmen, producers and the neighborhood.",
+    "doga": "Eco-Friendly",
+    "dogaDesc": "We work with a sustainable mode of transport that has no carbon emissions.",
+    "seffaf": "Transparent",
+    "seffafDesc": "Every step we take is part of a trust we build together.",
+    "communityTitle": "It is a voluntary community that makes Pako possible",
+    "communityDesc1": "The continuity and development of Pako is the result of the hard work of a team whose principles overlap in many subjects. What we carry in Pako is not just packages, but a common culture. Pako works with the understanding of \"festina lante\" (hurry up but slowly) by adapting to the rhythm of the city; thus establishing stability that gives confidence to both businesses and the field. An approach that prepares the individual for the changes of life, teaches him economy from the core and trains his cognitive abilities as an entrepreneurship school is in Pako's nature. This form of existence makes our job a bit different from others.",
+    "communityDesc2": "Pako is not for everyone; it is suitable for adventure lovers and nature people, but not for those who get away with things easily. In these contexts, the Pako rider is positioned outside the mainstream."
+  },
+  "principles": {
+    "title": "Pako Principles",
+    "bossless": "BOSSLESSNESS",
+    "balance": "BALANCE",
+    "diversity": "DIVERSITY",
+    "selfControl": "SELF-CONTROL",
+    "autonomy": "AUTONOMY",
+    "honesty": "HONESTY",
+    "solidarity": "SOLIDARITY",
+    "organic": "ORGANICITY",
+    "equality": "EQUALITY",
+    "limitless": "LIMITLESSNESS",
+    "alternativeEconomy": "ALTERNATIVE ECONOMY",
+    "locality": "LOCALITY",
+    "broadVision": "BROAD VISION",
+    "pioneering": "PIONEERING IN THE SECTOR",
+    "nonViolence": "NON-VIOLENCE",
+    "wellbeing": "WELLBEING",
+    "antiFragility": "ANTI-FRAGILITY"
+  },
+  "home": {
+    "hero": {
+      "line1": "Choose life,",
+      "line2": "Choose your bike.",
+      "description": "Join the community, let's create a fair system together in the cycle of the bicycle.",
+      "cta": "join"
+    },
+    "whatIsPako": {
+      "title": "What is Pako?",
+      "description": "Pako is a Kadıköy-based restaurant courier project born from Bossless Couriers. It was formed without profit motive in 2019 during the pandemic period to support local tradesmen and producers.",
+      "cta": "more"
+    },
+    "pakoRider": {
+      "title": "Pako Rider",
+      "description": "Decentralized delivery technology is being collectively produced by the Pako community, making fair work possible for everyone.",
+      "cta": "more"
+    },
+    "communityPage": {
+      "title": "Community",
+      "description": "The Pako Community is coming, where we will develop ideas and projects about bicycle life and produce solutions together in a participatory way."
+    },
+    "community": {
+      "title": "Pako is coming!",
+      "description": "Join the Pako Community where ideas and projects about bicycle life are developed. Let's produce solutions together in a participatory way.",
+      "cta": "community"
+    },
+    "blogPreview": {
+      "cta": "blog",
+      "postLabel": "article",
+      "posts": [
+        {
+          "title": "Bumps are not an obstacle with PakoBike",
+          "excerpt": "Speaking of local and customized production, we couldn't find a better production tool than the bicycle. We designed a bicycle suitable for the challenging road conditions our couriers encounter...."
+        },
+        {
+          "title": "Tips for getting along well with your bicycle",
+          "excerpt": "Yes that's right you are in a serious relationship. We prepared this guide for this relationship to be healthy for both parties..."
+        },
+        {
+          "title": "We succeeded as a community",
+          "excerpt": "One of the most beautiful gifts of acting as a community, good luck to our entire district. You can entrust your bicycles to the PKOOP bicycle center, repair"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What does a Pako rider do?",
+        "a": "The Pako rider takes on the delivery tasks from restaurants in the pool of the Pako Rider application and works on a voluntary basis. With the awareness of representing a collective, they offer solutions to their business partners with well-being."
+      },
+      {
+        "q": "What is the difference between Pako and other delivery platforms?",
+        "a": "Pako does not perform platform couriering, it performs restaurant couriering. It is not a private company either, it is a community of cyclists. Pako Rider only lists local jobs. Pakos choose these jobs and they do not use motorized vehicles for the jobs they choose, they make deliveries by bicycle. Pako does not work with commission, it does not earn any income other than the return for its labor."
+      },
+      {
+        "q": "How can I become a Pako?",
+        "a": "By being included in the community, you participate in a platform where we develop Pako-style life together and take the first step. You can get information about the field on our community page and start the orientation process."
+      },
+      {
+        "q": "Is Pako safe?",
+        "a": "Yes. Pako riders have professional equipment and follow safety standards supervised by the community. Bicycle is one of the safest means of transportation and accidents are not a common occurrence in Pako. Pako orientation is a process and trains the cyclist autonomously to develop their awareness not only in traffic but in every area of life."
+      }
+    ]
+  },
+  "supportCta": {
+    "title": "Support Pako Rider!",
+    "description": "You can support Pako without stepping into the field. You can check the options on our support page and get more information.",
+    "cta": "Support"
+  },
+  "newsletter": {
+    "title": "Get News from Us",
+    "subtitle": "Be informed about the latest developments",
+    "placeholder": "mail@pako.com",
+    "cta": "join",
+    "sending": "Sending...",
+    "success": "✓ Successfully saved! Welcome to the newsletter.",
+    "error": "✗ Please enter a valid e-mail address."
+  }
+}

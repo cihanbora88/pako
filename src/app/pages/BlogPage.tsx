@@ -6,22 +6,40 @@ import { FilterTag } from '../components/ui/FilterTag';
 import { BlogCard } from '../components/ui/BlogCard';
 import { CardGrid } from '../components/sections/CardGrid';
 import { blogPosts } from '../data/blog-posts';
-import { t } from '../utils/translations';
+import { useTranslation } from 'react-i18next';
 
 export function BlogPage() {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
 
-  const filters = [
-    t('blog.filters.article'),
-    t('blog.filters.video'),
-    t('blog.filters.story'),
-    t('blog.filters.guide'),
-    t('blog.filters.howto'),
-    t('blog.filters.advice'),
+  const filterOptions = [
+    { key: 'article', label: t('blog.filters.article') },
+    { key: 'video', label: t('blog.filters.video') },
+    { key: 'story', label: t('blog.filters.story') },
+    { key: 'guide', label: t('blog.filters.guide') },
+    { key: 'howto', label: t('blog.filters.howto') },
+    { key: 'advice', label: t('blog.filters.advice') },
   ];
 
-  const filteredPosts = blogPosts.filter((post) => {
+  const localizedPosts = (
+    t('blog.posts', { returnObjects: true }) as Array<{
+      title: string;
+      excerpt: string;
+      category: string;
+      image: string;
+    }>
+  ).map((post, index) => {
+    const originalPost = blogPosts[index];
+    return {
+      ...originalPost,
+      title: post.title,
+      excerpt: post.excerpt,
+      categoryLabel: t(`blog.filters.${originalPost.category}`),
+    };
+  });
+
+  const filteredPosts = localizedPosts.filter((post) => {
     const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
@@ -47,12 +65,14 @@ export function BlogPage() {
             <div className="flex w-full flex-col gap-4 md:flex-row md:items-center md:justify-between">
               {/* Filters */}
               <div className="flex flex-wrap gap-2">
-                {filters.map((filter) => (
+                {filterOptions.map((option) => (
                   <FilterTag
-                    key={filter}
-                    label={filter}
-                    isActive={selectedFilter === filter}
-                    onClick={() => setSelectedFilter(selectedFilter === filter ? null : filter)}
+                    key={option.key}
+                    label={option.label}
+                    isActive={selectedFilter === option.key}
+                    onClick={() =>
+                      setSelectedFilter(selectedFilter === option.key ? null : option.key)
+                    }
                   />
                 ))}
               </div>
@@ -75,13 +95,25 @@ export function BlogPage() {
             {filteredPosts.length > 0 ? (
               <>
                 {/* Hero Post */}
-                <BlogCard {...filteredPosts[0]} size="large" />
+                <BlogCard
+                  title={filteredPosts[0].title}
+                  excerpt={filteredPosts[0].excerpt}
+                  category={filteredPosts[0].categoryLabel}
+                  image={filteredPosts[0].image}
+                  size="large"
+                />
 
                 {/* Two Column Grid */}
                 {filteredPosts.length > 1 && (
                   <CardGrid columns={2}>
                     {filteredPosts.slice(1, 3).map((post) => (
-                      <BlogCard key={post.id} {...post} />
+                      <BlogCard
+                        key={post.id}
+                        title={post.title}
+                        excerpt={post.excerpt}
+                        category={post.categoryLabel}
+                        image={post.image}
+                      />
                     ))}
                   </CardGrid>
                 )}
@@ -90,7 +122,13 @@ export function BlogPage() {
                 {filteredPosts.length > 3 && (
                   <CardGrid columns={3}>
                     {filteredPosts.slice(3).map((post) => (
-                      <BlogCard key={post.id} {...post} />
+                      <BlogCard
+                        key={post.id}
+                        title={post.title}
+                        excerpt={post.excerpt}
+                        category={post.categoryLabel}
+                        image={post.image}
+                      />
                     ))}
                   </CardGrid>
                 )}
@@ -98,7 +136,7 @@ export function BlogPage() {
             ) : (
               <div className="flex w-full items-center justify-center py-20">
                 <p className="font-['Overpass',sans-serif] text-lg text-gray-500 dark:text-gray-400">
-                  Aramanıza uygun içerik bulunamadı.
+                  {t('blog.noContent')}
                 </p>
               </div>
             )}

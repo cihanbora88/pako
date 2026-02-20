@@ -1,8 +1,9 @@
 import { Link } from 'react-router';
 import svgPaths from '../../../imports/svg-9rloq76aef';
-import { t } from '../../utils/translations';
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+  const { t } = useTranslation();
   const footerMenu1 = [
     { label: t('footer.about'), path: '/hakkinda' },
     { label: t('footer.pakoRider'), path: '/pako-rider' },

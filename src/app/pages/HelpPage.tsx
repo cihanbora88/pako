@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { MainLayout } from '../components/layout/MainLayout';
-import { t } from '../utils/translations';
+import { useTranslation } from 'react-i18next';
 
 interface HelpCard {
   title: string;
@@ -12,26 +12,27 @@ interface HelpCard {
 
 const helpCards: HelpCard[] = [
   {
-    title: 'Topluluk',
-    desc: "Pako'lardan destek alın, öğrenin",
-    action: 'katıl',
+    title: 'help.community',
+    desc: 'help.communityDesc',
+    action: 'help.join',
     link: '/topluluk',
   },
   {
-    title: 'PakoAI ile sohbet',
-    desc: 'Pako hakkında bir AI modeli geliştirdik, ona soru sorabilir ve çözüm bulabilirsin.',
-    action: 'başlat',
+    title: 'help.pakoAI',
+    desc: 'help.pakoAIDesc',
+    action: 'help.start',
     link: '#',
   },
   {
-    title: 'Kaynaklar',
-    desc: 'Topluluk tarafından oluşturulan belgeleri burada bulabilirsin',
-    action: 'incele',
+    title: 'help.resources',
+    desc: 'help.resourcesDesc',
+    action: 'help.explore',
     link: '#',
   },
 ];
 
 export function HelpPage() {
+  const { t } = useTranslation();
   return (
     <MainLayout>
       <div className="flex w-full flex-col items-center gap-8 py-10">
@@ -56,10 +57,10 @@ export function HelpPage() {
                 className="flex flex-col gap-4 rounded-2xl border-2 border-[var(--color-border)] p-8 transition-colors hover:border-[var(--color-secondary)]"
               >
                 <h3 className="font-['Overpass_Mono',sans-serif] text-xl font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)]">
-                  {card.title}
+                  {t(card.title)}
                 </h3>
                 <p className="flex-1 font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white">
-                  {card.desc}
+                  {t(card.desc)}
                 </p>
                 {card.isExternal ? (
                   <a
@@ -68,14 +69,14 @@ export function HelpPage() {
                     rel="noopener noreferrer"
                     className="self-start rounded-lg bg-[var(--color-secondary)] px-6 py-3 font-['Overpass',sans-serif] text-lg font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
                   >
-                    {card.action}
+                    {t(card.action)}
                   </a>
                 ) : (
                   <Link
                     to={card.link}
                     className="self-start rounded-lg bg-[var(--color-secondary)] px-6 py-3 font-['Overpass',sans-serif] text-lg font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
                   >
-                    {card.action}
+                    {t(card.action)}
                   </Link>
                 )}
               </div>

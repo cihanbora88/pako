@@ -1,16 +1,22 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import svgPaths from '../../../imports/svg-9rloq76aef';
-import { t } from '../../utils/translations';
+import { useTranslation } from 'react-i18next';
 
 interface HeaderProps {
   onThemeToggle?: () => void;
   isDarkMode?: boolean;
 }
 
-export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
+export function Header({ onThemeToggle }: HeaderProps) {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language.startsWith('tr') ? 'en' : 'tr';
+    i18n.changeLanguage(newLang);
+  };
 
   const menuItems = [
     { key: 'about', path: '/hakkinda', label: t('header.about') },
@@ -82,13 +88,29 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
 
           {/* Language Toggle */}
           <button
-            className="flex h-[30px] w-[30px] items-center justify-center rounded-full transition-transform hover:scale-110 active:scale-95"
+            onClick={toggleLanguage}
+            className="flex items-center gap-1 font-['Overpass_Mono',sans-serif] text-[var(--text-sm)] font-bold transition-opacity hover:opacity-70 px-2"
             aria-label="Change language"
           >
-            <svg className="size-full" fill="none" viewBox="0 0 30 30">
-              <circle cx="15" cy="15" fill="var(--color-red)" r="15" />
-              <path d={svgPaths.pe742d00} fill="white" />
-            </svg>
+            <span
+              className={
+                i18n.language.startsWith('tr')
+                  ? 'text-[var(--color-primary)] dark:text-[var(--color-secondary)]'
+                  : 'text-gray-400'
+              }
+            >
+              TR
+            </span>
+            <span className="text-gray-400">|</span>
+            <span
+              className={
+                i18n.language.startsWith('en')
+                  ? 'text-[var(--color-primary)] dark:text-[var(--color-secondary)]'
+                  : 'text-gray-400'
+              }
+            >
+              EN
+            </span>
           </button>
         </div>
 
@@ -141,13 +163,29 @@ export function Header({ onThemeToggle, isDarkMode }: HeaderProps) {
                 </svg>
               </button>
               <button
-                className="flex h-10 w-10 items-center justify-center"
+                onClick={toggleLanguage}
+                className="flex items-center gap-1 font-['Overpass_Mono',sans-serif] text-[var(--text-lg)] font-bold transition-opacity hover:opacity-70 px-4 py-2"
                 aria-label="Change language"
               >
-                <svg className="size-8" fill="none" viewBox="0 0 30 30">
-                  <circle cx="15" cy="15" fill="var(--color-red)" r="15" />
-                  <path d={svgPaths.pe742d00} fill="white" />
-                </svg>
+                <span
+                  className={
+                    i18n.language.startsWith('tr')
+                      ? 'text-[var(--color-primary)] dark:text-[var(--color-secondary)]'
+                      : 'text-gray-400'
+                  }
+                >
+                  TR
+                </span>
+                <span className="text-gray-400">|</span>
+                <span
+                  className={
+                    i18n.language.startsWith('en')
+                      ? 'text-[var(--color-primary)] dark:text-[var(--color-secondary)]'
+                      : 'text-gray-400'
+                  }
+                >
+                  EN
+                </span>
               </button>
             </div>
           </div>

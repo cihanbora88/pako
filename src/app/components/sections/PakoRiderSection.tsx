@@ -1,6 +1,8 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 export function PakoRiderSection() {
+  const { t } = useTranslation();
   return (
     <section className="flex w-full items-center justify-center px-4 py-6 md:px-8 lg:py-6">
       <div className="flex w-full max-w-[var(--content-max-width)] flex-col-reverse items-center gap-6 lg:flex-row lg:gap-6 lg:px-20">
@@ -10,14 +12,13 @@ export function PakoRiderSection() {
             Pako Rider
           </h2>
           <p className="max-w-lg font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
-            Merkeziyetsiz teslimat teknolojisi Pako topluluğu tarafından kolektif şekilde
-            üretiliyor, adil çalışmayı herkes için mümkün kılıyor.
+            {t('home.pakoRider.description')}
           </p>
           <Link
             to="/pako-rider"
             className="rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
           >
-            devamı
+            {t('home.pakoRider.cta')}
           </Link>
         </div>
 

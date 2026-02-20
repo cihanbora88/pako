@@ -1,0 +1,300 @@
+{
+  "header": {
+    "about": "Hakkında",
+    "pakoRider": "Pako Rider",
+    "businesses": "İşletmeler",
+    "community": "Topluluk",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "about": "Hakkında",
+    "pakoRider": "Pako Rider",
+    "partnership": "İş Birliği",
+    "blog": "Blog",
+    "community": "Topluluk",
+    "pkoop": "PKOOP",
+    "support": "Destek ol",
+    "help": "Yardım",
+    "faq": "SSS",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "contact": "İletişim"
+  },
+  "blog": {
+    "title": "Blog",
+    "filters": {
+      "article": "yazı",
+      "video": "video",
+      "story": "hikaye",
+      "guide": "rehber",
+      "howto": "nasıl yapılır",
+      "advice": "tavsiye"
+    },
+    "search": "Ara...",
+    "noContent": "Aramanıza uygun içerik bulunamadı.",
+    "posts": [
+      {
+        "title": "Kısa Pako tarihi",
+        "excerpt": "bir fikir olarak Pako'nun nasıl ortaya çıktığı ve geliştiği hakkında..."
+      },
+      {
+        "title": "Platformlar ile çalışamayan işletme Pako ile komisyonsuz teslimat...",
+        "excerpt": "Resmi kurumlar platformların talep ettiği haksız komisyonu fatura edemiyorlar ve dolayısla platformlar üzerinden sipariş almaları imkansızlaşıyor. Pako'nun şeffaf..."
+      },
+      {
+        "title": "Patikalar beliriyor",
+        "excerpt": "Kolektifimizle birlikte ormanlarımızda parkur açtık! Gençlerimizin dağ bisikletleriyle antreman yapmaları için hep birlikte kazma, kürek, tırpan ve çapaları alıp..."
+      },
+      {
+        "title": "PakoBike ile tümsekler engel değil",
+        "excerpt": "Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık. Kuryelerimizin karşılaştığı zorlu yol şartlarına uygun bir bisiklet tasarımı..."
+      },
+      {
+        "title": "Bisikletinizle iyi geçinmenin püf noktaları",
+        "excerpt": "Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık..."
+      },
+      {
+        "title": "Topluluk olarak başardık",
+        "excerpt": "Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir ettirebilirsiniz."
+      },
+      {
+        "title": "Bisikletle Kargo Taşımanın İpuçları",
+        "excerpt": "Bisikletle etkili kargo taşıma tekniklerini öğrenin. Yükü dengeli dağıtmak ve güvenli sürüş için pratik öneriler..."
+      },
+      {
+        "title": "Yağmurda Bisiklet Sürüşü",
+        "excerpt": "Yağışlı havalarda güvenli bisiklet sürüşü için dikkat edilmesi gerekenler ve ekipman tavsiyeleri..."
+      },
+      {
+        "title": "Pako Rider Kullanım Kılavuzu",
+        "excerpt": "Pako Rider uygulamasını en verimli şekilde kullanmak için detaylı adım adım rehber..."
+      },
+      {
+        "title": "Kurye Deneyimleri: Bir Günde",
+        "excerpt": "Pako kuryelerinden birinin gözünden bir çalışma gününün hikayesi ve yaşananlar..."
+      }
+    ]
+  },
+  "help": {
+    "title": "Yardım",
+    "description": "Yardım için buradayız. PakoAI ile sohbet başlatın, topluluktan destek alın, kaynakları inceleyin ve çözüm bulun.",
+    "community": "Topluluk",
+    "communityDesc": "Pako'lardan destek alın, öğrenin",
+    "join": "katıl",
+    "pakoAI": "PakoAI ile sohbet",
+    "pakoAIDesc": "Pako hakkında bir AI modeli geliştirdik, ona soru sorabilir ve çözüm bulabilirsin.",
+    "start": "başlat",
+    "resources": "Kaynaklar",
+    "resourcesDesc": "Topluluk tarafından oluşturulan belgeleri burada bulabilirsin",
+    "explore": "incele"
+  },
+  "support": {
+    "title": "Destek ol",
+    "intro": {
+      "description1": "Pako'yu yürekten desteklediğini bilmek bizim için en önemlisidir çünkü bu inanış atmosferi bizim hedeflerimiz doğrultusunda daha çok çalışmamızı ve üretmemizi sağlıyor. Topluluğuza üye olarak, sosyal medya kanallarıda Pako'yu takip ederek ve yorum yazarak bize en büyük desteği vermiş olursun.",
+      "description2": "Öte yandan Pako'nun sosyal tarafı ekonomik yönünden ağır basan, kâr amacı gütmeyen topluluk yapısı devamlılığı için fiziksel desteğe de ihtiyacı duyuyor:",
+      "list": [
+        "Bisiklet merkezli bir oluşumuz ve her türlü bisiklet malzemesi bize fayda sağlar,",
+        "Sahada operasyon yürüten arkadaşlarımıza gerekli ekipmanlar için maddi kaynak çok işimize yarar,",
+        "Açık kaynak olarak geliştirdiğimiz ve bisikletiyle yerel üreticilere destek olmayı amaçlayan, herkesin ücretsiz ulaşabileceği Pako Rider'ın geliştirilmesinde yazılım bilgin ile katkıda bulunabilirsin,",
+        "Pako Rider'ın barınması ve geliştirilmesi için maddi katkı sağlayabilirsin."
+      ]
+    },
+    "github": {
+      "title": "Repoya katkıda bulun",
+      "description": "Yazılımı incele, katkıda bulun ayrıca görüş ve önerilerini bizimle paylaşmayı unutma.",
+      "cta": "github"
+    },
+    "bank": {
+      "title": "Banka Hesapları",
+      "description": "Bağış için PKOOP'un aşağıdaki banka hesaplarını kullanabilirsin.",
+      "bank1": "Banka 1",
+      "bank2": "Banka 2",
+      "note": "Kooperatif olarak kollektif şekilde karar alan Pako'da harcamalar da diğer her konu gibi şeffaftır. Kurul toplantılarımızda ele alınan konular, kararlar ve harcamalar hakkında PKOOP'dan bilgi talep etme hakkınız saklıdır."
+    },
+    "banner": {
+      "text": "Pako’nun kâr amacı gütmeyen misyonu ve sosyal hareketinin bir parçası ol,",
+      "highlight": "Dayanışmamıza katılarak fark yarat!"
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "description": "Görüş, öneri ve talepleriniz için iletişim kutusunu kullannın, e-mail adresimize posta gönderin veya iletişim numaramızı arayın.",
+    "name": "İsim",
+    "subject": "Başlık",
+    "topic": "Konu",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "message": "Mesaj",
+    "send": "gönder",
+    "sending": "Gönderiliyor...",
+    "success": "✓ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
+    "error": "✗ Lütfen tüm gerekli alanları doldurunuz ve e-mail adresini doğru formatta giriniz.",
+    "note": "Ekibimiz gönüllülük esasıyla çalışır, bir arkadaşımız en yakın sürede gönüllülük esasıyla mesajınızı yanıtlayacaktır."
+  },
+  "businesses": {
+    "title": "İşletmeler",
+    "intro": {
+      "title": "İşletmeler",
+      "description1": "Emeğiyle mekanlara ruh kazandıran, yemekleriyle ilham kaynağı olan işletmeler Pako için en öncelikli kitleyi oluşturur çünkü ‘yerellik’ kavramını ilkelerinin en başına koyan Pako kültür olarak mahallenin bisikletlilerinden oluşan yerel bir topluluktur. Amacımız bisikletin hızını, kooperatifin adaletini ve teknolojinin kolaylığını birleştirerek yerel esnafa ve kuryeye adil ve şeffaf bir çalışma modeli sunmaktır.",
+      "description2": "Merkeziyetsiz sistemimiz kuryelik modelini dönüştürüyor ve bu modeli her koşulda her ilçede uygulanabilir kılma yolunda gelişiyor. Pako ile tanışıp destek olarak ilkeli bir çalışma modelini geliştirmemize yardımcı olabilirsiniz.",
+      "description3": "2019'da pandemi döneminden beri sahada edindiği tecrübe ile bir çok kuryelik ağına eğitim veren Pako, geliştirdiği mobil uygulama Pako Rider ile merkeziyetsiz ve bağımsız restoran kuryeliğini teknolojik olarak mümkün kılmıştır."
+    },
+    "heroStatement": "Pako’nun kâr amacı gütmeyen misyonu ve sosyal hareketinin bir parçası ol, yerel üreticilerle güçlü bağlar.",
+    "localNetwork": {
+      "title": "Yerel ağa katılın",
+      "description1": "Pako Türkiye'nin dayanışmacı köklerinden, yerellikten ve organiklikten beslenir. Haksız iş düzeninin yükselişe geçtiği bir dönemde değer üreten ve eşsiz olan siz kıymetli esnaflara, global zincirin dışında kalan yerel üreticilere faydalı bir alternatif sunar. ‘Farklı bir kuryelik modeli mümkün mü?’ sorusunu sorarak bisikletin bu modelin taşıyıcısı olduğuna inanır.",
+      "description2": "2019'da pandemi döneminden beri sahada edindiği tecrübe ile bir çok kuryelik ağına eğitim veren Pako, geliştirdiği mobil uygulama Pako Rider ile merkeziyetsiz ve bağımsız restoran kuryeliğini teknolojik olarak mümkün kılmıştır. Pako komisyonsuz restoran kuryeliği yapar, Pako Rider bölgedeki teslimat işlerini listeleyen bir ‘havuz’ işlevi görür. Hizmet verdiğiniz bölgede bisikletli Pako ekibinden destek alarak adil ve şeffaf bir model sergileyen dayanışmaya katkı sağlamış olursunuz."
+    },
+    "meetPako": {
+      "title": "Pako ile tanış",
+      "description": "Pako Rider ile geliştirmekte olduğumuz teslimat sistemi hakkında daha fazla bilgi al",
+      "cta": "başla"
+    },
+    "principles": {
+      "title": "İş birliği prensipleri",
+      "description1": "Pako, bir \"patron\" tarafından değil, emeğiyle değer üretenler tarafından yönetilen bir teknoloji platformudur. Pako'nun kültürü, felsefesi ve iş modelinin öncelikle Pako sürücüsü ve ortaklık kurmayı amaçladığı işletme tarafından doğru anlaşılması gerekir. Türkiye'nin dayanışmacı geçmişinden beslenen Pako gönüllülük esasına göre çalışır ve işletme ile kurduğu bu güven bağıını muhafaza etmeyi amaçlarken araç olarak bisikleti kullanır.",
+      "description2": "İşletmeci Pako ile iş birliği kurarak ilkeli bir hareketi, iş modelini destekleyiyor olduğunun farkında olmalıdır. Pako sürücüsünün her siparişi önemsediğini bilmeli ve yaşanabilecek aksaklıklar karşısında metanetli ve anlayışlı olması beklenir."
+    },
+    "contactCard": {
+      "description": "Daha fazla bilgi almak için bizimle iletişime geçin veya irtibat bilginizi paylaşın, bir ekip arkadaşımız en yakın sürede size ulaşacaktır.",
+      "cta": "iletişim"
+    }
+  },
+  "pakoRider": {
+    "title": "Pako Rider",
+    "joinCommunity": "Topluluğa katıl",
+    "joinDesc": "Geleneksel Pako yolunu öğren ve kendi bölgende patronsuz çalış.",
+    "createAccount": "Hesap oluştur",
+    "joinMovement": "Harekete Katıl!",
+    "description1": "Pako Rider uygulaması organik saha tecrübesinin dijital bir yansıması olarak Pako’ya gönül vermiş bisikletli kuryeler tarafından geliştirilmiştir. Pako Rider, sadece bir teslimat aracı değil; gücünü açık kaynak kodlu (Open-Source) felsefeden alan, yüksek performanslı ve şeffaf bir teknoloji platformudur. Kolektif bilinçle bisikletliler tarafından bisikletliler için geliştirilen Pako Rider yazılımı açık kaynaklıdır; herkes tarafından incelenebilir ve geliştirilebilir. Veri akışı gizli değilir. Bağımsız teknolojisi kooperatifin ortak değeridir.",
+    "description2": "Pako’nun kurye odaklı teknolojik vizyonu, kuryelerin ihtiyaçlarını doğrudan sahada gözlemleyerek çözümler üretir. Bu yazılım, topluluğun ortak aklıyla şekillenerek daha adil, şeffaf ve verimli bir çalışma ortamı sunmayı hedefler; algoritmanın değil, insanın öncelikli olduğu bir gelecek inşa eder.",
+    "heroTitle": "Açık kaynak kod, şeffaf veri akışı ve dürüst ekonomik modeller",
+    "interfaceDescription1": "Kolektif bilinçle bisikletliler tarafından bisikletliler için geliştirilen Pako Rider yazılımı açık kaynaklıdır; herkes tarafından incelenebilir ve geliştirilebilir. Veri akışı gizli değilir. Bağımsız teknolojisi kooperatifin ortak değeridir.",
+    "interfaceDescription2": "Pako Rider’ın yeni nesil yazılım anlayışı hızlı bir iş akışı oluşturur, organik gelişmiş algoritması ile havuzdaki işleri sahadaki kuryelere en makul şekilde tavsiye eder ve akıllı rotalar oluşturur. Ortak bir görev üzerinde çalışan kişilerin hedeflerine ulaşmalarına yardımcı olmak için tasarlanmıştır.",
+    "communityInvitation1": "Pako Rider ile başlattığımız harekete katıl, felsefemiz, ilkelerimiz hakkında daha fazla bilgi almak ve kullanım prensiplerini incelemek için topluluğa dahil ol. Amacımız Pako Rider’ın kullanımını herkes için mümkün kılmak ve kolaylaştırmak.",
+    "communityInvitation2": "Saha oryantasyonu, Pako topluluk sistemi, saha koordinasyonunu ve operasyonu gibi konular hakkında konu başlıklarını ve uygulama hakkında aradığın tüm rehberleri orada bulacaksın. Katılımın, Pako Rider’ın geliştirilmesi için çok değerli, bisikletli adil bir teslimat sistemini birlikte geliştirmek isteyen herkesi topluluk sayfamıza üye olmaya davet ediyoruz."
+  },
+  "about": {
+    "title": "Pako nedir?",
+    "description1": "Pako, PKOOP (Patronsuzlar Kooperatifi) çatısı altında geliştirilen, dayanışma ekonomisini ve ekolojik ulaşımı odağına alan bir teslimat ekosistemidir. Pako restoran kuryeliği yapar ve amacı restoranlarla bisikletlileri buluşturmak ve her iki taraf içinde şeffaf ve adil bir teslimat sistemini mümkün kılmaktır. Geleneksel kurye platformlarının aksine \"patronsuz\" bir yapı ile çalışan Pako, bisikletli kuryeleri birer işçi olarak değil, platformun ortağı ve bağımsız hizmet sağlayıcısı olarak konumlandırır. Yerelliği, komşuluğu ve karşılıklı güveni önemser. Kârı öncelemeyen, kolektif akılla hareket eden, sürdürülebilir ve doğa dostu bir ulaşım modeli mümkün der ve bisikletin bu modelin taşıyıcısı olabileceğine inanır; karbon ayak izini sıfıra indiren lojistik ağıyla, hızlı ve etik bir teslimat alternatifi sunar.",
+    "description2": "Topluluk tarafından yönetilen, merkeziyetsiz bir yapıya sahip olan Pako, adil çalışma koşulları ve yerel ekonomiyi desteklemek için çalışmaktadır.",
+    "heroTitle": "Sürdürülebilir, komisyonsuz İşbirlikçi ve katılımcı çalışma modeli",
+    "kolektif": "Kolektif",
+    "kolektifDesc": "Birlikte karar alır, birlikte yol alırız.",
+    "yerel": "Yerel",
+    "yerelDesc": "Esnafla, üreticiyle, mahalleyle güçlü bağlar kurarız.",
+    "doga": "Doğa Dostu",
+    "dogaDesc": "Karbon salımı olmayan, sürdürülebilir bir ulaşım biçimiyle çalışırız.",
+    "seffaf": "Şeffaf",
+    "seffafDesc": "Her adımımız, birlikte inşa ettiğimiz bir güvenin parçasıdır.",
+    "communityTitle": "Pako’yu mümkün kılan gönüllü bir topluluktur",
+    "communityDesc1": "Pako’nun sürekliliği ve geliştirilmesi, ilkeleri pek çok konuda birbiri ile örtüşen bir ekibin sıkı çalışması sonucudur. Pako’da taşıdığımız şey sadece paket değil, ortak kültürdür. Pako, şehrin ritmine uyum sağlayarak “festina lante” (acele et ama yavaşça) anlayışıyla çalışır; böylece hem işletmelere hem de sahaya güven veren bir istikrar kurar. Bir girişim okulu olarak bireyi hayatın değişkenliklerine hazırlayan, ona ekonomiyi çekirdekten öğreten ve onun bilişsel yeteneklerini eğiten bir tarz Pako’nun doğasında vardır. Bu varoluş biçimi bizim işimiz diğerlerinden biraz farklı kılar.",
+    "communityDesc2": "Pako herkes için değildir; macera severler, doğa insanları için uygun fakat işlerin kolayına kaçanlar için uygun değildir. Bu bağlamlarda Pako sürücüsü ana akımın dışında konumlanır."
+  },
+  "principles": {
+    "title": "Pako İlkeleri",
+    "bossless": "PATRONSUZLUK",
+    "balance": "DENGE",
+    "diversity": "ÇEŞİTLİLİK",
+    "selfControl": "ÖZDENETİM",
+    "autonomy": "OTONOMİ",
+    "honesty": "DÜRÜSTLÜK",
+    "solidarity": "DAYANIŞMA",
+    "organic": "ORGANİKLİK",
+    "equality": "EŞİTLİK",
+    "limitless": "SINIRSIZLIK",
+    "alternativeEconomy": "ALTERNATİF EKONOMİ",
+    "locality": "YERELLİK",
+    "broadVision": "GENİŞ VİZYON",
+    "pioneering": "SEKTÖRDE ÖNCÜ OLMA",
+    "nonViolence": "ŞİDDETSİZLİK",
+    "wellbeing": "ESENLİK",
+    "antiFragility": "ANTİ-KIRILGANLIK"
+  },
+  "home": {
+    "hero": {
+      "line1": "Hayatı seç,",
+      "line2": "Bisikletini Seç.",
+      "description": "Topluluğa katıl, birlikte bisikletin döngüsünde adil bir sistem oluşturalım.",
+      "cta": "katıl"
+    },
+    "whatIsPako": {
+      "title": "Pako nedir?",
+      "description": "Pako, Patronsuz Kuryeler'den doğan Kadıköy merkezli bir restoran kuryeliği projesidir. 2019 yılında pandemi döneminde yerel esnafı, üreticiyi desteklemek amacıyla kâr amacı gütmeden oluşmuştur.",
+      "cta": "devamı"
+    },
+    "pakoRider": {
+      "title": "Pako Rider",
+      "description": "Pako, global ağların dışında yerel kuryeleşmenin, esnafın ve yerel teslimatın teknolojisini geliştiriyor. Bu modele katkı sağlayarak yerel dayanışmayı güçlendirebilirsiniz.",
+      "cta": "devamı"
+    },
+    "community": {
+      "title": "Pako geliyor!",
+      "description": "Bisikletli yaşama dair fikirler ve projeler geliştirilen Pako Topluluğu'na katılın. Çözümleri birlikte katılımcı şekilde üretelim.",
+      "cta": "topluluk"
+    },
+    "blogPreview": {
+      "cta": "blog",
+      "postLabel": "yazı",
+      "posts": [
+        {
+          "title": "PakoBike ile tümsekler engel değil",
+          "excerpt": "Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık. Kuryelerimizin karşılaştığı zorlu yol şartlarına uygun bir bisiklet tas...."
+        },
+        {
+          "title": "Bisikletinizle iyi geçinmenin püf noktaları",
+          "excerpt": "Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık..."
+        },
+        {
+          "title": "Topluluk olarak başardık",
+          "excerpt": "Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Sıkça sorulan sorular",
+    "items": [
+      {
+        "q": "Pako sürücüsü ne yapar",
+        "a": "Pako sürücüsü Pako Rider uygulamasının havuzunda bulunan, restoranlardan gelen teslimat görevlerini üstlenir, gönüllülük esasıyla çalışır. Bir kolektifi temsil etmenin bilincinde iş ortaklarına esenlikle çözüm sunar."
+      },
+      {
+        "q": "Pako'nun diğer teslimat platformlarından farkı nedir?",
+        "a": "Pako platform kuryeliği yapmaz, restoran kuryeliği yapar. Özel bir şirket de değildir, bisikletlilerden oluşan bir topluluktur. Pako Rider sadece yerel işleri listeler. Pakolar bu işleri seçer ve seçtikleri işler için motorlu araçlar kullanmaz, teslimatları bisiklet ile yaparlar. Pako komisyon ile çalışmaz, emeğinin karşılığı dışında bir gelir etmez."
+      },
+      {
+        "q": "Nasıl Pako olabilirim?",
+        "a": "Topluluğa dahil olarak Pako tarzı yaşamı birlikte geliştirdiğimiz bir platforma katılmış ve ilk adımı atmış olursun. Topluluk sayfamızda saha ile ilgili bilgileri edinebilir ve oryantasyon sürecini başlatabilirsin."
+      },
+      {
+        "q": "Pako güvenli midir?",
+        "a": "Evet. Pako sürücüleri profesyonel ekipmanlara sahiptir ve topluluk tarafından denetlenen güvenlik standartlarına uyarlar. Bisiklet en güvenli ulaşım araçlarından biridir ve Pako’da kazalar sık karşılaştığımız bir durum değildir. Pako oryantasyonu bir süreçtir ve bisikletliyi sadece trafikte değil hayatın her alanında farkındalığını geliştirmek için otonom şekilde eğitir. "
+      }
+    ]
+  },
+  "supportCta": {
+    "title": "Pako Rider'a Destek Ol!",
+    "description": "Sahaya adım atmadan da Pako'ya destek olabilirsin. Destek sayfamızdaki seçenekleri inceleyebilir, daha fazla bilgi alabilirsin.",
+    "cta": "Destek ol"
+  },
+  "newsletter": {
+    "title": "Bizden Haber Al",
+    "subtitle": "En son gelişmelerden haberdar ol",
+    "placeholder": "mail@pako.com",
+    "cta": "katıl",
+    "sending": "Gönderiliyor...",
+    "success": "✓ Başarıyla kaydedildi! Bültene hoş geldiniz.",
+    "error": "✗ Lütfen geçerli bir e-mail adresi giriniz."
+  },
+  "communityPage": {
+    "title": "Topluluk",
+    "description": "Bisikletli yaşama dair fikirler, projeler geliştireceğimiz ve çözümleri birlikte katılımcı şekilde üreteceğimiz Pako Topluluğu geliyor."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Sayfa bulunamadı",
+    "cta": "Ana Sayfaya Dön"
+  }
+}

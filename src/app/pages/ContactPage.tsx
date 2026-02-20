@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { MainLayout } from '../components/layout/MainLayout';
 import svgPaths from '../../imports/svg-xmc1gi6xw8';
-import { t } from '../utils/translations';
+import { useTranslation } from 'react-i18next';
 
 export function ContactPage() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     subject: '',
@@ -208,22 +209,21 @@ export function ContactPage() {
               disabled={isSubmitting}
               className="mt-2 rounded-lg bg-[var(--color-secondary)] px-4 py-4 font-['Overpass',sans-serif] font-medium text-[var(--text-xl)] text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-98 disabled:opacity-50"
             >
-              {isSubmitting ? 'Gönderiliyor...' : t('contact.send')}
+              {isSubmitting ? t('contact.sending') : t('contact.send')}
             </button>
 
             {/* Status Messages */}
             {submitStatus === 'success' && (
               <div className="mt-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-3">
                 <p className="text-center font-['Overpass',sans-serif] text-green-700 dark:text-green-400">
-                  ✓ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.
+                  {t('contact.success')}
                 </p>
               </div>
             )}
             {submitStatus === 'error' && (
               <div className="mt-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 p-3">
                 <p className="text-center font-['Overpass',sans-serif] text-red-700 dark:text-red-400">
-                  ✗ Lütfen tüm gerekli alanları doldurunuz ve e-mail adresini doğru formatta
-                  giriniz.
+                  {t('contact.error')}
                 </p>
               </div>
             )}

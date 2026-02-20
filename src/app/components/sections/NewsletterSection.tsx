@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import newsletterBg from '@assets/images/newsletter_bg.jpg';
+import { useTranslation } from 'react-i18next';
 
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
 
 export function NewsletterSection() {
+  const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<SubmitStatus>('idle');
 
@@ -48,10 +50,10 @@ export function NewsletterSection() {
         {/* Text */}
         <div className="flex flex-col gap-2 text-white">
           <p className="font-['Overpass',sans-serif] text-3xl font-bold leading-tight md:text-5xl lg:text-[64px] lg:leading-[64px]">
-            Bizden Haber Al
+            {t('newsletter.title')}
           </p>
           <p className="font-['Overpass',sans-serif] text-lg font-light tracking-tight md:text-2xl lg:text-[32px] lg:leading-[40px]">
-            En son gelişmelerden haberdar ol
+            {t('newsletter.subtitle')}
           </p>
         </div>
 
@@ -60,7 +62,7 @@ export function NewsletterSection() {
           <div className="flex w-full gap-4">
             <input
               type="email"
-              placeholder="mail@pako.com"
+              placeholder={t('newsletter.placeholder')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -72,20 +74,16 @@ export function NewsletterSection() {
               disabled={status === 'loading'}
               className="rounded-lg bg-black px-6 py-3 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-white transition-all hover:bg-[var(--color-gray-800)] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              {status === 'loading' ? 'Gönderiliyor...' : 'katıl'}
+              {status === 'loading' ? t('newsletter.sending') : t('newsletter.cta')}
             </button>
           </div>
 
           {/* Status feedback */}
           {status === 'success' && (
-            <p className="text-sm font-medium text-green-200">
-              ✓ Başarıyla kaydedildi! Bültene hoş geldiniz.
-            </p>
+            <p className="text-sm font-medium text-green-200">{t('newsletter.success')}</p>
           )}
           {status === 'error' && (
-            <p className="text-sm font-medium text-red-200">
-              ✗ Lütfen geçerli bir e-mail adresi giriniz.
-            </p>
+            <p className="text-sm font-medium text-red-200">{t('newsletter.error')}</p>
           )}
         </form>
       </div>

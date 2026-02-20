@@ -1,32 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface FaqItem {
   question: string;
   answer: string;
 }
-
-const faqItems: FaqItem[] = [
-  {
-    question: 'Pako sürücüsü ne yapar',
-    answer:
-      'Pako sürücüsü Pako Rider uygulamasının havuzunda bulunan, restoranlardan gelen teslimat görevlerini üstlenir, gönüllülük esasıyla çalışır. Bir kolektifi temsil etmenin bilincinde iş ortaklarına esenlikle çözüm sunar.',
-  },
-  {
-    question: "Pako'nun diğer teslimat platformlarından farkı nedir?",
-    answer:
-      'Pako platform kuryeliği yapmaz, restoran kuryeliği yapar. Özel bir şirket de değildir, bisikletlilerden oluşan bir topluluktur. Pako Rider sadece yerel işleri listeler. Pakolar bu işleri seçer ve seçtikleri işler için motorlu araçlar kullanmaz, teslimatları bisiklet ile yaparlar. Pako komisyon ile çalışmaz, emeğinin karşılığı dışında bir gelir etmez.',
-  },
-  {
-    question: 'Nasıl Pako olabilirim?',
-    answer:
-      'Topluluğa dahil olarak Pako tarzı yaşamı birlikte geliştirdiğimiz bir platforma katılmış ve ilk adımı atmış olursun. Topluluk sayfamızda saha ile ilgili bilgileri edinebilir ve oryantasyon sürecini başlatabilirsin.',
-  },
-  {
-    question: 'Pako güvenli midir?',
-    answer:
-      'Evet. Pako sürücüleri profesyonel ekipmanlara sahiptir ve topluluk tarafından denetlenen güvenlik standartlarına uyarlar. Bisiklet en güvenli ulaşım araçlarından biridir ve Pako’da kazalar sık karşılaştığımız bir durum değildir. Pako oryantasyonu bir süreçtir ve bisikletliyi sadece trafikte değil hayatın her alanında farkındalığını geliştirmek için otonom şekilde eğitir. ',
-  },
-];
 
 function AccordionItem({
   item,
@@ -81,13 +59,33 @@ function AccordionItem({
 }
 
 export function FaqSection() {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(2); // Third item open by default like Figma
+
+  const faqItems: FaqItem[] = [
+    {
+      question: t('faq.items.0.q'),
+      answer: t('faq.items.0.a'),
+    },
+    {
+      question: t('faq.items.1.q'),
+      answer: t('faq.items.1.a'),
+    },
+    {
+      question: t('faq.items.2.q'),
+      answer: t('faq.items.2.a'),
+    },
+    {
+      question: t('faq.items.3.q'),
+      answer: t('faq.items.3.a'),
+    },
+  ];
 
   return (
     <section className="flex w-full items-center justify-center px-4 py-4 md:px-8">
       <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-6 md:px-16 lg:px-30">
         <h2 className="text-center font-['Overpass_Mono',sans-serif] text-2xl font-semibold tracking-tight text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px] md:leading-[32px]">
-          Sıkça sorulan sorular
+          {t('faq.title')}
         </h2>
         <div className="flex w-full flex-col gap-6">
           {faqItems.map((item, i) => (

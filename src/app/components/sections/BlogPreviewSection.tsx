@@ -1,31 +1,11 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 interface BlogCardData {
   label: string;
   title: string;
   excerpt: string;
 }
-
-const blogPosts: BlogCardData[] = [
-  {
-    label: 'yazı',
-    title: 'PakoBike ile tümsekler engel değil',
-    excerpt:
-      'Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık. Kuryelerimizin karşılaştığı zorlu yol şartlarına uygun bir bisiklet tas....',
-  },
-  {
-    label: 'yazı',
-    title: 'Bisikletinizle iyi geçinmenin püf noktaları',
-    excerpt:
-      'Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık...',
-  },
-  {
-    label: 'yazı',
-    title: 'Topluluk olarak başardık',
-    excerpt:
-      'Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir',
-  },
-];
 
 function BlogCard({ post }: { post: BlogCardData }) {
   return (
@@ -50,6 +30,26 @@ function BlogCard({ post }: { post: BlogCardData }) {
 }
 
 export function BlogPreviewSection() {
+  const { t } = useTranslation();
+
+  const blogPosts: BlogCardData[] = [
+    {
+      label: t('home.blogPreview.postLabel'),
+      title: t('home.blogPreview.posts.0.title'),
+      excerpt: t('home.blogPreview.posts.0.excerpt'),
+    },
+    {
+      label: t('home.blogPreview.postLabel'),
+      title: t('home.blogPreview.posts.1.title'),
+      excerpt: t('home.blogPreview.posts.1.excerpt'),
+    },
+    {
+      label: t('home.blogPreview.postLabel'),
+      title: t('home.blogPreview.posts.2.title'),
+      excerpt: t('home.blogPreview.posts.2.excerpt'),
+    },
+  ];
+
   return (
     <section className="flex w-full items-center justify-center px-4 py-6 md:px-8">
       <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-3">
@@ -64,7 +64,7 @@ export function BlogPreviewSection() {
           to="/blog"
           className="mt-2 rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
         >
-          blog
+          {t('home.blogPreview.cta')}
         </Link>
       </div>
     </section>
