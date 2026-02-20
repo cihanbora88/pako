@@ -8,6 +8,7 @@ import { BusinessesPage } from './pages/BusinessesPage';
 import { PakoRiderPage } from './pages/PakoRiderPage';
 import { AboutPage } from './pages/AboutPage';
 import { CommunityPage } from './pages/CommunityPage';
+import { CookiePolicyPage } from './pages/CookiePolicyPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 export const router = createBrowserRouter([
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
   {
     path: '/topluluk',
     Component: CommunityPage,
+  },
+  {
+    path: '/cerez-politikasi',
+    Component: CookiePolicyPage,
   },
   {
     path: '*',

@@ -19,8 +19,9 @@ export function Footer() {
   ];
 
   const footerMenu3 = [
-    { label: t('footer.faq'), path: '#' },
+    { label: t('footer.faq'), path: '/yardim' },
     { label: t('footer.privacy'), path: '#' },
+    { label: t('footer.cookies'), path: '/cerez-politikasi' },
     { label: t('footer.terms'), path: '#' },
     { label: t('footer.contact'), path: '/iletisim' },
   ];

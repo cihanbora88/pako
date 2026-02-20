@@ -1,6 +1,7 @@
 import { ReactNode, useState, useEffect } from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { CookieBanner } from '../ui/CookieBanner';
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -46,6 +47,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       <Header onThemeToggle={toggleTheme} isDarkMode={isDarkMode} />
       <main className="flex-1">{children}</main>
       <Footer />
+      <CookieBanner />
     </div>
   );
 }

@@ -17,6 +17,7 @@
     "help": "Help",
     "faq": "FAQ",
     "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
     "terms": "Terms of Service",
     "contact": "Contact"
   },
@@ -291,5 +292,29 @@
     "sending": "Sending...",
     "success": "✓ Successfully saved! Welcome to the newsletter.",
     "error": "✗ Please enter a valid e-mail address."
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "description": "This Cookie Policy explains how cookies and similar technologies are used on the Pako website.",
+    "whatAreCookies": {
+      "title": "What are Cookies?",
+      "content": "Cookies are small text files placed on your device when you visit a website. They help websites function more efficiently and remember user preferences."
+    },
+    "howWeUse": {
+      "title": "How We Use Cookies?",
+      "content1": "At Pako, we use cookies minimally and only to improve your user experience:",
+      "item1": "Remembering user settings such as dark mode and language preferences (using localStorage).",
+      "item2": "Storing interface preferences such as sidebar state.",
+      "content2": "Our website does not use third-party advertising or tracking cookies."
+    },
+    "managing": {
+      "title": "How to Manage Cookies?",
+      "content": "You can delete or block cookies through your browser settings. However, in this case, some features may not work as expected."
+    },
+    "banner": {
+      "message": "We use cookies to provide you with a better experience.",
+      "accept": "Accept",
+      "learnMore": "Learn More"
+    }
   }
 }

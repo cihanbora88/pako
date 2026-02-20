@@ -17,6 +17,7 @@
     "help": "Yardım",
     "faq": "SSS",
     "privacy": "Gizlilik Politikası",
+    "cookies": "Çerez Politikası",
     "terms": "Kullanım Koşulları",
     "contact": "İletişim"
   },
@@ -296,5 +297,29 @@
     "title": "404",
     "description": "Sayfa bulunamadı",
     "cta": "Ana Sayfaya Dön"
+  },
+  "cookiePolicy": {
+    "title": "Çerez Politikası",
+    "description": "Bu Çerez Politikası, Pako web sitesinde çerezlerin ve benzer teknolojilerin nasıl kullanıldığını açıklar.",
+    "whatAreCookies": {
+      "title": "Çerez Nedir?",
+      "content": "Çerezler, bir web sitesini ziyaret ettiğinizde cihazınıza yerleştirilen küçük metin dosyalarıdır. Web sitelerinin daha verimli çalışmasına ve kullanıcı tercihlerini hatırlamasına yardımcı olurlar."
+    },
+    "howWeUse": {
+      "title": "Çerezleri Nasıl Kullanıyoruz?",
+      "content1": "Pako olarak çerezleri minimum düzeyde ve sadece kullanıcı deneyiminizi iyileştirmek için kullanıyoruz:",
+      "item1": "Karanlık mod ve dil tercihleriniz gibi kullanıcı ayarlarını hatırlamak (localStorage kullanarak).",
+      "item2": "Yan menü durumu gibi arayüz tercihlerini saklamak.",
+      "content2": "Web sitemiz üçüncü taraf reklam çerezleri veya izleme çerezleri kullanmaz."
+    },
+    "managing": {
+      "title": "Çerezleri Nasıl Yönetebilirsiniz?",
+      "content": "Tarayıcı ayarlarınız aracılığıyla çerezleri silebilir veya engelleyebilirsiniz. Ancak bu durumda bazı özellikler beklediğiniz gibi çalışmayabilir."
+    },
+    "banner": {
+      "message": "Size daha iyi bir deneyim sunmak için çerezleri kullanıyoruz.",
+      "accept": "Kabul Et",
+      "learnMore": "Daha Fazla Bilgi"
+    }
   }
 }
