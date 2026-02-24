@@ -4,13 +4,15 @@ import {
   PakoNedirSection,
   PakoRiderSection,
   CommunitySection,
-  SupportCtaSection,
+  PurpleCard,
   BlogPreviewSection,
   FaqSection,
   NewsletterSection,
 } from '../components/sections';
+import { useTranslation } from 'react-i18next';
 
 export function HomePage() {
+  const { t } = useTranslation();
   return (
     <MainLayout>
       <div className="flex w-full flex-col items-center gap-8">
@@ -18,7 +20,12 @@ export function HomePage() {
         <PakoNedirSection />
         <PakoRiderSection />
         <CommunitySection />
-        <SupportCtaSection />
+        <PurpleCard
+          title={t('supportCta.title')}
+          description={t('supportCta.description')}
+          ctaLabel={t('supportCta.cta')}
+          ctaLink="/destek-ol"
+        />
         <BlogPreviewSection />
         <FaqSection />
         <NewsletterSection />

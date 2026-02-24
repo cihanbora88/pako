@@ -5,11 +5,14 @@ import { SearchBar } from '../components/ui/SearchBar';
 import { FilterTag } from '../components/ui/FilterTag';
 import { BlogCard } from '../components/ui/BlogCard';
 import { CardGrid } from '../components/sections/CardGrid';
-import { blogPosts } from '../data/blog-posts';
 import { useTranslation } from 'react-i18next';
+import { useBlogPosts } from '../lib/useBlogPosts';
 
 export function BlogPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const locale = i18n.language.startsWith('tr') ? 'tr-TR' : 'en-US';
+  const { posts, loading } = useBlogPosts(locale);
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
 
@@ -22,23 +25,10 @@ export function BlogPage() {
     { key: 'advice', label: t('blog.filters.advice') },
   ];
 
-  const localizedPosts = (
-    t('blog.posts', { returnObjects: true }) as Array<{
-      title: string;
-      excerpt: string;
-      category: string;
-      image: string;
-    }>
-  ).map((post, index) => {
-    const originalPost = blogPosts[index];
-    return {
-      ...originalPost,
-      title: post.title,
-      excerpt: post.excerpt,
-      categoryLabel: t(`blog.filters.${originalPost.category}`),
-      slug: originalPost.slug, // Ensure slug is present
-    };
-  });
+  const localizedPosts = posts.map((post) => ({
+    ...post,
+    categoryLabel: t(`blog.filters.${post.category}`),
+  }));
 
   const filteredPosts = localizedPosts.filter((post) => {
     const matchesSearch =
@@ -47,6 +37,18 @@ export function BlogPage() {
     const matchesFilter = !selectedFilter || post.category === selectedFilter;
     return matchesSearch && matchesFilter;
   });
+
+  if (loading) {
+    return (
+      <MainLayout>
+        <div className="flex w-full items-center justify-center py-40">
+          <span className="font-['Overpass_Mono',sans-serif] text-gray-400 dark:text-gray-500 animate-pulse">
+            {t('blog.loading', 'Yükleniyor...')}
+          </span>
+        </div>
+      </MainLayout>
+    );
+  }
 
   return (
     <MainLayout>

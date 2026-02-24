@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import { MainLayout } from '../components/layout/MainLayout';
 import { useTranslation } from 'react-i18next';
+import { PurpleCard } from '../components/sections';
 
 export function BusinessesPage() {
   const { t } = useTranslation();
@@ -89,19 +90,11 @@ export function BusinessesPage() {
         </section>
 
         {/* Section 6: Contact Card */}
-        <section className="flex w-full flex-col items-center px-4 pb-20 md:px-8">
-          <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center justify-between gap-8 rounded-2xl bg-[#290079] p-8 lg:flex-row lg:px-12 lg:py-10">
-            <p className="max-w-2xl font-['Overpass',sans-serif] text-base font-light leading-snug tracking-tight text-white md:text-xl">
-              {t('businesses.contactCard.description')}
-            </p>
-            <Link
-              to="/iletisim"
-              className="min-w-[140px] rounded-xl border-2 border-white px-8 py-3 text-center font-['Overpass',sans-serif] text-lg font-medium tracking-tight text-white transition-all hover:bg-white hover:text-[#290079] active:scale-[0.98]"
-            >
-              {t('businesses.contactCard.cta')}
-            </Link>
-          </div>
-        </section>
+        <PurpleCard
+          description={t('businesses.contactCard.description')}
+          ctaLabel={t('businesses.contactCard.cta')}
+          ctaLink="/iletisim"
+        />
       </div>
     </MainLayout>
   );

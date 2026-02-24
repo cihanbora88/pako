@@ -280,6 +280,10 @@
     },
     "disclaimer": "Pako bir Sosyal ve dayanışma ekonomisi (SDE) platformu ve dijital teknoloji girişimidir."
   },
+  "community": {
+    "title": "Topluluk",
+    "description": "Bisikletli yaşama dair fikirler, projeler geliştireceğimiz ve çözümleri birlikte katılımcı şekilde üreteceğimiz Pako Topluluğu geliyor."
+  },
   "faq": {
     "title": "Sıkça sorulan sorular",
     "items": [

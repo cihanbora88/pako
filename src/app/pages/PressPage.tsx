@@ -4,35 +4,27 @@ import { Container } from '../components/ui/Container';
 import { motion } from 'motion/react';
 import { LucideFileDown, LucideExternalLink, LucidePlayCircle } from 'lucide-react';
 import pakoSticker from '@assets/svg/pako_sticker.svg';
+import { usePressItems, type PressItem } from '../lib/usePressItems';
 
-interface PressItem {
-  id: number;
-  source: string;
-  title: string;
-  date: string;
-  url: string;
-  type: 'news' | 'video' | 'documentary';
-}
-
-const pressCoverage: PressItem[] = [
+const fallbackCoverage: PressItem[] = [
   {
-    id: 1,
-    source: 'Bianet',
-    title: 'Kadıköy’ün "Patronsuz Kuryeleri": İki pedal sıfır emisyon',
+    id: '1',
+    source: 'NTV',
+    title: 'Motosiklet yerine bisikletleriyle yollardalar',
     date: '2021-04-10',
-    url: 'https://bianet.org/haber/kadikoy-un-patronsuz-kuryeleri-iki-pedal-sifir-emisyon-242188',
+    url: 'https://www.ntv.com.tr/video/turkiye/motosiklet-yerine-bisikletleriyle-yollardalar,X5d2n3OeDkemtMOiUS34Ew',
+    type: 'video',
+  },
+  {
+    id: '2',
+    source: 'TRT Haber',
+    title: 'Patronsuz Kurye işbaşında',
+    date: '2021-09-25',
+    url: 'https://www.trthaber.com/haber/yasam/patronsuz-kurye-isbasinda-621120.html',
     type: 'news',
   },
   {
-    id: 2,
-    source: 'Gazete Oksijen',
-    title: 'Patronsuz Kuryeler: "Biz kurye değil, mahalleyiz"',
-    date: '2022-06-15',
-    url: 'https://gazeteoksijen.com/yasam/patronsuz-kuryeler-biz-kurye-degil-mahalleyiz-149021',
-    type: 'news',
-  },
-  {
-    id: 5,
+    id: '3',
     source: 'Sabah',
     title: 'Patronsuz, bisikletli kuryeler',
     date: '2021-06-26',
@@ -40,7 +32,7 @@ const pressCoverage: PressItem[] = [
     type: 'news',
   },
   {
-    id: 6,
+    id: '4',
     source: 'Gazete Kadıköy',
     title: 'Modern zamanın hamalları: "Patronsuz Kurye"',
     date: '2021-07-28',
@@ -48,7 +40,7 @@ const pressCoverage: PressItem[] = [
     type: 'news',
   },
   {
-    id: 7,
+    id: '5',
     source: 'Independent Türkçe',
     title: "Kadıköy'ün patronsuz kuryeleri: Amacımız şehrin lojistiğini değiştirmek",
     date: '2021-10-04',
@@ -56,7 +48,7 @@ const pressCoverage: PressItem[] = [
     type: 'news',
   },
   {
-    id: 8,
+    id: '6',
     source: 'Atv Haber',
     title: 'Esnaf için pedal çeviriyorlar',
     date: '2021-07-27',
@@ -64,7 +56,7 @@ const pressCoverage: PressItem[] = [
     type: 'video',
   },
   {
-    id: 9,
+    id: '7',
     source: 'YouTube',
     title: 'Patronsuz Kurye işbaşında',
     date: '2021-03-22',
@@ -72,7 +64,7 @@ const pressCoverage: PressItem[] = [
     type: 'video',
   },
   {
-    id: 10,
+    id: '8',
     source: 'YouTube',
     title: '22 06 2021 patronsuz kurye',
     date: '2021-06-22',
@@ -82,7 +74,12 @@ const pressCoverage: PressItem[] = [
 ];
 
 export function PressPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const locale = i18n.language.startsWith('tr') ? 'tr-TR' : 'en-US';
+  const { items, loading } = usePressItems(locale);
+
+  // Use Contentful data if available, otherwise fall back to hardcoded data
+  const pressCoverage = !loading && items.length > 0 ? items : fallbackCoverage;
 
   return (
     <MainLayout>

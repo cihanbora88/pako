@@ -121,13 +121,13 @@ export function Header({ onThemeToggle }: HeaderProps) {
           aria-label="Toggle menu"
         >
           <span
-            className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}
+            className={`h-0.5 w-6 bg-[var(--color-primary)] dark:bg-[var(--color-secondary)] transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}
           />
           <span
-            className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`}
+            className={`h-0.5 w-6 bg-[var(--color-primary)] dark:bg-[var(--color-secondary)] transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`}
           />
           <span
-            className={`h-0.5 w-6 bg-[var(--color-primary)] transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}
+            className={`h-0.5 w-6 bg-[var(--color-primary)] dark:bg-[var(--color-secondary)] transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}
           />
         </button>
       </nav>

@@ -68,35 +68,19 @@ export function Footer() {
             >
               <g id="pako_logo">
                 <g id="pako_logo_2">
-                  <path
-                    d={svgPaths.p13c0e400}
-                    fill="#290079"
-                    className="dark:fill-[var(--color-secondary)]"
-                  />
-                  <path
-                    d={svgPaths.p1b627800}
-                    fill="#290079"
-                    className="dark:fill-[var(--color-secondary)]"
-                  />
-                  <path
-                    d={svgPaths.p35ac7872}
-                    fill="#290079"
-                    className="dark:fill-[var(--color-secondary)]"
-                  />
-                  <path
-                    d={svgPaths.pc1cca00}
-                    fill="#290079"
-                    className="dark:fill-[var(--color-secondary)]"
-                  />
+                  <path d={svgPaths.p13c0e400} fill="#290079" className="dark:fill-white" />
+                  <path d={svgPaths.p1b627800} fill="#290079" className="dark:fill-white" />
+                  <path d={svgPaths.p35ac7872} fill="#290079" className="dark:fill-white" />
+                  <path d={svgPaths.pc1cca00} fill="#290079" className="dark:fill-white" />
                   <path
                     d={svgPaths.paa7e180}
                     fill="var(--color-secondary)"
-                    className="dark:fill-[var(--color-primary)]"
+                    className="dark:fill-[var(--color-secondary)]"
                   />
                   <path
                     d={svgPaths.p1bf53600}
                     fill="var(--color-secondary)"
-                    className="dark:fill-[var(--color-primary)]"
+                    className="dark:fill-[var(--color-secondary)]"
                   />
                 </g>
               </g>
