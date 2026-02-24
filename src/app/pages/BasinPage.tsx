@@ -1,0 +1,243 @@
+import { useTranslation } from 'react-i18next';
+import { MainLayout } from '../components/layout/MainLayout';
+import { Container } from '../components/ui/Container';
+import { motion } from 'motion/react';
+import { LucideFileDown, LucideExternalLink, LucidePlayCircle } from 'lucide-react';
+import pakoSticker from '@assets/svg/pako_sticker.svg';
+
+interface PressItem {
+  id: number;
+  source: string;
+  title: string;
+  date: string;
+  url: string;
+  type: 'news' | 'video' | 'documentary';
+}
+
+const pressCoverage: PressItem[] = [
+  {
+    id: 1,
+    source: 'Bianet',
+    title: 'Kadıköy’ün "Patronsuz Kuryeleri": İki pedal sıfır emisyon',
+    date: '2021-04-10',
+    url: 'https://bianet.org/haber/kadikoy-un-patronsuz-kuryeleri-iki-pedal-sifir-emisyon-242188',
+    type: 'news',
+  },
+  {
+    id: 2,
+    source: 'Gazete Oksijen',
+    title: 'Patronsuz Kuryeler: "Biz kurye değil, mahalleyiz"',
+    date: '2022-06-15',
+    url: 'https://gazeteoksijen.com/yasam/patronsuz-kuryeler-biz-kurye-degil-mahalleyiz-149021',
+    type: 'news',
+  },
+  {
+    id: 5,
+    source: 'Sabah',
+    title: 'Patronsuz, bisikletli kuryeler',
+    date: '2021-06-26',
+    url: 'https://www.sabah.com.tr/cumartesi/2021/06/26/patronsuz-bisikletli-kuryeler',
+    type: 'news',
+  },
+  {
+    id: 6,
+    source: 'Gazete Kadıköy',
+    title: 'Modern zamanın hamalları: "Patronsuz Kurye"',
+    date: '2021-07-28',
+    url: 'https://www.gazetekadikoy.com.tr/gundem/modern-zamanin-hamallari-patronsuz-kurye',
+    type: 'news',
+  },
+  {
+    id: 7,
+    source: 'Independent Türkçe',
+    title: "Kadıköy'ün patronsuz kuryeleri: Amacımız şehrin lojistiğini değiştirmek",
+    date: '2021-10-04',
+    url: 'https://www.indyturk.com/node/387826',
+    type: 'news',
+  },
+  {
+    id: 8,
+    source: 'Atv Haber',
+    title: 'Esnaf için pedal çeviriyorlar',
+    date: '2021-07-27',
+    url: 'https://www.youtube.com/watch?v=k5P5-P_LcC0',
+    type: 'video',
+  },
+  {
+    id: 9,
+    source: 'YouTube',
+    title: 'Patronsuz Kurye işbaşında',
+    date: '2021-03-22',
+    url: 'https://www.youtube.com/watch?v=n7DflOi82dI',
+    type: 'video',
+  },
+  {
+    id: 10,
+    source: 'YouTube',
+    title: '22 06 2021 patronsuz kurye',
+    date: '2021-06-22',
+    url: 'https://www.youtube.com/watch?v=w-8bX5TvfI0',
+    type: 'video',
+  },
+];
+
+export function BasinPage() {
+  const { t } = useTranslation();
+
+  return (
+    <MainLayout>
+      <div className="bg-white dark:bg-gray-900 overflow-hidden">
+        {/* Hero Section */}
+        <section className="relative pt-20 pb-16 bg-gradient-to-b from-[var(--color-primary)] to-[#1a0050] text-white">
+          <Container>
+            <div className="max-w-3xl">
+              <motion.span
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="font-['Overpass_Mono',sans-serif] text-[var(--color-secondary)] font-bold uppercase tracking-widest text-sm"
+              >
+                {t('press.title')}
+              </motion.span>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="font-['Overpass',sans-serif] text-4xl md:text-5xl lg:text-6xl font-extrabold mt-4 leading-tight"
+              >
+                Medyada <span className="text-[var(--color-secondary)]">Pako</span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="font-['Overpass',sans-serif] text-lg md:text-xl font-light mt-6 text-white/80 leading-relaxed"
+              >
+                {t('press.description')}
+              </motion.p>
+            </div>
+          </Container>
+        </section>
+
+        {/* Coverage Grid */}
+        <section className="py-20">
+          <Container>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {pressCoverage.map((item, index) => (
+                <motion.a
+                  key={item.id}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.05 }}
+                  className="group relative bg-gray-50 dark:bg-gray-800/50 p-8 rounded-2xl border border-gray-100 dark:border-gray-700/50 hover:bg-white dark:hover:bg-gray-800 transition-all shadow-sm hover:shadow-xl flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-6">
+                      <span className="font-['Overpass_Mono',sans-serif] text-xs font-bold text-[var(--color-primary)] dark:text-[var(--color-secondary)] uppercase tracking-wider px-3 py-1 bg-[var(--color-secondary)]/10 dark:bg-primary/20 rounded-full">
+                        {item.source}
+                      </span>
+                      {item.type === 'video' || item.type === 'documentary' ? (
+                        <LucidePlayCircle className="size-5 text-red-500" />
+                      ) : (
+                        <LucideExternalLink className="size-5 text-gray-400 group-hover:text-[var(--color-primary)] transition-colors" />
+                      )}
+                    </div>
+                    <h3 className="font-['Overpass',sans-serif] text-xl md:text-2xl font-bold text-black dark:text-white group-hover:text-[var(--color-primary)] dark:group-hover:text-[var(--color-secondary)] transition-colors mb-4 leading-snug">
+                      &quot;{item.title}&quot;
+                    </h3>
+                  </div>
+                  <div className="mt-6 flex items-center justify-between">
+                    <span className="font-['Overpass_Mono',sans-serif] text-sm text-gray-500">
+                      {item.date}
+                    </span>
+                    <span className="font-['Overpass',sans-serif] text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Haberi Oku →
+                    </span>
+                  </div>
+                </motion.a>
+              ))}
+            </div>
+          </Container>
+        </section>
+
+        {/* Press Kit Section */}
+        <section className="py-20 bg-[var(--color-primary)] text-white">
+          <Container>
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+              <div className="lg:w-1/2">
+                <h2 className="font-['Overpass',sans-serif] text-3xl md:text-4xl font-extrabold mb-6">
+                  {t('press.kitTitle')}
+                </h2>
+                <p className="font-['Overpass',sans-serif] text-lg text-white/70 mb-10 leading-relaxed">
+                  {t('press.kitDesc')}
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <button className="flex items-center justify-between gap-4 bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-all group">
+                    <span className="font-['Overpass',sans-serif] font-bold">
+                      Logo Paketi (SVG/PNG)
+                    </span>
+                    <LucideFileDown className="size-5 text-[var(--color-secondary)] group-hover:translate-y-1 transition-transform" />
+                  </button>
+                  <button className="flex items-center justify-between gap-4 bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-all group">
+                    <span className="font-['Overpass',sans-serif] font-bold">Fotoğraf Arşivi</span>
+                    <LucideFileDown className="size-5 text-[var(--color-secondary)] group-hover:translate-y-1 transition-transform" />
+                  </button>
+                  <button className="flex items-center justify-between gap-4 bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-all group col-span-1 sm:col-span-2">
+                    <span className="font-['Overpass',sans-serif] font-bold">
+                      Pako Kurumsal Kimlik Klavuzu (PDF)
+                    </span>
+                    <LucideFileDown className="size-5 text-[var(--color-secondary)] group-hover:translate-y-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="lg:w-1/2 flex justify-center">
+                <motion.div
+                  initial={{ opacity: 0, rotate: 12, scale: 0.8 }}
+                  whileInView={{ opacity: 1, rotate: 3, scale: 1 }}
+                  whileHover={{ rotate: 0, scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 200 }}
+                  className="relative w-full max-w-sm"
+                >
+                  <img
+                    src={pakoSticker}
+                    alt="Pako Sticker"
+                    className="w-full h-auto drop-shadow-2xl"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-[var(--color-secondary)] text-[var(--color-primary)] font-bold px-6 py-2 rounded-lg shadow-lg">
+                    Official Brand Assets
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* Media Contact */}
+        <section className="py-24">
+          <Container>
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="inline-flex items-center justify-center size-16 bg-gray-100 dark:bg-gray-800 rounded-full mb-8">
+                <LucideExternalLink className="size-8 text-[var(--color-primary)]" />
+              </div>
+              <h2 className="font-['Overpass',sans-serif] text-3xl font-extrabold text-black dark:text-white mb-6">
+                {t('press.contactTitle')}
+              </h2>
+              <p className="font-['Overpass',sans-serif] text-lg text-black/60 dark:text-white/60 mb-8 leading-relaxed">
+                {t('press.contactDesc')}
+              </p>
+              <a
+                href="mailto:basin@pako.com"
+                className="font-['Overpass_Mono',sans-serif] text-2xl md:text-3xl font-bold text-[var(--color-primary)] dark:text-[var(--color-secondary)] hover:underline decoration-4 underline-offset-8"
+              >
+                basin@pako.com
+              </a>
+            </div>
+          </Container>
+        </section>
+      </div>
+    </MainLayout>
+  );
+}
