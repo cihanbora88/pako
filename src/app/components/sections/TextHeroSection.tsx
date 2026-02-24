@@ -10,7 +10,7 @@ export function TextHeroSection({ title, subtitle, className }: TextHeroSectionP
   return (
     <section className={`flex w-full flex-col items-center px-4 py-16 md:px-8 ${className ?? ''}`}>
       <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-6 text-center">
-        <h2 className="font-['Overpass',sans-serif] text-3xl font-light leading-tight text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-5xl lg:text-xl">
+        <h2 className="font-['Overpass',sans-serif] text-3xl font-light leading-tight text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-5xl lg:text-4xl">
           {title}
         </h2>
         {subtitle && (

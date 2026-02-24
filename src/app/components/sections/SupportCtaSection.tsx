@@ -4,17 +4,19 @@ import { useTranslation } from 'react-i18next';
 export function SupportCtaSection() {
   const { t } = useTranslation();
   return (
-    <section className="flex w-full items-center justify-center px-4 py-6 md:px-8 lg:py-6">
-      <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-6 px-4 text-center md:px-16 lg:px-60">
-        <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold tracking-tight text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px] md:leading-[32px]">
-          {t('supportCta.title')}
-        </h2>
-        <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
-          {t('supportCta.description')}
-        </p>
+    <section className="flex w-full items-center justify-center px-4 py-12 md:px-8">
+      <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center justify-between gap-8 rounded-2xl bg-[#290079] p-8 lg:flex-row lg:px-16 lg:py-12">
+        <div className="flex flex-col gap-4 text-left lg:max-w-2xl">
+          <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold tracking-tight text-[#AFE403] md:text-[32px] md:leading-[32px]">
+            {t('supportCta.title')}
+          </h2>
+          <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-white md:text-xl">
+            {t('supportCta.description')}
+          </p>
+        </div>
         <Link
           to="/destek-ol"
-          className="rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
+          className="min-w-[180px] rounded-xl border-2 border-white px-8 py-4 text-center font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-white transition-all hover:bg-white hover:text-[#290079] active:scale-[0.98]"
         >
           {t('supportCta.cta')}
         </Link>

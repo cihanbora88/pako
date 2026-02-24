@@ -32,47 +32,57 @@
       "advice": "advice"
     },
     "search": "Search...",
-    "noContent": "No content found matching your search.",
+    "backToBlog": "Back to Blog",
     "posts": [
       {
         "title": "A brief history of Pako",
-        "excerpt": "About how Pako emerged and developed as an idea..."
+        "excerpt": "About how Pako emerged and developed as an idea...",
+        "content": "<p>Pako started as a dream of a handful of people who believed in the freedom of cycling in the narrow streets of Kadıköy. In early 2019, it sprouted as an answer to the injustices in the delivery world.</p><p>Since day one, our aim has not only been to carry a package, but to keep the solidarity in our neighborhood alive.</p>"
       },
       {
         "title": "Commission-free delivery with Pako for businesses unable to work with platforms...",
-        "excerpt": "Official institutions cannot invoice the unfair commissions requested by platforms and therefore it becomes impossible for them to receive orders through platforms. Pako's transparent..."
+        "excerpt": "Official institutions cannot invoice the unfair commissions requested by platforms...",
+        "content": "<p>Many local tradesmen are crushed under commissions of up to 30%-40% imposed by large platforms. As Pako, we are changing this order.</p><p>Thanks to our commission-free model, businesses protect their earnings while our couriers receive the full reward for their labor.</p>"
       },
       {
         "title": "Trails are appearing",
-        "excerpt": "We opened a trail in our forests with our collective! We all took picks, shovels, scythes and hoes together for our youth to train with mountain bikes..."
+        "excerpt": "We opened a trail in our forests with our collective!...",
+        "content": "<p>We leave a mark not only in the city but also in nature. Last month, we opened new mountain bike trails for our youth in the Aydos forest.</p><p>Working together with picks and shovels, we created routes that are respectful and protected from nature.</p>"
       },
       {
         "title": "Bumps are not an obstacle with PakoBike",
-        "excerpt": "Speaking of local and customized production, we couldn't find a better production tool than the bicycle. A bicycle design suitable for the challenging road conditions our couriers encounter..."
+        "excerpt": "Speaking of local and customized production, we couldn't find a better production tool than the bicycle...",
+        "content": "<p>Istanbul's roads are difficult. We needed a bicycle suitable for cobblestones and bumps. Our PakoBike, designed with our own couriers, is a total city beast.</p>"
       },
       {
         "title": "Tips for getting along well with your bicycle",
-        "excerpt": "Yes that's right you are in a serious relationship. We prepared this guide for this relationship to be healthy for both parties..."
+        "excerpt": "Yes that's right you are in a serious relationship. We prepared this guide for you...",
+        "content": "<p>Your bike is your most loyal friend. But it also wants love and care. Don't neglect to lubricate your chain and check the brake pads.</p><p>In this guide, you will find simple but effective maintenance tips that will extend the life of your bike.</p>"
       },
       {
         "title": "We succeeded as a community",
-        "excerpt": "One of the most beautiful gifts of acting as a community, good luck to our entire district. You can entrust your bicycles to the PKOOP bicycle center, have them repaired."
+        "excerpt": "One of the most beautiful gifts of acting as a community...",
+        "content": "<p>Kadıköy PKOOP cycling center has opened its doors! We now have a house where you can safely entrust your bikes, have them repaired and socialize with other cyclists.</p>"
       },
       {
         "title": "Tips for Carrying Cargo by Bicycle",
-        "excerpt": "Learn effective cargo carrying techniques by bicycle. Practical suggestions for balanced load distribution and safe driving..."
+        "excerpt": "Learn effective cargo carrying techniques by bicycle...",
+        "content": "<p>Carrying load is an art. You need to know how to place the load for balance, safety and efficiency. Keeping the center of gravity low is the golden rule.</p>"
       },
       {
         "title": "Cycling in the Rain",
-        "excerpt": "Points to consider for safe cycling in wet weather and equipment recommendations..."
+        "excerpt": "Points to consider for safe cycling in wet weather...",
+        "content": "<p>Rain is not an obstacle, just a condition. With the right equipment and technique, you can safely pedal on wet roads as well.</p>"
       },
       {
         "title": "Pako Rider User Manual",
-        "excerpt": "Detailed step-by-step guide to using the Pako Rider application most efficiently..."
+        "excerpt": "Detailed step-by-step guide to using the Pako Rider application...",
+        "content": "<p>Our new mobile application Pako Rider completely digitizes the workflow of our couriers.</p><p>We explained step by step how to use all the features such as task receiving and route tracking.</p>"
       },
       {
         "title": "Courier Experiences: In One Day",
-        "excerpt": "The story of a working day from the eyes of one of the Pako couriers and what happened..."
+        "excerpt": "The story of a working day from the eyes of one of the Pako couriers...",
+        "content": "<p>How do we start the day? Pedaling in the silence of the neighborhood in the early hours of the morning is priceless.</p><p>We share the funny events we lived in a day, the difficulties and the peace brought by the tiredness at the end of the day.</p>"
       }
     ]
   },

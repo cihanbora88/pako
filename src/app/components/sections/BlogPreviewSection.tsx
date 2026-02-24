@@ -1,72 +1,65 @@
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-
-interface BlogCardData {
-  label: string;
-  title: string;
-  excerpt: string;
-}
-
-function BlogCard({ post }: { post: BlogCardData }) {
-  return (
-    <article className="flex flex-1 flex-col gap-1">
-      {/* Placeholder image with label */}
-      <div className="relative flex flex-col items-start">
-        <div className="z-10 bg-[var(--color-secondary)] px-1">
-          <span className="font-['Overpass',sans-serif] text-base font-semibold text-[#230067]">
-            {post.label}
-          </span>
-        </div>
-        <div className="-mt-2 aspect-[300/200] w-full bg-[var(--color-gray-300)] dark:bg-[var(--color-gray-700)]" />
-      </div>
-      <h3 className="font-['Overpass',sans-serif] text-base font-semibold text-black dark:text-white">
-        {post.title}
-      </h3>
-      <p className="font-['Overpass',sans-serif] text-base font-light leading-6 tracking-tight text-black dark:text-white">
-        {post.excerpt}
-      </p>
-    </article>
-  );
-}
+import { BlogCard } from '../ui/BlogCard';
+import { blogPosts as allPosts } from '../../data/blog-posts';
 
 export function BlogPreviewSection() {
   const { t } = useTranslation();
 
-  const blogPosts: BlogCardData[] = [
-    {
-      label: t('home.blogPreview.postLabel'),
-      title: t('home.blogPreview.posts.0.title'),
-      excerpt: t('home.blogPreview.posts.0.excerpt'),
-    },
-    {
-      label: t('home.blogPreview.postLabel'),
-      title: t('home.blogPreview.posts.1.title'),
-      excerpt: t('home.blogPreview.posts.1.excerpt'),
-    },
-    {
-      label: t('home.blogPreview.postLabel'),
-      title: t('home.blogPreview.posts.2.title'),
-      excerpt: t('home.blogPreview.posts.2.excerpt'),
-    },
-  ];
+  // Pick specific posts for the preview (e.g., first 3)
+  const previewPosts = [3, 4, 5]; // Indices for PakoBike, Püf Noktaları, Topluluk
+
+  const localizedPosts = previewPosts.map((index) => {
+    const post = allPosts[index];
+    const localizedPostsData = t('blog.posts', { returnObjects: true }) as Array<{
+      title: string;
+      excerpt: string;
+      content: string;
+    }>;
+    const localizedPost = localizedPostsData[index];
+
+    return {
+      id: post.id,
+      title: localizedPost?.title || post.title,
+      excerpt: localizedPost?.excerpt || post.excerpt,
+      category: t(`blog.filters.${post.category}`),
+      image: post.image,
+      slug: post.slug,
+      author: post.author,
+      date: post.date,
+    };
+  });
 
   return (
-    <section className="flex w-full items-center justify-center px-4 py-6 md:px-8">
-      <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-3">
-        {/* Blog cards grid */}
-        <div className="grid w-full gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post, i) => (
-            <BlogCard key={i} post={post} />
-          ))}
-        </div>
+    <section className="flex w-full items-center justify-center px-4 py-16 md:px-8 bg-gray-50 dark:bg-gray-900/50">
+      <Container>
+        <div className="flex w-full flex-col items-center gap-12">
+          {/* Blog cards grid */}
+          <div className="grid w-full gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {localizedPosts.map((post) => (
+              <BlogCard
+                key={post.id}
+                title={post.title}
+                excerpt={post.excerpt}
+                category={post.category}
+                image={post.image}
+                slug={post.slug}
+                author={post.author}
+                date={post.date}
+              />
+            ))}
+          </div>
 
-        <Link
-          to="/blog"
-          className="mt-2 rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
-        >
-          {t('home.blogPreview.cta')}
-        </Link>
-      </div>
+          <Link
+            to="/blog"
+            className="rounded-full bg-[var(--color-secondary)] px-10 py-4 font-['Overpass_Mono',sans-serif] text-lg font-bold text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-95 shadow-lg shadow-secondary/20"
+          >
+            {t('home.blogPreview.cta')}
+          </Link>
+        </div>
+      </Container>
     </section>
   );
 }
+
+import { Container } from '../ui/Container';

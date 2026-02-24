@@ -36,6 +36,7 @@ export function BlogPage() {
       title: post.title,
       excerpt: post.excerpt,
       categoryLabel: t(`blog.filters.${originalPost.category}`),
+      slug: originalPost.slug, // Ensure slug is present
     };
   });
 
@@ -100,6 +101,9 @@ export function BlogPage() {
                   excerpt={filteredPosts[0].excerpt}
                   category={filteredPosts[0].categoryLabel}
                   image={filteredPosts[0].image}
+                  slug={filteredPosts[0].slug}
+                  author={filteredPosts[0].author}
+                  date={filteredPosts[0].date}
                   size="large"
                 />
 
@@ -113,6 +117,9 @@ export function BlogPage() {
                         excerpt={post.excerpt}
                         category={post.categoryLabel}
                         image={post.image}
+                        slug={post.slug}
+                        author={post.author}
+                        date={post.date}
                       />
                     ))}
                   </CardGrid>
@@ -128,6 +135,9 @@ export function BlogPage() {
                         excerpt={post.excerpt}
                         category={post.categoryLabel}
                         image={post.image}
+                        slug={post.slug}
+                        author={post.author}
+                        date={post.date}
                       />
                     ))}
                   </CardGrid>

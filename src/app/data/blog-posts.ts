@@ -1,3 +1,9 @@
+export interface Author {
+  name: string;
+  picture?: string;
+  bio?: string;
+}
+
 export interface BlogPost {
   id: number;
   title: string;
@@ -6,7 +12,13 @@ export interface BlogPost {
   image?: string;
   slug: string;
   date: string;
+  content?: string;
+  author: Author;
 }
+
+const defaultAuthor: Author = {
+  name: 'Pako Ekibi',
+};
 
 export const blogPosts: BlogPost[] = [
   {
@@ -16,6 +28,7 @@ export const blogPosts: BlogPost[] = [
     category: 'article',
     slug: 'kisa-pako-tarihi',
     date: '2024-01-15',
+    author: defaultAuthor,
   },
   {
     id: 2,
@@ -25,6 +38,7 @@ export const blogPosts: BlogPost[] = [
     category: 'article',
     slug: 'komisyonsuz-teslimat',
     date: '2024-01-20',
+    author: defaultAuthor,
   },
   {
     id: 3,
@@ -34,6 +48,7 @@ export const blogPosts: BlogPost[] = [
     category: 'story',
     slug: 'patikalar-beliriyor',
     date: '2024-02-01',
+    author: defaultAuthor,
   },
   {
     id: 4,
@@ -43,6 +58,7 @@ export const blogPosts: BlogPost[] = [
     category: 'article',
     slug: 'pakobike-tumsekler',
     date: '2024-02-10',
+    author: defaultAuthor,
   },
   {
     id: 5,
@@ -52,6 +68,7 @@ export const blogPosts: BlogPost[] = [
     category: 'guide',
     slug: 'bisiklet-bakim-rehberi',
     date: '2024-02-15',
+    author: defaultAuthor,
   },
   {
     id: 6,
@@ -61,6 +78,7 @@ export const blogPosts: BlogPost[] = [
     category: 'story',
     slug: 'topluluk-basarisi',
     date: '2024-02-20',
+    author: defaultAuthor,
   },
   {
     id: 7,
@@ -70,6 +88,7 @@ export const blogPosts: BlogPost[] = [
     category: 'howto',
     slug: 'kargo-tasima-ipuclari',
     date: '2024-03-01',
+    author: defaultAuthor,
   },
   {
     id: 8,
@@ -79,6 +98,7 @@ export const blogPosts: BlogPost[] = [
     category: 'advice',
     slug: 'yagmurda-bisiklet',
     date: '2024-03-05',
+    author: defaultAuthor,
   },
   {
     id: 9,
@@ -88,6 +108,7 @@ export const blogPosts: BlogPost[] = [
     category: 'guide',
     slug: 'pako-rider-kilavuz',
     date: '2024-03-10',
+    author: defaultAuthor,
   },
   {
     id: 10,
@@ -96,5 +117,6 @@ export const blogPosts: BlogPost[] = [
     category: 'story',
     slug: 'kurye-deneyimi',
     date: '2024-03-15',
+    author: defaultAuthor,
   },
 ];

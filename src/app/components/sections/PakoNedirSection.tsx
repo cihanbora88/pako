@@ -1,23 +1,13 @@
 import { Link } from 'react-router';
-import pakoSticker from '@assets/svg/pako_sticker.svg';
 import { useTranslation } from 'react-i18next';
 
 export function PakoNedirSection() {
   const { t } = useTranslation();
   return (
     <section className="flex w-full items-center justify-center px-4 py-6 md:px-8 lg:py-6">
-      <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-10 md:gap-16 lg:flex-row lg:gap-20 lg:px-20">
-        {/* Image */}
-        <div className="flex flex-1 items-center justify-center">
-          <img
-            src={pakoSticker}
-            alt="Pako sticker"
-            className="h-auto w-full max-w-sm object-contain lg:max-w-none"
-          />
-        </div>
-
+      <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center lg:px-20">
         {/* Text content */}
-        <div className="flex flex-1 flex-col items-end gap-4 text-right">
+        <div className="flex w-full max-w-3xl flex-col items-center gap-6 text-center">
           <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold tracking-tight text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px] md:leading-[32px]">
             {t('home.whatIsPako.title')}
           </h2>

@@ -33,46 +33,57 @@
     },
     "search": "Ara...",
     "noContent": "Aramanıza uygun içerik bulunamadı.",
+    "backToBlog": "Blog'a Dön",
     "posts": [
       {
         "title": "Kısa Pako tarihi",
-        "excerpt": "bir fikir olarak Pako'nun nasıl ortaya çıktığı ve geliştiği hakkında..."
+        "excerpt": "bir fikir olarak Pako'nun nasıl ortaya çıktığı ve geliştiği hakkında...",
+        "content": "<p>Pako, Kadıköy'ün dar sokaklarında bisikletin özgürlüğüne inanan bir avuç insanın hayali olarak başladı. 2019'un başlarında, paket servis dünyasındaki adaletsizliklere bir cevap olarak filizlendi.</p><p>İlk günden beri amacımız sadece bir paket taşımak değil, mahallemizdeki dayanışmayı canlı tutmaktı. Bugün ise Pako, yüzlerce bisikletliyi ve onlarca işletmeyi bir araya getiren organik bir ekosisteme dönüştü.</p>"
       },
       {
         "title": "Platformlar ile çalışamayan işletme Pako ile komisyonsuz teslimat...",
-        "excerpt": "Resmi kurumlar platformların talep ettiği haksız komisyonu fatura edemiyorlar ve dolayısla platformlar üzerinden sipariş almaları imkansızlaşıyor. Pako'nun şeffaf..."
+        "excerpt": "Resmi kurumlar platformların talep ettiği haksız komisyonu fatura edemiyorlar...",
+        "content": "<p>Birçok yerel esnaf, büyük platformların dayattığı %30-%40'a varan komisyonlar altında eziliyor. Pako olarak bu düzeni değiştiriyoruz.</p><p>Komisyonsuz modelimiz sayesinde işletmeler kazançlarını korurken, kuryelerimiz de emeklerinin tam karşılığını alıyor. Bu, mahalle ekonomisini güçlendirmenin en dürüst yolu.</p>"
       },
       {
         "title": "Patikalar beliriyor",
-        "excerpt": "Kolektifimizle birlikte ormanlarımızda parkur açtık! Gençlerimizin dağ bisikletleriyle antreman yapmaları için hep birlikte kazma, kürek, tırpan ve çapaları alıp..."
+        "excerpt": "Kolektifimizle birlikte ormanlarımızda parkur açtık!...",
+        "content": "<p>Sadece şehirde değil, doğada da iz bırakıyoruz. Geçtiğimiz ay Aydos ormanında gençlerimiz için yeni dağ bisikleti parkurları açtık.</p><p>Hep birlikte kazma kürek çalışarak, doğaya saygılı ve korunaklı rotalar oluşturduk. Pako topluluğu sadece bir teslimat ağı değil, bir yaşam biçimidir.</p>"
       },
       {
         "title": "PakoBike ile tümsekler engel değil",
-        "excerpt": "Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık. Kuryelerimizin karşılaştığı zorlu yol şartlarına uygun bir bisiklet tasarımı..."
+        "excerpt": "Yerel ve özelleştirilmiş üretim demişken bisikletten daha iyi bir üretim aracı bulamazdık...",
+        "content": "<p>İstanbul'un yolları zordur. Maşallahı olan tümseklere, arnavut kaldırımlarına uygun bir bisiklet ihtiyacımız vardı.</p><p>Kendi kuryelerimizle tasarladığımız PakoBike, hem dayanıklılığı hem de yük taşıma kapasitesiyle tam bir şehir canavarı. Yerel üretimin gücüne inanıyoruz.</p>"
       },
       {
         "title": "Bisikletinizle iyi geçinmenin püf noktaları",
-        "excerpt": "Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık..."
+        "excerpt": "Evet doğru ciddi bir ilişkidesiniz. Bu ilişkinin her iki taraf için de sağlıklı yaşanması için bu rehberi hazırladık...",
+        "content": "<p>Bisikletiniz sizin en sadık dostunuzdur. Ancak o da sevgi ve bakım ister. Zincirinizi yağlamayı, fren pabuçlarını kontrol etmeyi ihmal etmeyin.</p><p>Bu rehberimizde, bisikletinizin ömrünü uzatacak ve sürüş keyfinizi artıracak basit ama etkili bakım ipuçlarını bulacaksınız.</p>"
       },
       {
         "title": "Topluluk olarak başardık",
-        "excerpt": "Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir ettirebilirsiniz."
+        "excerpt": "Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun...",
+        "content": "<p>Kadıköy PKOOP bisiklet merkezi kapılarını açtı! Artık bisikletlerinizi güvenle emanet edebileceğiniz, tamir ettirebileceğiniz ve diğer bisikletlilerle sosyalleşebileceğiniz bir evimiz var.</p><p>Bu başarı hepimizin. Dayanışmanın neleri mümkün kılabileceğinin en somut örneği.</p>"
       },
       {
         "title": "Bisikletle Kargo Taşımanın İpuçları",
-        "excerpt": "Bisikletle etkili kargo taşıma tekniklerini öğrenin. Yükü dengeli dağıtmak ve güvenli sürüş için pratik öneriler..."
+        "excerpt": "Bisikletle etkili kargo taşıma tekniklerini öğrenin...",
+        "content": "<p>Yük taşımak bir sanattır. Denge, güvenlik ve verimlilik için yükü nasıl yerleştireceğinizi bilmeniz gerekir.</p><p>Ağırlık merkezini düşük tutmak ve yükü iki yana eşit dağıtmak altın kuraldır. Daha fazlası için videomuzu izleyebilirsiniz.</p>"
       },
       {
         "title": "Yağmurda Bisiklet Sürüşü",
-        "excerpt": "Yağışlı havalarda güvenli bisiklet sürüşü için dikkat edilmesi gerekenler ve ekipman tavsiyeleri..."
+        "excerpt": "Yağışlı havalarda güvenli bisiklet sürüşü için dikkat edilmesi gerekenler...",
+        "content": "<p>Yağmur engel değil, sadece bir şarttır. Doğru ekipman ve teknikle ıslak yollarda da güvenle pedal çevirebilirsiniz.</p><p>Kaygan zeminlere dikkat edin, fren mesafenizi artırın ve görünürlüğünüzü sağlamak için ışıklarınızı mutlaka yakın.</p>"
       },
       {
         "title": "Pako Rider Kullanım Kılavuzu",
-        "excerpt": "Pako Rider uygulamasını en verimli şekilde kullanmak için detaylı adım adım rehber..."
+        "excerpt": "Pako Rider uygulamasını en verimli şekilde kullanmak için detaylı adım adım rehber...",
+        "content": "<p>Yeni mobil uygulamamız Pako Rider, kuryelerimizin iş akışını tamamen dijitalleştiriyor.</p><p>Görev alma, rota takibi ve gelir görüntüleme gibi tüm özelliklerin nasıl kullanıldığını bu kapsamlı rehberde adım adım anlattık.</p>"
       },
       {
         "title": "Kurye Deneyimleri: Bir Günde",
-        "excerpt": "Pako kuryelerinden birinin gözünden bir çalışma gününün hikayesi ve yaşananlar..."
+        "excerpt": "Pako kuryelerinden birinin gözünden bir çalışma gününün hikayesi...",
+        "content": "<p>Güne nasıl başlıyoruz? Sabahın erken saatlerinde mahallenin sessizliğinde pedal çevirmek paha biçilemez.</p><p>Bir gün içinde yaşadığımız komik olayları, zorlukları ve gün sonundaki yorgunluğun getirdiği huzuru samimi bir dille paylaşıyoruz.</p>"
       }
     ]
   },
