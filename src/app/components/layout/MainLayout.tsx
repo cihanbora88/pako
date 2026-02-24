@@ -1,7 +1,9 @@
 import { ReactNode, useState, useEffect } from 'react';
+import { ScrollRestoration, useLocation } from 'react-router';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { CookieBanner } from '../ui/CookieBanner';
+import { DisclaimerSection } from '../sections';
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -42,9 +44,14 @@ export function MainLayout({ children }: MainLayoutProps) {
     setIsDarkMode((prev) => !prev);
   };
 
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <div className="flex min-h-screen flex-col bg-white dark:bg-gray-900">
+      {isHomePage && <DisclaimerSection />}
       <Header onThemeToggle={toggleTheme} isDarkMode={isDarkMode} />
+      <ScrollRestoration />
       <main className="flex-1">{children}</main>
       <Footer />
       <CookieBanner />

@@ -19,7 +19,8 @@
     "privacy": "Gizlilik Politikası",
     "cookies": "Çerez Politikası",
     "terms": "Kullanım Koşulları",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "press": "Basın"
   },
   "blog": {
     "title": "Blog",
@@ -86,6 +87,19 @@
         "content": "<p>Güne nasıl başlıyoruz? Sabahın erken saatlerinde mahallenin sessizliğinde pedal çevirmek paha biçilemez.</p><p>Bir gün içinde yaşadığımız komik olayları, zorlukları ve gün sonundaki yorgunluğun getirdiği huzuru samimi bir dille paylaşıyoruz.</p>"
       }
     ]
+  },
+  "press": {
+    "title": "Basın Odası",
+    "description": "Pako'nun legal statüsü, sosyal misyonu ve medyadaki yansımaları.",
+    "kitTitle": "Basın Kiti",
+    "kitDesc": "Logolarımız, fotoğraflarımız ve kurumsal kimlik dökümanlarımıza buradan ulaşabilirsiniz.",
+    "contactTitle": "Basın İletişim",
+    "contactDesc": "Resmi görüş ve röportaj talepleri için:",
+    "categories": {
+      "news": "Haber",
+      "video": "Video",
+      "documentary": "Belgesel"
+    }
   },
   "help": {
     "title": "Yardım",
@@ -263,7 +277,8 @@
           "excerpt": "Bir topluluk olarak hareket etmenin en güzel hediyelerinden biri tüm ilçemize hayırlı olsun. PKOOP bisiklet merkezine bisikletlerinizi emanet edebilir, tamir"
         }
       ]
-    }
+    },
+    "disclaimer": "Pako bir Sosyal ve dayanışma ekonomisi (SDE) platformu ve dijital teknoloji girişimidir."
   },
   "faq": {
     "title": "Sıkça sorulan sorular",

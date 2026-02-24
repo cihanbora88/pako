@@ -81,7 +81,7 @@ const pressCoverage: PressItem[] = [
   },
 ];
 
-export function BasinPage() {
+export function PressPage() {
   const { t } = useTranslation();
 
   return (

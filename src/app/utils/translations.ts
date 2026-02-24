@@ -39,6 +39,8 @@ const translations: { [locale: string]: Translations } = {
         advice: 'tavsiye',
       },
       search: 'Ara...',
+      author: 'YAZAR',
+      noContent: 'Henüz blog yazısı bulunmuyor.',
     },
     help: {
       title: 'Yardım',
@@ -119,7 +121,20 @@ const translations: { [locale: string]: Translations } = {
       terms: 'Terms of Service',
       contact: 'Contact',
     },
-    // Add more English translations...
+    blog: {
+      title: 'Blog',
+      filters: {
+        article: 'article',
+        video: 'video',
+        story: 'story',
+        guide: 'guide',
+        howto: 'how to',
+        advice: 'advice',
+      },
+      search: 'Search...',
+      author: 'AUTHOR',
+      noContent: 'No blog posts found yet.',
+    },
   },
 };
 
@@ -137,7 +152,7 @@ export const t = (key: string): string => {
 
   for (const k of keys) {
     if (value && typeof value === 'object') {
-      value = value[k];
+      value = (value as Record<string, unknown>)[k];
     } else {
       return key; // Return key if translation not found
     }

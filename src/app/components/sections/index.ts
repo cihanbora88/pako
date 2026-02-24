@@ -6,3 +6,4 @@ export { SupportCtaSection } from './SupportCtaSection';
 export { BlogPreviewSection } from './BlogPreviewSection';
 export { FaqSection } from './FaqSection';
 export { NewsletterSection } from './NewsletterSection';
+export { DisclaimerSection } from './DisclaimerSection';

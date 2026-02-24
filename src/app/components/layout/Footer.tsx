@@ -9,6 +9,7 @@ export function Footer() {
     { label: t('footer.pakoRider'), path: '/pako-rider' },
     { label: t('footer.partnership'), path: '/isletmeler' },
     { label: t('footer.blog'), path: '/blog' },
+    { label: t('footer.press'), path: '/basin' },
   ];
 
   const footerMenu2 = [
