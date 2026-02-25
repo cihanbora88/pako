@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
 
 # Editor directories and files
 .vscode/*
@@ -22,9 +23,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Figma Make specific
-src/imports/
-# ^ Since we rebuilt all pages, we might want to ignore the original heavy Figma imports
-# but for now let's keep it commented if the user wants to keep them in the repo.
-# src/imports/

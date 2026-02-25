@@ -1,7 +1,11 @@
 import { useState } from 'react';
-
-import svgPaths from '../../imports/svg-xmc1gi6xw8';
 import { useTranslation } from 'react-i18next';
+
+// SVG path data from real assets (assets/icons/)
+const mailIconPath =
+  'M36 0H4C1.8 0 0.02 1.8 0.02 4L0 28C0 30.2 1.8 32 4 32H36C38.2 32 40 30.2 40 28V4C40 1.8 38.2 0 36 0ZM36 28H4V8L20 18L36 8V28ZM20 14L4 4H36L20 14Z';
+const phoneIconPath =
+  'M20.4286 0H5.57143C2.48857 0 0 2.43636 0 5.45455V34.5455C0 37.5636 2.48857 40 5.57143 40H20.4286C23.5114 40 26 37.5636 26 34.5455V5.45455C26 2.43636 23.5114 0 20.4286 0ZM22.2857 30.9091H3.71429V5.45455H22.2857V30.9091ZM16.7143 36.3636H9.28571V34.5455H16.7143V36.3636Z';
 
 export function ContactPage() {
   const { t } = useTranslation();
@@ -236,7 +240,7 @@ export function ContactPage() {
           <div className="flex items-end gap-4">
             <svg className="size-10 shrink-0" fill="none" viewBox="0 0 40 32">
               <path
-                d={svgPaths.p2d133480}
+                d={mailIconPath}
                 fill="var(--color-primary)"
                 className="dark:fill-[var(--color-secondary)]"
               />
@@ -253,7 +257,7 @@ export function ContactPage() {
           <div className="flex items-center gap-4">
             <svg className="size-10 shrink-0" fill="none" viewBox="0 0 26 40">
               <path
-                d={svgPaths.p1c8ad00}
+                d={phoneIconPath}
                 fill="var(--color-primary)"
                 className="dark:fill-[var(--color-secondary)]"
               />

@@ -9,7 +9,7 @@ export function HeroSection() {
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <img alt="" className="absolute inset-0 size-full object-cover" src={heroImage} />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[rgba(41,0,121,0.5)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[rgba(41,0,121,0.5)] dark:to-[rgba(0,0,0,0.5)]" />
       </div>
 
       {/* Content */}

@@ -42,7 +42,7 @@ export function NewsletterSection() {
       {/* Background */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <img alt="" className="absolute inset-0 size-full object-cover" src={newsletterBg} />
-        <div className="absolute inset-0 bg-[rgba(41,0,121,0.5)]" />
+        <div className="absolute inset-0 bg-[rgba(41,0,121,0.5)] dark:bg-[rgba(0,0,0,0.5)]" />
       </div>
 
       {/* Content */}
