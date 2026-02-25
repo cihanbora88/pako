@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 export function Footer() {
   const { t } = useTranslation();
   const footerMenu1 = [
-    { label: t('footer.about'), path: '/hakkinda' },
+    { label: t('footer.about'), path: '/hikayemiz' },
     { label: t('footer.pakoRider'), path: '/pako-rider' },
     { label: t('footer.partnership'), path: '/isletmeler' },
     { label: t('footer.blog'), path: '/blog' },
@@ -17,14 +17,13 @@ export function Footer() {
     { label: t('footer.pkoop'), path: '#' },
     { label: t('footer.support'), path: '/destek-ol' },
     { label: t('footer.help'), path: '/yardim' },
+    { label: t('footer.contact'), path: '/iletisim' },
   ];
 
   const footerMenu3 = [
-    { label: t('footer.faq'), path: '/yardim' },
-    { label: t('footer.privacy'), path: '#' },
+    { label: t('footer.privacy'), path: '/kvkk' },
     { label: t('footer.cookies'), path: '/cerez-politikasi' },
-    { label: t('footer.terms'), path: '#' },
-    { label: t('footer.contact'), path: '/iletisim' },
+    { label: t('footer.terms'), path: '/kullanim-ilkeleri' },
   ];
 
   const socialLinks = [
@@ -56,7 +55,7 @@ export function Footer() {
 
   return (
     <footer className="w-full bg-white dark:bg-gray-900">
-      <div className="mx-auto flex max-w-[var(--container-max-width)] flex-wrap items-start justify-center gap-8 px-4 py-6 md:gap-12 md:px-8 lg:flex-nowrap lg:gap-20 lg:px-[var(--spacing-6xl)]">
+      <div className="mx-auto flex max-w-[var(--container-max-width)] flex-wrap items-center justify-center gap-8 px-4 py-6 md:gap-12 md:px-8 lg:flex-nowrap lg:gap-20 lg:px-[var(--spacing-6xl)]">
         {/* Logo */}
         <div className="flex w-44 shrink-0 items-center justify-center">
           <div className="h-[43px] w-[124px]">

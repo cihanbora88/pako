@@ -1,16 +1,26 @@
 import { useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
 import { useParams, Link } from 'react-router';
-import { MainLayout } from '../components/layout/MainLayout';
+
 import { Container } from '../components/ui/Container';
 import { useTranslation } from 'react-i18next';
 import { AuthorInfo } from '../components/ui/AuthorInfo';
 import { BlogCard } from '../components/ui/BlogCard';
 import { contentfulClient } from '../lib/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import type { Document } from '@contentful/rich-text-types';
+import { BLOCKS } from '@contentful/rich-text-types';
+import type { Document, Block, Inline } from '@contentful/rich-text-types';
 import type { BlogPost } from '../data/blog-posts';
 
 type LocalizedPost = BlogPost & { categoryLabel: string };
+
+const richTextOptions = {
+  renderNode: {
+    [BLOCKS.PARAGRAPH]: (_node: Block | Inline, children: ReactNode) => (
+      <p className="mb-5 leading-[1.8] font-['Overpass',sans-serif] text-[1.0625rem]">{children}</p>
+    ),
+  },
+};
 
 function mapEntry(item: Record<string, unknown>, index: number): BlogPost {
   const fields = (item['fields'] as Record<string, unknown>) || {};
@@ -128,119 +138,113 @@ export function BlogPostPage() {
 
   if (loading) {
     return (
-      <MainLayout>
-        <Container>
-          <div className="flex items-center justify-center py-40">
-            <span className="font-['Overpass_Mono',sans-serif] text-gray-400 animate-pulse">
-              {t('blog.loading', 'Yükleniyor...')}
-            </span>
-          </div>
-        </Container>
-      </MainLayout>
+      <Container>
+        <div className="flex items-center justify-center py-40">
+          <span className="font-['Overpass_Mono',sans-serif] text-gray-400 animate-pulse">
+            {t('blog.loading', 'Yükleniyor...')}
+          </span>
+        </div>
+      </Container>
     );
   }
 
   if (notFound || !post) {
     return (
-      <MainLayout>
-        <Container>
-          <div className="flex flex-col items-center justify-center py-20 gap-6">
-            <h1 className="font-['Overpass_Mono',sans-serif] text-3xl text-gray-400">
-              Post not found
-            </h1>
-            <Link to="/blog" className="text-[var(--color-primary)] hover:underline">
-              Back to Blog
-            </Link>
-          </div>
-        </Container>
-      </MainLayout>
+      <Container>
+        <div className="flex flex-col items-center justify-center py-20 gap-6">
+          <h1 className="font-['Overpass_Mono',sans-serif] text-3xl text-gray-400">
+            Post not found
+          </h1>
+          <Link to="/blog" className="text-[var(--color-primary)] hover:underline">
+            Back to Blog
+          </Link>
+        </div>
+      </Container>
     );
   }
 
   return (
-    <MainLayout>
-      <div className="bg-white dark:bg-gray-900 py-16">
-        <Container>
-          <div className="max-w-3xl mx-auto flex flex-col gap-8">
-            {/* Back Button */}
-            <Link
-              to="/blog"
-              className="group flex items-center gap-2 font-['Overpass_Mono',sans-serif] text-sm text-[var(--color-primary)] dark:text-[var(--color-secondary)] hover:opacity-80 transition-opacity"
-            >
-              <span className="text-xl">←</span>
-              {t('blog.backToBlog')}
-            </Link>
+    <div className="bg-white dark:bg-gray-900 py-16">
+      <Container>
+        <div className="max-w-3xl mx-auto flex flex-col gap-8">
+          {/* Back Button */}
+          <Link
+            to="/blog"
+            className="group flex items-center gap-2 font-['Overpass_Mono',sans-serif] text-sm text-[var(--color-primary)] dark:text-[var(--color-secondary)] hover:opacity-80 transition-opacity"
+          >
+            <span className="text-xl">←</span>
+            {t('blog.backToBlog')}
+          </Link>
 
-            {/* Post Header */}
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <span className="bg-[var(--color-secondary)] px-3 py-1 font-['Overpass',sans-serif] text-sm font-bold text-[var(--color-primary)] rounded">
-                  {t(`blog.filters.${post.category}`)}
-                </span>
-                <span className="font-['Overpass_Mono',sans-serif] text-sm text-gray-500 dark:text-gray-400">
-                  {post.date}
-                </span>
-              </div>
-              <h1 className="font-['Overpass',sans-serif] text-2xl md:text-3xl font-bold leading-tight text-black dark:text-white">
-                {post.title}
-              </h1>
+          {/* Post Header */}
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-4">
+              <span className="bg-[var(--color-secondary)] px-3 py-1 font-['Overpass',sans-serif] text-sm font-bold text-[var(--color-primary)] rounded">
+                {t(`blog.filters.${post.category}`)}
+              </span>
+              <span className="font-['Overpass_Mono',sans-serif] text-sm text-gray-500 dark:text-gray-400">
+                {post.date}
+              </span>
             </div>
-
-            {/* Hero Image */}
-            {post.image && (
-              <div className="aspect-video w-full overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
-                <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-              </div>
-            )}
-
-            {/* Content */}
-            {richContent ? (
-              <div className="prose prose-lg dark:prose-invert max-w-none font-['Overpass',sans-serif] text-black dark:text-white leading-relaxed">
-                {documentToReactComponents(richContent)}
-              </div>
-            ) : (
-              <div
-                className="prose prose-lg dark:prose-invert max-w-none font-['Overpass',sans-serif] text-black dark:text-white leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: post.content || '' }}
-              />
-            )}
-
-            {/* Author Info */}
-            <AuthorInfo
-              name={post.author.name}
-              picture={post.author.picture}
-              bio={post.author.bio}
-              variant="detailed"
-            />
-
-            {/* Divider */}
-            <hr className="border-gray-100 dark:border-gray-800 my-8" />
-
-            {/* Recommended Posts */}
-            {recommendedPosts.length > 0 && (
-              <div className="flex flex-col gap-10 py-10">
-                <h2 className="font-['Overpass',sans-serif] text-2xl font-bold text-black dark:text-white">
-                  {t('blog.recommendedTitle', { defaultValue: 'Sizin için seçtiklerimiz' })}
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {recommendedPosts.map((p) => (
-                    <BlogCard
-                      key={p.id}
-                      title={p.title}
-                      excerpt={p.excerpt}
-                      category={p.categoryLabel}
-                      image={p.image}
-                      slug={p.slug}
-                      author={p.author}
-                      date={p.date}
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
+            <h1 className="font-['Overpass',sans-serif] text-2xl md:text-3xl font-bold leading-tight text-black dark:text-white">
+              {post.title}
+            </h1>
           </div>
-        </Container>
-      </div>
-    </MainLayout>
+
+          {/* Hero Image */}
+          {post.image && (
+            <div className="aspect-video w-full overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800">
+              <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+            </div>
+          )}
+
+          {/* Content */}
+          {richContent ? (
+            <div className="blog-content text-black dark:text-white">
+              {documentToReactComponents(richContent, richTextOptions)}
+            </div>
+          ) : (
+            <div
+              className="blog-content text-black dark:text-white"
+              dangerouslySetInnerHTML={{ __html: post.content || '' }}
+            />
+          )}
+
+          {/* Author Info */}
+          <AuthorInfo
+            name={post.author.name}
+            picture={post.author.picture}
+            bio={post.author.bio}
+            variant="detailed"
+          />
+
+          {/* Divider */}
+          <hr className="border-gray-100 dark:border-gray-800 my-8" />
+
+          {/* Recommended Posts */}
+          {recommendedPosts.length > 0 && (
+            <div className="flex flex-col gap-10 py-10">
+              <h2 className="font-['Overpass',sans-serif] text-2xl font-bold text-black dark:text-white">
+                {t('blog.recommendedTitle', { defaultValue: 'Sizin için seçtiklerimiz' })}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {recommendedPosts.map((p) => (
+                  <BlogCard
+                    key={p.id}
+                    title={p.title}
+                    excerpt={p.excerpt}
+                    category={p.categoryLabel}
+                    image={p.image}
+                    slug={p.slug}
+                    author={p.author}
+                    date={p.date}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </Container>
+    </div>
   );
 }

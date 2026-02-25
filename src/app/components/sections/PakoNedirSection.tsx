@@ -15,7 +15,7 @@ export function PakoNedirSection() {
             {t('home.whatIsPako.description')}
           </p>
           <Link
-            to="/hakkinda"
+            to="/hikayemiz"
             className="rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
           >
             {t('home.whatIsPako.cta')}

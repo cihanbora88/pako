@@ -1,13 +1,13 @@
 {
   "header": {
-    "about": "About",
+    "about": "Our Story",
     "pakoRider": "Pako Rider",
     "businesses": "Businesses",
     "community": "Community",
     "contact": "Contact"
   },
   "footer": {
-    "about": "About",
+    "about": "Our Story",
     "pakoRider": "Pako Rider",
     "partnership": "Partnership",
     "blog": "Blog",
@@ -16,9 +16,9 @@
     "support": "Support",
     "help": "Help",
     "faq": "FAQ",
-    "privacy": "Privacy Policy",
+    "privacy": "Privacy and Data Sovereignty (KVKK)",
     "cookies": "Cookie Policy",
-    "terms": "Terms of Service",
+    "terms": "Usage and Ethical Principles",
     "contact": "Contact",
     "press": "Press"
   },
@@ -89,7 +89,7 @@
   },
   "press": {
     "title": "Press Room",
-    "description": "Pako's legal status, social mission, and media coverage.",
+    "description": "How are we changing the rules of the game? Our manifesto, brand kit, and Pako in the media.",
     "kitTitle": "Press Kit",
     "kitDesc": "Access our logos, photos, and corporate identity documents here.",
     "contactTitle": "Media Contact",
@@ -155,7 +155,7 @@
     "sending": "Sending...",
     "success": "✓ Your message has been sent successfully! We will get back to you as soon as possible.",
     "error": "✗ Please fill in all required fields and enter the e-mail address in the correct format.",
-    "note": "Our team works on a voluntary basis, a friend will respond to your message on a voluntary basis as soon as possible."
+    "note": "We are not a massive and bureaucratic institution; we are a passionate and autonomous community. You won't receive corporate templates—a real Pako member from the field will get back to you as soon as possible."
   },
   "businesses": {
     "title": "Businesses",
@@ -165,7 +165,7 @@
       "description2": "Our decentralized system is transforming the courier model and developing towards making this model applicable in every district under all conditions. You can help us develop a principled working model by meeting and supporting Pako.",
       "description3": "Pako, which has been providing training to many courier networks with the experience it has gained in the field since the pandemic period in 2019, has made decentralized and independent restaurant couriering technologically possible with the mobile application Pako Rider it developed."
     },
-    "heroStatement": "Be a part of Pako's non-profit mission and social movement, strong ties with local producers.",
+    "heroStatement": "Don't surrender to commission monsters. Join the neighborhood's fair, zero-carbon, and 100% local delivery network.",
     "localNetwork": {
       "title": "Join the local network",
       "description1": "Pako feeds on Turkey's solidarist roots, locality and organicity. In a period when the unfair business order is on the rise, it offers a beneficial alternative to you precious tradesmen who produce value and are unique, and to local producers outside the global chain. By asking 'Is a different courier model possible?', it believes that the bicycle is the carrier of this model.",
@@ -194,7 +194,7 @@
     "joinMovement": "Join the Movement!",
     "description1": "The Pako Rider application was developed as a digital reflection of organic field experience by bicycle couriers dedicated to Pako. Pako Rider is not just a delivery tool; it is a high-performance and transparent technology platform that draws its strength from the open-source philosophy. Developed by cyclists for cyclists with collective consciousness, the Pako Rider software is open source; it can be inspected and developed by everyone. The data flow is not secret. Its independent technology is a common value of the cooperative.",
     "description2": "Pako's courier-oriented technological vision produces solutions by observing courier needs directly in the field. This software aims to offer a fairer, more transparent and efficient working environment by shaping with the collective mind of the community; it builds a future where people, not algorithms, are priority.",
-    "heroTitle": "Open source code, transparent data flow and honest economic models",
+    "heroTitle": "Open source code, transparent data flow and decentralized job pool. Fair technology coded by cyclists, for cyclists.",
     "interfaceDescription1": "Developed by cyclists for cyclists with collective consciousness, the Pako Rider software is open source; it can be inspected and developed by everyone. Data flow is not secret. Its independent technology is the joint value of the cooperative.",
     "interfaceDescription2": "Pako Rider's new generation software approach creates a fast workflow, recommends works in the pool to couriers in the field in the most reasonable way with its organic advanced algorithm and creates smart routes. It is designed to help people working on a common task achieve their goals.",
     "communityInvitation1": "Join the movement we started with Pako Rider, join the community to get more information about our philosophy, principles and examine usage principles. Our goal is to make the use of Pako Rider possible and easier for everyone.",
@@ -215,7 +215,9 @@
     "seffafDesc": "Every step we take is part of a trust we build together.",
     "communityTitle": "It is a voluntary community that makes Pako possible",
     "communityDesc1": "The continuity and development of Pako is the result of the hard work of a team whose principles overlap in many subjects. What we carry in Pako is not just packages, but a common culture. Pako works with the understanding of \"festina lante\" (hurry up but slowly) by adapting to the rhythm of the city; thus establishing stability that gives confidence to both businesses and the field. An approach that prepares the individual for the changes of life, teaches him economy from the core and trains his cognitive abilities as an entrepreneurship school is in Pako's nature. This form of existence makes our job a bit different from others.",
-    "communityDesc2": "Pako is not for everyone; it is suitable for adventure lovers and nature people, but not for those who get away with things easily. In these contexts, the Pako rider is positioned outside the mainstream."
+    "communityDesc2": "Pako is not for everyone; it is suitable for adventure lovers and nature people, but not for those who get away with things easily. In these contexts, the Pako rider is positioned outside the mainstream.",
+    "newEcosystemTitle": "A new ecosystem where the courier is the boss, the code is open, and delivery is fair.",
+    "newEcosystemContent": "Pako is not an ordinary order application or a subcontracted cargo company. It is a zero-carbon network under the umbrella of PKOOP, drawing its strength from the community. Couriers are not a cog in this structure; they are the autonomous owners of the application, the data, and the platform."
   },
   "principles": {
     "title": "Pako Principles",
@@ -281,7 +283,8 @@
         }
       ]
     },
-    "disclaimer": "Pako is a Social and Solidarity Economy (SSE) platform and a digital technology initiative."
+    "disclaimer": "Pako is a Social and Solidarity Economy (SSE) platform and a digital technology initiative.",
+    "faqStatement": "Pako is an independent delivery technology developed against the exploitation and commission pressure of the gig economy, drawing its strength from the community."
   },
   "community": {
     "title": "Community",
@@ -323,27 +326,106 @@
     "error": "✗ Please enter a valid e-mail address."
   },
   "cookiePolicy": {
-    "title": "Cookie Policy",
-    "description": "This Cookie Policy explains how cookies and similar technologies are used on the Pako website.",
-    "whatAreCookies": {
-      "title": "What are Cookies?",
-      "content": "Cookies are small text files placed on your device when you visit a website. They help websites function more efficiently and remember user preferences."
-    },
-    "howWeUse": {
-      "title": "How We Use Cookies?",
-      "content1": "At Pako, we use cookies minimally and only to improve your user experience:",
-      "item1": "Remembering user settings such as dark mode and language preferences (using localStorage).",
-      "item2": "Storing interface preferences such as sidebar state.",
-      "content2": "Our website does not use third-party advertising or tracking cookies."
-    },
-    "managing": {
-      "title": "How to Manage Cookies?",
-      "content": "You can delete or block cookies through your browser settings. However, in this case, some features may not work as expected."
-    },
+    "title": "Cookie and Privacy Preferences Policy",
+    "description": "Just as we don't want exhaust fumes in the streets, we don't want unnecessary data fumes (tracking cookies) on our website. Pako advocates digital cleanliness and simplicity.",
+    "sections": [
+      {
+        "title": "1. What is a Cookie?",
+        "content": "Cookies are small notes that websites leave on your browser to remember you. Many sites use them to track you across the internet; we only use them for our site to work properly."
+      },
+      {
+        "title": "2. What Types of Cookies Do We Use?",
+        "content": "We are not \"followers\". That's why we only use Mandatory and Functional cookies:",
+        "list": [
+          "User Preferences: To remember whether you want to see our site in \"Dark Mode\" or \"Light Mode\".",
+          "Language Selection: To remember whether you want to read in Turkish or English.",
+          "Session Security: To recognize you when you log in, if you have a Pako account."
+        ]
+      },
+      {
+        "title": "3. What We Don't Use? (Our Red Line)",
+        "list": [
+          "Advertising Cookies: We do not allow ads that follow you on the internet.",
+          "Third Party Trackers: We do not host tracking pixels that leak your data to data giants like Google, Meta or similar."
+        ]
+      },
+      {
+        "title": "4. How Can You Manage Cookies?",
+        "content": "You can completely block or delete cookies from your browser settings. When you delete only functional cookies, your dark mode or language preferences on our site will be reset every time you enter."
+      }
+    ],
+    "footer": "You can browse freely without leaving a digital footprint. In Pako, there is no surveillance, there is solidarity.",
     "banner": {
       "message": "We use cookies to provide you with a better experience.",
       "accept": "Accept",
       "learnMore": "Learn More"
     }
+  },
+  "kvkk": {
+    "title": "Privacy and Data Sovereignty Policy (KVKK)",
+    "description": "As Pako, we are against data being turned into a weapon in the hands of platform monopolies, just like labor. Unlike traditional platforms, we process your data not to sell your privacy to advertising companies or to manipulate your user profile; only for the purpose of running a fair and transparent delivery ecosystem.",
+    "subDescription": "This document explains how we protect your sovereignty over your data.",
+    "sections": [
+      {
+        "title": "1. Data Controller: Who Are We?",
+        "content": "The controller of your data is us: PKOOP (Bossless Cooperative). We are not a company, but a solidarity network managed by collective wisdom. We do not see your data as our \"property\", but as a \"community value\" entrusted to us."
+      },
+      {
+        "title": "2. Which Data Do We Process and Why?",
+        "content": "We process the minimum data required for the Pako ecosystem to function:",
+        "list": [
+          "Identity and Contact: For registration processes and operational communication (First name-last name, e-mail, phone).",
+          "Location Data: Only during an active delivery process, for route optimization and the functioning of \"Pako Rider\" assistance. Location tracking ends when the delivery ends.",
+          "Transaction Security: Technical records necessary to prevent system misuse and protect our autonomous structure."
+        ]
+      },
+      {
+        "title": "3. Our Data Processing Principles: \"Autonomous and Transparent\"",
+        "list": [
+          "Data Minimization: We only take what is \"mandatory\". We do not store any unnecessary data points (age, gender, interests, etc.).",
+          "Transparent Algorithm: Your data is not processed by \"black box\" algorithms that punish or manipulate the courier; it is processed by open-source and community-monitored Pako technology.",
+          "Ban on Sale to Third Parties: Your data is never shared with advertisers, data brokers, or platform monopolies."
+        ]
+      },
+      {
+        "title": "4. Your Rights (Data Sovereignty)",
+        "content": "Under the KVKK, you have the following rights, but as Pako we promise you more:",
+        "list": [
+          "You can question how your data is processed at any time.",
+          "You can request the correction of incorrect or incomplete data.",
+          "You can use the right to have your data completely deleted from our system (\"Right to be Forgotten\") at any time.",
+          "You can apply directly to PKOOP if you think your data sovereignty has been violated."
+        ]
+      }
+    ],
+    "footer": "In Pako, data is not an exploitation tool, but a community assistant.",
+    "contact": "For all your questions: iletisim@pako.bike"
+  },
+  "terms": {
+    "title": "Usage and Ethical Principles",
+    "description": "When you start using the Pako ecosystem (website, mobile application and network components), you accept not just a software, but a solidarity economy and ethical transportation movement. Our \"terms\" are not small print traps, but big principles that protect our community.",
+    "sections": [
+      {
+        "title": "1. Ban on Misuse",
+        "content": "Pako technology is written for fair sharing, solidarity and local development. You undertake not to use the open-source nature or decentralized structure of the system for the purpose of deceiving community members (couriers, businesses, end users) or gaining unfair profit."
+      },
+      {
+        "title": "2. Non-violence and Well-being",
+        "content": "In all kinds of communication carried out through the Pako platform (in the courier-business-customer triangle), the \"Non-violence\" principle is essential. Approaches including impolite language, mobbing or pressure are reasons for immediate removal from our autonomous structure."
+      },
+      {
+        "title": "3. Accuracy of Information and Honesty",
+        "content": "The accuracy of the information you provide when registering to the ecosystem is the basis of trust in the system. Fake accounts or misleading operational data entries damage Pako's anti-fragile structure."
+      },
+      {
+        "title": "4. Ownership and Open Source",
+        "content": "The contents on the website and the Pako Rider software are the collective labor of the community. You cannot sell this labor to profit-oriented third parties, patent it or turn it into a closed-circuit system. We are building a \"knowledge partnership\" (knowledge commons) that grows as we share."
+      },
+      {
+        "title": "5. Limits of Responsibility",
+        "content": "Pako is not a courier company managed by a central \"boss\", but a technological infrastructure provider and cooperative network. Operational disruptions that may occur are the responsibility of the autonomous units (couriers, businesses); however, the Pako Committee is always ready to mediate in disputes with the \"fair-restorative justice\" principle."
+      }
+    ],
+    "footer": "By using this platform, you declare that you will remain faithful to the rules of solidarity. Welcome!"
   }
 }

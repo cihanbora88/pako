@@ -1,13 +1,13 @@
 {
   "header": {
-    "about": "Hakkında",
+    "about": "Hikayemiz",
     "pakoRider": "Pako Rider",
     "businesses": "İşletmeler",
     "community": "Topluluk",
     "contact": "İletişim"
   },
   "footer": {
-    "about": "Hakkında",
+    "about": "Hikayemiz",
     "pakoRider": "Pako Rider",
     "partnership": "İş Birliği",
     "blog": "Blog",
@@ -16,9 +16,9 @@
     "support": "Destek ol",
     "help": "Yardım",
     "faq": "SSS",
-    "privacy": "Gizlilik Politikası",
+    "privacy": "Gizlilik ve Veri Egemenliği (KVKK)",
     "cookies": "Çerez Politikası",
-    "terms": "Kullanım Koşulları",
+    "terms": "Kullanım ve Etik İlkeleri",
     "contact": "İletişim",
     "press": "Basın"
   },
@@ -90,7 +90,7 @@
   },
   "press": {
     "title": "Basın Odası",
-    "description": "Pako'nun legal statüsü, sosyal misyonu ve medyadaki yansımaları.",
+    "description": "Oyunun kurallarını nasıl değiştiriyoruz? Manifestomuz, marka kitimiz ve medyada Pako.",
     "kitTitle": "Basın Kiti",
     "kitDesc": "Logolarımız, fotoğraflarımız ve kurumsal kimlik dökümanlarımıza buradan ulaşabilirsiniz.",
     "contactTitle": "Basın İletişim",
@@ -156,7 +156,7 @@
     "sending": "Gönderiliyor...",
     "success": "✓ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
     "error": "✗ Lütfen tüm gerekli alanları doldurunuz ve e-mail adresini doğru formatta giriniz.",
-    "note": "Ekibimiz gönüllülük esasıyla çalışır, bir arkadaşımız en yakın sürede gönüllülük esasıyla mesajınızı yanıtlayacaktır."
+    "note": "Biz devasa ve bürokratik bir kurum değil, tutkulu ve otonom bir topluluğuz. Sana kurumsal metinler değil, sahadan gerçek bir Pako üyesi en kısa sürede dönüş yapacak."
   },
   "businesses": {
     "title": "İşletmeler",
@@ -166,7 +166,7 @@
       "description2": "Merkeziyetsiz sistemimiz kuryelik modelini dönüştürüyor ve bu modeli her koşulda her ilçede uygulanabilir kılma yolunda gelişiyor. Pako ile tanışıp destek olarak ilkeli bir çalışma modelini geliştirmemize yardımcı olabilirsiniz.",
       "description3": "2019'da pandemi döneminden beri sahada edindiği tecrübe ile bir çok kuryelik ağına eğitim veren Pako, geliştirdiği mobil uygulama Pako Rider ile merkeziyetsiz ve bağımsız restoran kuryeliğini teknolojik olarak mümkün kılmıştır."
     },
-    "heroStatement": "Pako’nun kâr amacı gütmeyen misyonu ve sosyal hareketinin bir parçası ol, yerel üreticilerle güçlü bağlar.",
+    "heroStatement": "Komisyon canavarlarına teslim olma. Mahallenin adil, sıfır karbonlu ve %100 yerel teslimat ağına katıl.",
     "localNetwork": {
       "title": "Yerel ağa katılın",
       "description1": "Pako Türkiye'nin dayanışmacı köklerinden, yerellikten ve organiklikten beslenir. Haksız iş düzeninin yükselişe geçtiği bir dönemde değer üreten ve eşsiz olan siz kıymetli esnaflara, global zincirin dışında kalan yerel üreticilere faydalı bir alternatif sunar. ‘Farklı bir kuryelik modeli mümkün mü?’ sorusunu sorarak bisikletin bu modelin taşıyıcısı olduğuna inanır.",
@@ -195,7 +195,7 @@
     "joinMovement": "Harekete Katıl!",
     "description1": "Pako Rider uygulaması organik saha tecrübesinin dijital bir yansıması olarak Pako’ya gönül vermiş bisikletli kuryeler tarafından geliştirilmiştir. Pako Rider, sadece bir teslimat aracı değil; gücünü açık kaynak kodlu (Open-Source) felsefeden alan, yüksek performanslı ve şeffaf bir teknoloji platformudur. Kolektif bilinçle bisikletliler tarafından bisikletliler için geliştirilen Pako Rider yazılımı açık kaynaklıdır; herkes tarafından incelenebilir ve geliştirilebilir. Veri akışı gizli değilir. Bağımsız teknolojisi kooperatifin ortak değeridir.",
     "description2": "Pako’nun kurye odaklı teknolojik vizyonu, kuryelerin ihtiyaçlarını doğrudan sahada gözlemleyerek çözümler üretir. Bu yazılım, topluluğun ortak aklıyla şekillenerek daha adil, şeffaf ve verimli bir çalışma ortamı sunmayı hedefler; algoritmanın değil, insanın öncelikli olduğu bir gelecek inşa eder.",
-    "heroTitle": "Açık kaynak kod, şeffaf veri akışı ve dürüst ekonomik modeller",
+    "heroTitle": "Açık kaynak kod, şeffaf veri akışı ve merkeziyetsiz iş havuzu. Bisikletliler tarafından, bisikletliler için kodlanmış adil teknoloji.",
     "interfaceDescription1": "Kolektif bilinçle bisikletliler tarafından bisikletliler için geliştirilen Pako Rider yazılımı açık kaynaklıdır; herkes tarafından incelenebilir ve geliştirilebilir. Veri akışı gizli değilir. Bağımsız teknolojisi kooperatifin ortak değeridir.",
     "interfaceDescription2": "Pako Rider’ın yeni nesil yazılım anlayışı hızlı bir iş akışı oluşturur, organik gelişmiş algoritması ile havuzdaki işleri sahadaki kuryelere en makul şekilde tavsiye eder ve akıllı rotalar oluşturur. Ortak bir görev üzerinde çalışan kişilerin hedeflerine ulaşmalarına yardımcı olmak için tasarlanmıştır.",
     "communityInvitation1": "Pako Rider ile başlattığımız harekete katıl, felsefemiz, ilkelerimiz hakkında daha fazla bilgi almak ve kullanım prensiplerini incelemek için topluluğa dahil ol. Amacımız Pako Rider’ın kullanımını herkes için mümkün kılmak ve kolaylaştırmak.",
@@ -216,7 +216,9 @@
     "seffafDesc": "Her adımımız, birlikte inşa ettiğimiz bir güvenin parçasıdır.",
     "communityTitle": "Pako’yu mümkün kılan gönüllü bir topluluktur",
     "communityDesc1": "Pako’nun sürekliliği ve geliştirilmesi, ilkeleri pek çok konuda birbiri ile örtüşen bir ekibin sıkı çalışması sonucudur. Pako’da taşıdığımız şey sadece paket değil, ortak kültürdür. Pako, şehrin ritmine uyum sağlayarak “festina lante” (acele et ama yavaşça) anlayışıyla çalışır; böylece hem işletmelere hem de sahaya güven veren bir istikrar kurar. Bir girişim okulu olarak bireyi hayatın değişkenliklerine hazırlayan, ona ekonomiyi çekirdekten öğreten ve onun bilişsel yeteneklerini eğiten bir tarz Pako’nun doğasında vardır. Bu varoluş biçimi bizim işimiz diğerlerinden biraz farklı kılar.",
-    "communityDesc2": "Pako herkes için değildir; macera severler, doğa insanları için uygun fakat işlerin kolayına kaçanlar için uygun değildir. Bu bağlamlarda Pako sürücüsü ana akımın dışında konumlanır."
+    "communityDesc2": "Pako herkes için değildir; macera severler, doğa insanları için uygun fakat işlerin kolayına kaçanlar için uygun değildir. Bu bağlamlarda Pako sürücüsü ana akımın dışında konumlanır.",
+    "newEcosystemTitle": "Kuryenin patron, kodun açık, teslimatın adil olduğu yeni bir ekosistem.",
+    "newEcosystemContent": "Pako, sıradan bir sipariş uygulaması veya taşeron kargo şirketi değildir. PKOOP çatısı altında, gücünü topluluktan alan sıfır karbonlu bir ağdır. Kuryeler bu yapının bir dişlisi değil; uygulamanın, verinin ve platformun bizzat otonom sahipleridir."
   },
   "principles": {
     "title": "Pako İlkeleri",
@@ -278,7 +280,8 @@
         }
       ]
     },
-    "disclaimer": "Pako bir Sosyal ve dayanışma ekonomisi (SDE) platformu ve dijital teknoloji girişimidir."
+    "disclaimer": "Pako bir Sosyal ve dayanışma ekonomisi (SDE) platformu ve dijital teknoloji girişimidir.",
+    "faqStatement": "Pako, gig ekonomisinin sömürüsü ve komisyon baskısına karşı geliştirilmiş; gücünü topluluktan alan bağımsız bir teslimat teknolojisidir."
   },
   "community": {
     "title": "Topluluk",
@@ -329,27 +332,105 @@
     "cta": "Ana Sayfaya Dön"
   },
   "cookiePolicy": {
-    "title": "Çerez Politikası",
-    "description": "Bu Çerez Politikası, Pako web sitesinde çerezlerin ve benzer teknolojilerin nasıl kullanıldığını açıklar.",
-    "whatAreCookies": {
-      "title": "Çerez Nedir?",
-      "content": "Çerezler, bir web sitesini ziyaret ettiğinizde cihazınıza yerleştirilen küçük metin dosyalarıdır. Web sitelerinin daha verimli çalışmasına ve kullanıcı tercihlerini hatırlamasına yardımcı olurlar."
-    },
-    "howWeUse": {
-      "title": "Çerezleri Nasıl Kullanıyoruz?",
-      "content1": "Pako olarak çerezleri minimum düzeyde ve sadece kullanıcı deneyiminizi iyileştirmek için kullanıyoruz:",
-      "item1": "Karanlık mod ve dil tercihleriniz gibi kullanıcı ayarlarını hatırlamak (localStorage kullanarak).",
-      "item2": "Yan menü durumu gibi arayüz tercihlerini saklamak.",
-      "content2": "Web sitemiz üçüncü taraf reklam çerezleri veya izleme çerezleri kullanmaz."
-    },
-    "managing": {
-      "title": "Çerezleri Nasıl Yönetebilirsiniz?",
-      "content": "Tarayıcı ayarlarınız aracılığıyla çerezleri silebilir veya engelleyebilirsiniz. Ancak bu durumda bazı özellikler beklediğiniz gibi çalışmayabilir."
-    },
+    "title": "Çerez (Cookie) ve Gizlilik Tercihleri Politikası",
+    "description": "Sokaklarda egzoz dumanı istemediğimiz gibi, web sitemizde de gereksiz veri dumanı (izleme çerezleri) istemiyoruz. Pako, dijital temizliği ve sadeliği savunur.",
+    "sections": [
+      {
+        "title": "1. Çerez (Cookie) Nedir?",
+        "content": "Çerezler, web sitelerinin sizi hatırlamak için tarayıcınıza bıraktığı küçük notlardır. Birçok site bunları sizi internet boyunca takip etmek için kullanır; biz ise sadece sitemizin düzgün çalışması için kullanıyoruz."
+      },
+      {
+        "title": "2. Ne Tür Çerezler Kullanıyoruz?",
+        "content": "Biz \"takipçi\" değiliz. Bu yüzden sadece Zorunlu ve İşlevsel çerezleri kullanıyoruz:",
+        "list": [
+          "Kullanıcı Tercihleri: Sitemizi \"Koyu Mod\"da mı yoksa \"Aydınlık Mod\"da mı görmek istediğinizi hatırlamak için.",
+          "Dil Seçimi: Türkçe mi yoksa İngilizce mi okumak istediğinizi unutmamak için.",
+          "Oturum Güvenliği: Eğer bir Pako hesabınız varsa, giriş yaptığınızda sizi tanıyabilmek için."
+        ]
+      },
+      {
+        "title": "3. Neleri Kullanmıyoruz? (Kırmızı Çizgimiz)",
+        "list": [
+          "Reklam Çerezleri: Sizi internette takip eden reklamlara izin vermiyoruz.",
+          "Üçüncü Parti İzleyiciler: Verilerinizi Google, Meta veya benzeri veri devlerine sızdıran izleme piksellerini barındırmıyoruz."
+        ]
+      },
+      {
+        "title": "4. Çerezleri Nasıl Yönetebilirsiniz?",
+        "content": "Tarayıcı ayarlarınızdan çerezleri tamamen engelleyebilir veya silebilirsiniz. Sadece işlevsel çerezleri sildiğinizde, sitemizdeki karanlık mod veya dil tercihleriniz her girişte sıfırlanacaktır."
+      }
+    ],
+    "footer": "Dijital iz bırakmadan özgürce gezinebilirsiniz. Pako'da gözetim yoktur, dayanışma vardır.",
     "banner": {
       "message": "Size daha iyi bir deneyim sunmak için çerezleri kullanıyoruz.",
       "accept": "Kabul Et",
       "learnMore": "Daha Fazla Bilgi"
     }
+  },
+  "kvkk": {
+    "title": "Gizlilik ve Veri Egemenliği Politikası (KVKK)",
+    "description": "Pako olarak bizler, verinin de tıpkı emek gibi platform tekellerinin elinde bir silah haline getirilmesine karşıyız. Geleneksel platformların aksine, gizliliğinizi reklam şirketlerine satmak veya kullanıcı profilinizi manipüle etmek için değil; sadece adil ve şeffaf bir teslimat ekosistemini yürütmek amacıyla verilerinizi işliyoruz.",
+    "subDescription": "Bu belge, verileriniz üzerindeki egemenliğinizi nasıl koruduğumuzu açıklar.",
+    "sections": [
+      {
+        "title": "1. Veri Sorumlusu: Kimiz?",
+        "content": "Verilerinizin sorumlusu biziz: PKOOP (Patronsuzlar Kooperatifi). Biz bir şirket değil, ortak akılla yönetilen bir dayanışma ağıyız. Verilerinizi \"mülkiyetimiz\" olarak değil, bize emanet edilmiş birer \"topluluk değeri\" olarak görüyoruz."
+      },
+      {
+        "title": "2. Hangi Verileri, Neden İşliyoruz?",
+        "content": "Pako ekosisteminin çalışması için gereken minimum veriyi işleriz:",
+        "list": [
+          "Kimlik ve İletişim: Kayıt süreçleri ve operasyonel iletişim için (Ad-soyad, e-posta, telefon).",
+          "Konum Verisi: Sadece aktif bir teslimat süreci sırasında, rotanın optimize edilmesi ve \"Pako Rider\" asistanlığının çalışabilmesi için. Teslimat bittiğinde konum takibi de biter.",
+          "İşlem Güvenliği: Sistemin kötüye kullanımını önlemek ve otonom yapımızı korumak için gerekli teknik kayıtlar."
+        ]
+      },
+      {
+        "title": "3. Veri İşleme İlkelerimiz: \"Otonom ve Şeffaf\"",
+        "list": [
+          "Veri Minimizasyonu: Sadece \"zorunlu olanı\" alırız. Gereksiz hiçbir veri noktasını (yaş, cinsiyet, ilgi alanları vb.) depolamayız.",
+          "Şeffaf Algoritma: Verileriniz, kuryeyi cezalandıran veya manipüle eden \"kara kutu\" algoritmalar tarafından değil; açık kaynaklı ve topluluk denetimindeki Pako teknolojisi tarafından işlenir.",
+          "Üçüncü Taraflara Satış Yasağı: Verileriniz asla reklam verenlerle, veri simsarlarıyla veya platform tekelleriyle paylaşılmaz."
+        ]
+      },
+      {
+        "title": "4. Haklarınız (Veri Egemenliği)",
+        "content": "KVKK uyarınca aşağıdaki haklara sahipsiniz, ancak Pako olarak biz size daha fazlasını vaat ediyoruz:",
+        "list": [
+          "Verilerinizin nasıl işlendiğini her an sorgulayabilirsiniz.",
+          "Yanlış veya eksik verilerin düzeltilmesini talep edebilirsiniz.",
+          "Verilerinizin sistemimizden tamamen silinmesini (\"Unutulma Hakkı\") her an kullanabilirsiniz.",
+          "Veri egemenliğinizin ihlal edildiğini düşündüğünüzde doğrudan PKOOP'a başvurabilirsiniz."
+        ]
+      }
+    ],
+    "footer": "Pako'da veri, sömürü aracı değil, topluluk asistanıdır."
+  },
+  "terms": {
+    "title": "Kullanım ve Etik İlkeleri",
+    "description": "Pako ekosistemini (web sitesi, mobil uygulama ve ağ bileşenleri) kullanmaya başladığınızda, sadece bir yazılımı değil; bir dayanışma ekonomisi ve etik ulaşım hareketini kabul etmiş olursunuz. Bizim \"koşullarımız\" küçük puntolu tuzaklar değil, topluluğumuzu koruyan büyük ilkelerdir.",
+    "sections": [
+      {
+        "title": "1. Kötüye Kullanım Yasağı",
+        "content": "Pako teknolojisi; adil paylaşım, dayanışma ve yerel kalkınma için yazılmıştır. Sistemin açık kaynaklı doğasını veya merkeziyetsiz yapısını, topluluk üyelerini (kurye, esnaf, son kullanıcı) aldatmak veya haksız kazanç sağlamak amacıyla kullanmamayı taahhüt edersiniz."
+      },
+      {
+        "title": "2. Şiddetsizlik ve Esenlik",
+        "content": "Pako platformu üzerinden yürütülen her türlü iletişimde (kurye-esnaf-müşteri üçgeninde) \"Şiddetsizlik\" ilkesi esastır. Nezaket dışı dil, mobbing veya baskı içeren yaklaşımlar otonom yapımızdan derhal uzaklaştırılma sebebidir."
+      },
+      {
+        "title": "3. Bilginin Doğruluğu ve Dürüstlük",
+        "content": "Ekosisteme kayıt olurken verdiğiniz bilgilerin doğruluğu, sisteme duyulan güvenin temelidir. Sahte hesaplar veya yanıltıcı operasyonel veri girişleri Pako'nun anti-kırılgan yapısına zarar verir."
+      },
+      {
+        "title": "4. Mülkiyet ve Açık Kaynak",
+        "content": "Web sitesindeki içerikler ve Pako Rider yazılımı, topluluğun ortak emeğidir. Bu emeği kâr amaçlı üçüncü taraflara satamaz, patentleyemez veya kapalı devre bir siteme dönüştüremezsiniz. Biz paylaştıkça büyüyen bir \"bilgi ortaklığı\" (knowledge commons) kuruyoruz."
+      },
+      {
+        "title": "5. Sorumluluk Sınırları",
+        "content": "Pako, merkezi bir \"patron\" tarafından yönetilen bir kurye şirketi değil, teknolojik bir altyapı sağlayıcısı ve kooperatif ağdır. Oluşabilecek operasyonel aksaklıklar, otonom birimlerin (kuryeler, işletmeler) kendi sorumluluğundadır; ancak Pako Komitesi, anlaşmazlıklarda her zaman \"adil-onarıcı adalet\" ilkesiyle arabuluculuk yapmaya hazırdır."
+      }
+    ],
+    "footer": "Bu platformu kullanarak dayanışmanın kurallarına sadık kalacağınızı beyan etmiş olursunuz. Hoş geldiniz!"
   }
 }

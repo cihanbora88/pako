@@ -19,7 +19,7 @@ export function Header({ onThemeToggle }: HeaderProps) {
   };
 
   const menuItems = [
-    { key: 'about', path: '/hakkinda', label: t('header.about') },
+    { key: 'about', path: '/hikayemiz', label: t('header.about') },
     { key: 'pakoRider', path: '/pako-rider', label: t('header.pakoRider') },
     { key: 'businesses', path: '/isletmeler', label: t('header.businesses') },
     { key: 'community', path: '/topluluk', label: t('header.community') },
