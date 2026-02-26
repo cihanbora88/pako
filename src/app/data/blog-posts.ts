@@ -12,7 +12,6 @@ export interface BlogPost {
   image?: string;
   slug: string;
   date: string;
-  content?: string;
   author: Author;
 }
 

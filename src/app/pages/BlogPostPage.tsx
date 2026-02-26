@@ -63,7 +63,6 @@ function mapEntry(item: Record<string, unknown>, index: number): BlogPost {
       picture: authorPictureUrl,
       bio: (authorFields?.['bio'] as string) || undefined,
     },
-    content: undefined,
   };
 }
 
@@ -199,15 +198,10 @@ export function BlogPostPage() {
           )}
 
           {/* Content */}
-          {richContent ? (
+          {richContent && (
             <div className="blog-content text-black dark:text-white">
               {documentToReactComponents(richContent, richTextOptions)}
             </div>
-          ) : (
-            <div
-              className="blog-content text-black dark:text-white"
-              dangerouslySetInnerHTML={{ __html: post.content || '' }}
-            />
           )}
 
           {/* Author Info */}
