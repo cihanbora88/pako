@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { Container } from './Container';
+import { Button } from './button';
 
 export function CookieBanner() {
   const { t } = useTranslation();
@@ -42,12 +43,13 @@ export function CookieBanner() {
               >
                 {t('cookiePolicy.banner.learnMore')}
               </Link>
-              <button
+              <Button
+                variant="primary"
                 onClick={handleAccept}
-                className="bg-[var(--color-primary)] dark:bg-[var(--color-secondary)] text-white dark:text-black font-['Overpass_Mono',sans-serif] px-8 py-2.5 rounded-full text-sm font-semibold transition-all hover:opacity-90 active:scale-95 shadow-lg shadow-primary/20"
+                className="rounded-full px-8 py-6 font-['Overpass_Mono',sans-serif] shadow-lg shadow-primary/20 hover:opacity-90 transition-all font-semibold"
               >
                 {t('cookiePolicy.banner.accept')}
-              </button>
+              </Button>
             </div>
           </div>
         </Container>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import heroImage from '@assets/images/hero_image.png';
 import { useTranslation } from 'react-i18next';
+import { Button } from '../ui/button';
 
 export function HeroSection() {
   const { t } = useTranslation();
@@ -24,12 +25,14 @@ export function HeroSection() {
           <p className="max-w-lg font-['Overpass',sans-serif] text-lg font-light leading-relaxed tracking-tight text-[var(--color-gray-100)] md:text-2xl lg:text-[32px] lg:leading-[40px]">
             {t('home.hero.description')}
           </p>
-          <Link
-            to="/topluluk"
-            className="mt-2 rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
+          <Button
+            asChild
+            variant="primary"
+            size="lg"
+            className="mt-2 text-xl font-medium tracking-tight h-auto py-4 px-6"
           >
-            {t('home.hero.cta')}
-          </Link>
+            <Link to="/topluluk">{t('home.hero.cta')}</Link>
+          </Button>
         </div>
       </div>
     </section>

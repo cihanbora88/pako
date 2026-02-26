@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Button } from '../components/ui/button';
 
 // SVG path data from real assets (assets/icons/)
 const mailIconPath =
@@ -206,14 +207,15 @@ export function ContactPage() {
             />
           </div>
 
-          {/* Submit Button */}
-          <button
+          <Button
             type="submit"
+            variant="primary"
+            size="lg"
             disabled={isSubmitting}
-            className="mt-2 rounded-lg bg-[var(--color-secondary)] px-4 py-4 font-['Overpass',sans-serif] font-medium text-[var(--text-xl)] text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-98 disabled:opacity-50"
+            className="mt-2 w-full font-['Overpass',sans-serif] font-medium"
           >
             {isSubmitting ? t('contact.sending') : t('contact.send')}
-          </button>
+          </Button>
 
           {/* Status Messages */}
           {submitStatus === 'success' && (

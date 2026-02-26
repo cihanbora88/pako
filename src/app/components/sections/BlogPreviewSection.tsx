@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { BlogCard } from '../ui/BlogCard';
 import { Container } from '../ui/Container';
 import { useBlogPosts } from '../../lib/useBlogPosts';
+import { Button } from '../ui/button';
 
 export function BlogPreviewSection() {
   const { t, i18n } = useTranslation();
@@ -40,12 +41,14 @@ export function BlogPreviewSection() {
                 ))}
           </div>
 
-          <Link
-            to="/blog"
-            className="rounded-full bg-[var(--color-secondary)] px-10 py-4 font-['Overpass_Mono',sans-serif] text-lg font-bold text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-95 shadow-lg shadow-secondary/20"
+          <Button
+            asChild
+            variant="primary"
+            size="lg"
+            className="rounded-full px-10 py-6 font-['Overpass_Mono',sans-serif] text-lg font-bold transition-all shadow-lg shadow-secondary/20 hover:opacity-90"
           >
-            {t('home.blogPreview.cta')}
-          </Link>
+            <Link to="/blog">{t('home.blogPreview.cta')}</Link>
+          </Button>
         </div>
       </Container>
     </section>

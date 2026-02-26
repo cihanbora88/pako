@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { Button } from '../ui/button';
 
 interface PurpleCardProps {
   title?: string;
@@ -13,7 +14,7 @@ export function PurpleCard({ title, description, ctaLabel, ctaLink }: PurpleCard
       <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center justify-between gap-8 rounded-2xl bg-[#290079] dark:bg-[#AFE403] p-8 lg:flex-row lg:px-16 lg:py-12">
         <div className="flex flex-col gap-4 text-left lg:max-w-2xl">
           {title && (
-            <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold tracking-tight text-[#AFE403] dark:text-[#290079] md:text-[32px] md:leading-[32px]">
+            <h2 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold tracking-tight text-[#AFE403] dark:text-black md:text-[32px] md:leading-[32px]">
               {title}
             </h2>
           )}
@@ -21,12 +22,14 @@ export function PurpleCard({ title, description, ctaLabel, ctaLink }: PurpleCard
             {description}
           </p>
         </div>
-        <Link
-          to={ctaLink}
-          className="min-w-[180px] rounded-xl border-2 border-white dark:border-[#290079] px-8 py-4 text-center font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-white dark:text-[#290079] transition-all hover:bg-white hover:text-[#290079] dark:hover:bg-[#290079] dark:hover:text-[#AFE403] active:scale-[0.98]"
+        <Button
+          asChild
+          variant="outline"
+          size="lg"
+          className="min-w-[180px] rounded-xl border-2 px-8 py-6 text-xl font-medium tracking-tight transition-all active:scale-[0.98] border-white bg-transparent text-white hover:bg-white hover:text-[#290079] dark:border-black dark:bg-transparent dark:text-black dark:hover:bg-black dark:hover:border-black dark:hover:text-[#AFE403]"
         >
-          {ctaLabel}
-        </Link>
+          <Link to={ctaLink}>{ctaLabel}</Link>
+        </Button>
       </div>
     </section>
   );

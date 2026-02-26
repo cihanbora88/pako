@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 
 import { useTranslation } from 'react-i18next';
 import { PurpleCard } from '../components/sections';
+import { Button } from '../components/ui/button';
 
 export function BusinessesPage() {
   const { t } = useTranslation();
@@ -63,12 +64,14 @@ export function BusinessesPage() {
             {t('businesses.meetPako.description')}
           </p>
         </div>
-        <Link
-          to="/topluluk"
-          className="rounded-lg bg-[#AFE403] px-8 py-3 font-['Overpass',sans-serif] text-xl font-bold tracking-tight text-[#290079] transition-all hover:scale-105 active:scale-[0.98] shadow-md"
+        <Button
+          asChild
+          variant="primary"
+          size="lg"
+          className="rounded-lg px-8 py-6 font-['Overpass',sans-serif] text-xl font-bold tracking-tight shadow-md transition-all hover:scale-105 active:scale-[0.98]"
         >
-          {t('businesses.meetPako.cta')}
-        </Link>
+          <Link to="/topluluk">{t('businesses.meetPako.cta')}</Link>
+        </Button>
       </section>
 
       {/* Section 5: İş birliği prensipleri */}

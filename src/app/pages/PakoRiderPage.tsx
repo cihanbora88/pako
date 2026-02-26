@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-
 import { useTranslation } from 'react-i18next';
 import pakoRiderBadge from '@assets/svg/pako_rider_badge.svg';
 import pakoRiderInterface from '@assets/images/pakorider_interface.png';
 import { TextHeroSection } from '../components/sections/TextHeroSection';
+import { Button } from '../components/ui/button';
 
 export function PakoRiderPage() {
   const { t } = useTranslation();
@@ -76,12 +76,14 @@ export function PakoRiderPage() {
         <p className="max-w-2xl font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
           {t('pakoRider.joinDesc')}
         </p>
-        <Link
-          to="/topluluk"
-          className="rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
+        <Button
+          asChild
+          variant="primary"
+          size="lg"
+          className="rounded-lg px-6 py-6 font-['Overpass',sans-serif] text-xl font-medium tracking-tight h-auto transition-all active:scale-[0.98]"
         >
-          {t('pakoRider.joinCommunity')}
-        </Link>
+          <Link to="/topluluk">{t('pakoRider.joinCommunity')}</Link>
+        </Button>
       </section>
 
       {/* Community Invitation Section */}

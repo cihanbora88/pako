@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Button } from '../components/ui/button';
 
 export function SupportusPage() {
   const { t } = useTranslation();
@@ -38,14 +39,16 @@ export function SupportusPage() {
             {t('support.github.description')}
           </p>
         </div>
-        <a
-          href="https://github.com/pako"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-lg bg-[#AFE403] px-8 py-3 font-['Overpass',sans-serif] text-xl font-bold tracking-tight text-[#290079] transition-all hover:scale-105 active:scale-[0.98] shadow-md"
+        <Button
+          asChild
+          variant="primary"
+          size="lg"
+          className="rounded-lg px-8 py-6 font-['Overpass',sans-serif] text-xl font-bold tracking-tight shadow-md transition-all hover:scale-105 active:scale-[0.98]"
         >
-          {t('support.github.cta')}
-        </a>
+          <a href="https://github.com/pako" target="_blank" rel="noopener noreferrer">
+            {t('support.github.cta')}
+          </a>
+        </Button>
       </section>
 
       {/* Section 3: Bank Accounts */}

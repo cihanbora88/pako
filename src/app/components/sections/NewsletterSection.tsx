@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import newsletterBg from '@assets/images/newsletter_bg.jpg';
 import { useTranslation } from 'react-i18next';
+import { Button } from '../ui/button';
 
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
 
@@ -69,13 +70,13 @@ export function NewsletterSection() {
               disabled={status === 'loading'}
               className="flex-1 rounded-lg border border-[var(--color-gray-300)] bg-white px-4 py-3 font-['Inter',sans-serif] text-base text-[var(--color-gray-500)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] disabled:opacity-50 disabled:cursor-not-allowed"
             />
-            <button
+            <Button
               type="submit"
               disabled={status === 'loading'}
-              className="rounded-lg bg-black px-6 py-3 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-white transition-all hover:bg-[var(--color-gray-800)] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed"
+              className="px-6 py-6 font-['Overpass',sans-serif] text-xl tracking-tight !rounded-lg bg-black text-white hover:bg-gray-800 dark:bg-[#AFE403] dark:text-black dark:hover:bg-[#AFE403]/90 transition-all active:scale-[0.98]"
             >
               {status === 'loading' ? t('newsletter.sending') : t('newsletter.cta')}
-            </button>
+            </Button>
           </div>
 
           {/* Status feedback */}

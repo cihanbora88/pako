@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
-
 import { useTranslation } from 'react-i18next';
+import { Button } from '../components/ui/button';
 
 export function NotFoundPage() {
   const { t } = useTranslation();
@@ -12,12 +12,14 @@ export function NotFoundPage() {
       <p className="font-['Overpass',sans-serif] text-2xl text-black dark:text-white">
         {t('notFound.description')}
       </p>
-      <Link
-        to="/"
-        className="rounded-lg bg-[var(--color-secondary)] px-6 py-3 font-['Overpass',sans-serif] font-medium text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-98"
+      <Button
+        asChild
+        variant="primary"
+        size="lg"
+        className="rounded-lg px-6 py-6 font-['Overpass',sans-serif] font-medium transition-all active:scale-[0.98]"
       >
-        {t('notFound.cta')}
-      </Link>
+        <Link to="/">{t('notFound.cta')}</Link>
+      </Button>
     </div>
   );
 }

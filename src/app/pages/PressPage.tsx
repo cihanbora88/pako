@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { LucideFileDown, LucideExternalLink, LucidePlayCircle } from 'lucide-react';
 import pakoSticker from '@assets/svg/pako_sticker.svg';
 import { usePressItems, type PressItem } from '../lib/usePressItems';
+import { Button } from '../components/ui/button';
 
 const fallbackCoverage: PressItem[] = [
   {
@@ -171,22 +172,31 @@ export function PressPage() {
                 {t('press.kitDesc')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <button className="flex items-center justify-between gap-4 bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-all group">
+                <Button
+                  variant="outline"
+                  className="flex items-center justify-between gap-4 h-auto py-5 px-5 group hover:bg-white/20"
+                >
                   <span className="font-['Overpass',sans-serif] font-bold">
                     Logo Paketi (SVG/PNG)
                   </span>
                   <LucideFileDown className="size-5 text-[var(--color-secondary)] group-hover:translate-y-1 transition-transform" />
-                </button>
-                <button className="flex items-center justify-between gap-4 bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-all group">
+                </Button>
+                <Button
+                  variant="outline"
+                  className="flex items-center justify-between gap-4 h-auto py-5 px-5 group hover:bg-white/20"
+                >
                   <span className="font-['Overpass',sans-serif] font-bold">Fotoğraf Arşivi</span>
                   <LucideFileDown className="size-5 text-[var(--color-secondary)] group-hover:translate-y-1 transition-transform" />
-                </button>
-                <button className="flex items-center justify-between gap-4 bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-all group col-span-1 sm:col-span-2">
+                </Button>
+                <Button
+                  variant="outline"
+                  className="flex items-center justify-between gap-4 h-auto py-5 px-5 group hover:bg-white/20 col-span-1 sm:col-span-2"
+                >
                   <span className="font-['Overpass',sans-serif] font-bold">
                     Pako Kurumsal Kimlik Klavuzu (PDF)
                   </span>
                   <LucideFileDown className="size-5 text-[var(--color-secondary)] group-hover:translate-y-1 transition-transform" />
-                </button>
+                </Button>
               </div>
             </div>
             <div className="lg:w-1/2 flex justify-center">

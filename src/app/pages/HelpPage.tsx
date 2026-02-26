@@ -27,14 +27,26 @@ export function HelpPage() {
       desc: 'help.pakoAIDesc',
       action: 'help.start',
       link: '#',
-      icon: <img src={iconAI} alt="Pako AI" className="size-10 shrink-0" />,
+      icon: (
+        <img
+          src={iconAI}
+          alt="Pako AI"
+          className="size-10 shrink-0 dark:brightness-0 dark:invert"
+        />
+      ),
     },
     {
       title: 'help.resources',
       desc: 'help.resourcesDesc',
       action: 'help.explore',
       link: '#',
-      icon: <img src={iconResource} alt="Resources" className="size-10 shrink-0" />,
+      icon: (
+        <img
+          src={iconResource}
+          alt="Resources"
+          className="size-10 shrink-0 dark:brightness-0 dark:invert"
+        />
+      ),
     },
   ];
 

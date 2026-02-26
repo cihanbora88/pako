@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import communityImg from '@assets/images/community.png';
 import { useTranslation } from 'react-i18next';
+import { Button } from '../ui/button';
 
 export function CommunitySection() {
   const { t } = useTranslation();
@@ -24,12 +25,14 @@ export function CommunitySection() {
           <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
             {t('home.community.description')}
           </p>
-          <Link
-            to="/topluluk"
-            className="rounded-lg bg-[var(--color-secondary)] px-6 py-4 font-['Overpass',sans-serif] text-xl font-medium tracking-tight text-[var(--color-primary)] transition-all hover:opacity-90 active:scale-[0.98]"
+          <Button
+            asChild
+            variant="primary"
+            size="lg"
+            className="text-xl font-medium tracking-tight h-auto py-4 px-6 rounded-lg"
           >
-            {t('home.community.cta')}
-          </Link>
+            <Link to="/topluluk">{t('home.community.cta')}</Link>
+          </Button>
         </div>
       </div>
     </section>
