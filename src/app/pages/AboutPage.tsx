@@ -1,8 +1,4 @@
-import girlRider from '@assets/images/pako_girl_sportsbg.png';
-import iconKolektif from '@assets/icons/icon_kolektif.svg';
-import iconYerel from '@assets/icons/icon_yerel.svg';
-import iconDoga from '@assets/icons/icon_doga.svg';
-import iconSeffaf from '@assets/icons/icon_seffaf.svg';
+import { IconKolektif, IconYerel, IconDoga, IconSeffaf } from '../components/ui/VirtueIcons';
 import { TextHeroSection } from '../components/sections/TextHeroSection';
 import { PrinciplesSection } from '../components/sections/PrinciplesSection';
 import { useTranslation } from 'react-i18next';
@@ -13,34 +9,22 @@ export function AboutPage() {
     <div className="flex w-full flex-col items-center gap-8 py-10">
       {/* Page heading */}
       <section className="flex w-full flex-col items-center px-4 md:px-8">
-        <div className="flex w-full max-w-[var(--content-max-width)] flex-col gap-6">
-          <h1 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px]">
+        <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-6">
+          <h1 className="font-['Overpass_Mono',sans-serif] text-2xl font-semibold text-[var(--color-primary)] dark:text-[var(--color-secondary)] md:text-[32px] text-center">
             {t('about.title')}
           </h1>
         </div>
       </section>
 
-      {/* About content with image */}
+      {/* About content text */}
       <section className="flex w-full flex-col items-center px-4 md:px-8">
-        <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-10 lg:flex-row lg:gap-20 lg:px-20">
-          {/* Image */}
-          <div className="flex flex-1 items-center justify-center">
-            <img
-              src={girlRider}
-              alt="Pako bisiklet kurye"
-              className="h-auto w-full max-w-sm object-contain"
-            />
-          </div>
-
-          {/* Content blocks */}
-          <div className="flex flex-1 flex-col gap-6">
-            <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
-              {t('about.description1')}
-            </p>
-            <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
-              {t('about.description2')}
-            </p>
-          </div>
+        <div className="flex w-full max-w-4xl flex-col items-center gap-6 text-center px-4 md:px-12">
+          <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
+            {t('about.description1')}
+          </p>
+          <p className="font-['Overpass',sans-serif] text-base font-light leading-7 tracking-tight text-black dark:text-white md:text-xl">
+            {t('about.description2')}
+          </p>
         </div>
       </section>
 
@@ -52,30 +36,30 @@ export function AboutPage() {
         <div className="grid w-full max-w-[var(--content-max-width)] gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:px-16">
           {[
             {
-              icon: iconKolektif,
+              Icon: IconKolektif,
               title: 'about.kolektif',
               desc: 'about.kolektifDesc',
             },
             {
-              icon: iconYerel,
+              Icon: IconYerel,
               title: 'about.yerel',
               desc: 'about.yerelDesc',
             },
             {
-              icon: iconDoga,
+              Icon: IconDoga,
               title: 'about.doga',
               desc: 'about.dogaDesc',
             },
             {
-              icon: iconSeffaf,
+              Icon: IconSeffaf,
               title: 'about.seffaf',
               desc: 'about.seffafDesc',
             },
           ].map((value) => (
             <div key={value.title} className="flex flex-col items-center gap-4 text-center">
-              <img
-                src={value.icon}
-                alt={t(value.title)}
+              <value.Icon
+                role="img"
+                aria-label={t(value.title)}
                 className="h-28 w-28 object-contain transition-transform hover:scale-105 md:h-32 md:w-32"
               />
               <div className="flex flex-col gap-2">
