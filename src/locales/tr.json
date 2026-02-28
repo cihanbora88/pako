@@ -175,7 +175,8 @@
     "meetPako": {
       "title": "Pako ile tanış",
       "description": "Pako Rider ile geliştirmekte olduğumuz teslimat sistemi hakkında daha fazla bilgi al",
-      "cta": "başla"
+      "cta": "Sunumu incele",
+      "close": "Kapat"
     },
     "principles": {
       "title": "İş birliği prensipleri",

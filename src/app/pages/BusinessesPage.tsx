@@ -1,11 +1,13 @@
 import { Link } from 'react-router';
+import { useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 import { PurpleCard } from '../components/sections';
 import { Button } from '../components/ui/button';
 
 export function BusinessesPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [showSlide, setShowSlide] = useState(false);
   return (
     <div className="flex w-full flex-col items-center gap-16 py-10">
       {/* Section 1: Intro */}
@@ -64,14 +66,44 @@ export function BusinessesPage() {
             {t('businesses.meetPako.description')}
           </p>
         </div>
-        <Button
-          asChild
-          variant="primary"
-          size="lg"
-          className="rounded-lg px-8 py-6 font-['Overpass',sans-serif] text-xl font-bold tracking-tight shadow-md transition-all hover:scale-105 active:scale-[0.98]"
-        >
-          <Link to="/topluluk">{t('businesses.meetPako.cta')}</Link>
-        </Button>
+        {showSlide ? (
+          <div className="flex w-full flex-col items-center gap-6">
+            <div
+              className="relative mt-8 w-full overflow-hidden rounded-xl border border-gray-200 shadow-lg dark:border-gray-800"
+              style={{ paddingTop: '56.25%' }}
+            >
+              <iframe
+                src={
+                  i18n.language === 'en'
+                    ? 'https://docs.google.com/presentation/d/e/2PACX-1vSt4_gaQArOrmtecYzJjmONKGD6GU_-AwiJ0e6kNsfqIUzAyKicPFOMD1UhDUsBOw/pubembed?'
+                    : 'https://docs.google.com/presentation/d/e/2PACX-1vTUpvhlAQtnm_SlibIC6s6yyPCctv0PNlVw0tgp_E8Czyquanbvl0Dt8txh8fNTmg/pubembed?'
+                }
+                frameBorder="0"
+                width="100%"
+                height="100%"
+                allowFullScreen={true}
+                className="absolute inset-0 h-full w-full"
+              />
+            </div>
+            <Button
+              onClick={() => setShowSlide(false)}
+              variant="outline"
+              size="lg"
+              className="rounded-lg border-gray-300 px-8 py-3 font-['Overpass',sans-serif] text-lg font-medium tracking-tight text-gray-700 shadow-sm transition-all hover:bg-gray-100 hover:scale-105 active:scale-[0.98] dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+            >
+              {t('businesses.meetPako.close')}
+            </Button>
+          </div>
+        ) : (
+          <Button
+            onClick={() => setShowSlide(true)}
+            variant="primary"
+            size="lg"
+            className="rounded-lg px-8 py-6 font-['Overpass',sans-serif] text-xl font-bold tracking-tight shadow-md transition-all hover:scale-105 active:scale-[0.98]"
+          >
+            {t('businesses.meetPako.cta')}
+          </Button>
+        )}
       </section>
 
       {/* Section 5: İş birliği prensipleri */}
