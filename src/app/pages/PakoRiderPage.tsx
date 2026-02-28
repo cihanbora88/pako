@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import pakoRiderBadge from '@assets/svg/pako_rider_badge.svg';
-import pakoRiderInterface from '@assets/images/pakorider_interface.png';
 import { TextHeroSection } from '../components/sections/TextHeroSection';
 import { Button } from '../components/ui/button';
+import InteractivePakoComponent from '../components/InteractivePakoComponent';
 
 export function PakoRiderPage() {
   const { t } = useTranslation();
@@ -49,11 +49,7 @@ export function PakoRiderPage() {
         <div className="flex w-full max-w-[var(--content-max-width)] flex-col items-center gap-10 lg:flex-row lg:gap-20">
           {/* App screenshot */}
           <div className="flex flex-1 items-center justify-center">
-            <img
-              src={pakoRiderInterface}
-              alt={t('pakoRider.interfaceAlt')}
-              className="h-auto w-full max-w-xs object-contain"
-            />
+            <InteractivePakoComponent />
           </div>
 
           {/* Text blocks */}
