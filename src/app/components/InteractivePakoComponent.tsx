@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import baseSvgUrl from '@assets/svg/pakosvg_base.svg';
 
 export default function InteractivePakoComponent() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -19,11 +18,43 @@ export default function InteractivePakoComponent() {
 
   return (
     <div className="relative w-full max-w-[180px] md:max-w-[220px] lg:max-w-[260px] aspect-square mx-auto flex items-center justify-center group cursor-pointer">
-      <img
-        src={baseSvgUrl}
-        alt="Base layer"
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 500 500"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
         className="absolute inset-0 w-full h-full pointer-events-none"
-      />
+      >
+        <path
+          d="M497 250C497 113.586 386.414 3 250 3C113.586 3 3 113.586 3 250C3 386.414 113.586 497 250 497V500C111.929 500 0 388.071 0 250C0 111.929 111.929 0 250 0C388.071 0 500 111.929 500 250C500 388.071 388.071 500 250 500V497C386.414 497 497 386.414 497 250Z"
+          className="fill-[#9D9D9D] dark:fill-[#5B5B5B] transition-colors duration-300"
+        />
+        <path
+          d="M450 497V500H50V497H450ZM497 450V50C497 24.0426 475.957 3 450 3H50C24.0426 3 3.00001 24.0426 3 50V450C3 475.957 24.0426 497 50 497V500C22.6016 500 0.350039 477.963 0.00390625 450.646L0 450V50C6.44344e-06 22.3858 22.3858 4.02663e-07 50 0H450L450.646 0.00390625C477.963 0.350045 500 22.6016 500 50V450L499.996 450.646C499.653 477.748 477.748 499.653 450.646 499.996L450 500V497C475.957 497 497 475.957 497 450Z"
+          className="fill-[#9D9D9D] dark:fill-[#5B5B5B] transition-colors duration-300"
+        />
+        <path
+          d="M425 472V475H75V472H425ZM472 425V75C472 49.0426 450.957 28 425 28H75C49.0426 28 28 49.0426 28 75V425C28 450.957 49.0426 472 75 472V475L74.3535 474.996C47.2524 474.653 25.3473 452.748 25.0039 425.646L25 425V75C25 47.3858 47.3858 25 75 25H425C452.614 25 475 47.3858 475 75V425C475 452.398 452.963 474.65 425.646 474.996L425 475V472C450.957 472 472 450.957 472 425Z"
+          className="fill-[#9D9D9D] dark:fill-[#5B5B5B] transition-colors duration-300"
+        />
+        <path
+          d="M450 422V425H50V422H450ZM497 375V125C497 99.0426 475.957 78 450 78H50C24.0426 78 3 99.0426 3 125V375C3 400.957 24.0426 422 50 422V425C22.6016 425 0.35004 402.963 0.00390625 375.646L0 375V125C0 97.3858 22.3858 75 50 75H450L450.646 75.0039C477.963 75.35 500 97.6016 500 125V375C500 402.398 477.963 424.65 450.646 424.996L450 425V422C475.957 422 497 400.957 497 375Z"
+          className="fill-[#9D9D9D] dark:fill-[#5B5B5B] transition-colors duration-300"
+        />
+        <path
+          d="M422 50L425 50L425 450L422 450L422 50ZM375 2.99999L125 3C99.0426 3 78 24.0426 78 50L78 450C78 475.957 99.0426 497 125 497L375 497C400.957 497 422 475.957 422 450L425 450C425 477.398 402.963 499.65 375.646 499.996L375 500L125 500C97.3858 500 75 477.614 75 450L75 50L75.0039 49.3535C75.35 22.0372 97.6016 2.10757e-07 125 -2.18557e-06L375 -1.31134e-05C402.398 -1.4311e-05 424.65 22.0372 424.996 49.3535L425 50L422 50C422 24.0426 400.957 2.99999 375 2.99999Z"
+          className="fill-[#9D9D9D] dark:fill-[#5B5B5B] transition-colors duration-300"
+        />
+        <path
+          d="M36 420L242.521 241.073L182.18 225.707L464 84L298.953 207.268L349.946 218.195L36 420Z"
+          className="fill-[#CDCDCD] dark:fill-[#434343] transition-colors duration-300"
+        />
+        <path
+          d="M298.953 207.268L349.946 218.195L36 420L242.521 241.073L182.18 225.707L464 84L298.953 207.268ZM190.699 224.78L248.823 239.582L69.7041 394.768L342.205 219.604L291.865 208.817L434.896 101.991L190.699 224.78Z"
+          className="fill-[#9D9D9D] dark:fill-[#5B5B5B] transition-colors duration-300"
+        />
+      </svg>
 
       <div
         className="absolute z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -52,10 +83,18 @@ export default function InteractivePakoComponent() {
             >
               <stop
                 offset="0%"
-                stopColor={isHoveringAnimate ? 'var(--color-secondary)' : '#868686'}
+                className={
+                  isHoveringAnimate
+                    ? '[stop-color:var(--color-primary)] dark:[stop-color:var(--color-secondary)] transition-colors duration-300'
+                    : '[stop-color:#DBDBDB] dark:[stop-color:#868686] transition-colors duration-300'
+                }
                 stopOpacity="1"
               />
-              <stop offset="100%" stopColor="#868686" stopOpacity="1" />
+              <stop
+                offset="100%"
+                className="[stop-color:#DBDBDB] dark:[stop-color:#868686] transition-colors duration-300"
+                stopOpacity="1"
+              />
             </radialGradient>
           </defs>
 
@@ -63,8 +102,12 @@ export default function InteractivePakoComponent() {
             d="M262.056 122.066L259.409 124.043L262.639 124.735L310.075 134.899L16.8535 323.383L207.503 158.207L209.672 156.328L206.892 155.619L150.439 141.244L413.448 8.99512L262.056 122.066Z"
             stroke="url(#cursor-glow)"
             strokeWidth="3"
+            className={
+              isHoveringAnimate
+                ? 'drop-shadow-[0_0_8px_rgba(41,0,121,0.6)] dark:drop-shadow-[0_0_8px_rgba(175,228,3,0.6)]'
+                : ''
+            }
             style={{
-              filter: isHoveringAnimate ? 'drop-shadow(0 0 8px rgba(175, 228, 3, 0.6))' : 'none',
               transition: 'filter 0.3s ease',
             }}
           />
