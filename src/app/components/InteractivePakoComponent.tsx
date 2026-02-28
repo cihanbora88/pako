@@ -18,7 +18,7 @@ export default function InteractivePakoComponent() {
   };
 
   return (
-    <div className="relative w-full max-w-[280px] md:max-w-[320px] lg:max-w-[350px] aspect-square mx-auto flex items-center justify-center group cursor-pointer">
+    <div className="relative w-full max-w-[180px] md:max-w-[220px] lg:max-w-[260px] aspect-square mx-auto flex items-center justify-center group cursor-pointer">
       <img
         src={baseSvgUrl}
         alt="Base layer"
